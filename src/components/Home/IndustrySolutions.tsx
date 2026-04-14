@@ -123,13 +123,13 @@ export default function IndustrySolutions() {
                   rotateY: -3,
                   transition: { duration: 0.4 }
                 }}
-                className="group p-8 rounded-[2rem] border border-white/10 bg-[#0B0011]/90 backdrop-blur-2xl transition-all duration-500 relative flex flex-col w-full min-h-[400px] overflow-hidden perspective-1000 active:scale-95"
+                className="group p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border border-white/10 bg-[#0B0011]/90 backdrop-blur-2xl transition-all duration-500 relative flex flex-col w-full min-h-[320px] sm:min-h-[400px] overflow-hidden perspective-1000 active:scale-95"
               >
                 {/* Dynamic Hover Glow */}
                 <div className={`absolute inset-0 bg-linear-to-br ${item.color} opacity-0 group-hover:opacity-15 blur-[100px] transition-opacity duration-700 pointer-events-none`} />
 
                 {/* Icon Container */}
-                <div className="relative mb-10 z-10 w-fit">
+                <div className="relative mb-6 sm:mb-10 z-10 w-fit">
                   <div className={`absolute -inset-6 bg-linear-to-br ${item.color} opacity-0 group-hover:opacity-40 blur-3xl transition-all duration-700 scale-50 group-hover:scale-110`} />
                   <div className={`w-16 h-16 rounded-2xl bg-linear-to-br ${item.color} p-[1.5px] relative overflow-hidden group-hover:rotate-12 transition-transform duration-700 shadow-2xl`}>
                     <div className="w-full h-full rounded-[15px] bg-[#0B0011] flex items-center justify-center relative z-10">

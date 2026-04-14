@@ -143,7 +143,7 @@ export default function TestimonialsSection() {
 
         {/* SWAP CAROUSEL - Smooth Position Swapping */}
         <motion.div
-          className="relative mt-24 cursor-grab active:cursor-grabbing"
+          className="relative mt-10 sm:mt-16 md:mt-24 cursor-grab active:cursor-grabbing"
           onPointerDown={() => setIsPaused(true)}
           onPointerUp={() => setIsPaused(false)}
           onPointerCancel={() => setIsPaused(false)}
@@ -152,7 +152,7 @@ export default function TestimonialsSection() {
           dragElastic={0.1}
           onDragEnd={handleDragEnd}
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 min-h-[400px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             <AnimatePresence mode="popLayout" initial={false}>
               {visibleItems.map((item, idx) => (
                 <motion.div
@@ -170,25 +170,25 @@ export default function TestimonialsSection() {
                     duration: 0.6,
                     ease: [0.32, 0.72, 0, 1]
                   }}
-                  className="group"
+                  className={`group ${idx !== 0 ? "hidden md:block" : ""}`}
                 >
-                  <div className={`relative p-8 rounded-[2.5rem] flex flex-col justify-between h-full border transition-all duration-300 ${idx === 1
-                      ? "bg-white/10 border-purple-500/40 shadow-2xl shadow-purple-500/10 scale-105 z-10"
-                      : "bg-white/5 border-white/10 opacity-60 z-0"
+                  <div className={`relative p-5 sm:p-8 rounded-3xl flex flex-col justify-between border transition-all duration-300 ${idx === 1
+                    ? "bg-white/10 border-purple-500/40 shadow-2xl shadow-purple-500/10 md:scale-105 z-10"
+                    : "bg-white/5 border-white/10 opacity-60 z-0"
                     }`}>
                     <div className="relative z-10">
-                      <div className="flex gap-1 mb-6">
+                      <div className="flex gap-1 mb-4 sm:mb-6">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <Star key={star} size={12} fill="#EAB308" className="text-yellow-500" />
                         ))}
                       </div>
-                      <p className="text-gray-200 text-base leading-relaxed mb-10 font-medium line-clamp-6">
+                      <p className="text-gray-200 text-sm sm:text-base leading-relaxed mb-6 sm:mb-10 font-medium line-clamp-6">
                         &ldquo;{item.quote}&rdquo;
                       </p>
                     </div>
 
-                    <div className="relative z-10 flex items-center gap-4 pt-6 border-t border-white/10 mt-auto">
-                      <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-purple-500/30">
+                    <div className="relative z-10 flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-white/10 mt-auto">
+                      <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden shrink-0 border border-purple-500/30">
                         <img src={item.src} alt={item.name} className="w-full h-full object-cover pointer-events-none" />
                       </div>
                       <div>
@@ -197,7 +197,7 @@ export default function TestimonialsSection() {
                       </div>
                     </div>
                     {idx === 1 && (
-                      <div className="absolute inset-x-0 bottom-0 top-1/2 bg-linear-to-t from-purple-600/10 to-transparent z-0 rounded-[2rem]" />
+                      <div className="absolute inset-x-0 bottom-0 top-1/2 bg-linear-to-t from-purple-600/10 to-transparent z-0 rounded-3xl" />
                     )}
                   </div>
                 </motion.div>
@@ -205,11 +205,10 @@ export default function TestimonialsSection() {
             </AnimatePresence>
           </div>
 
-          <div className="flex justify-center flex-wrap gap-2 mt-16 max-w-2xl mx-auto">
+          <div className="flex justify-center flex-wrap gap-2 mt-8 sm:mt-12 max-w-2xl mx-auto">
             {testimonials.map((_, i) => (
               <button
                 key={i}
-                // To fix interaction: prevent default on mousedown to stop drag conflicting with click
                 onPointerDownCapture={(e) => e.stopPropagation()}
                 onClick={() => setActive(i)}
                 className={`h-1.5 rounded-full transition-all duration-300 ${active === i ? "w-8 bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.5)]" : "w-2 bg-white/20 hover:bg-white/40"}`}

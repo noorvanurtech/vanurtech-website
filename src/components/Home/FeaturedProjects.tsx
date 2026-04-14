@@ -52,7 +52,7 @@ export default function FeaturedProjects() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center p-8 py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-16 sm:py-20"
       style={{ backgroundColor: "#0A0012" }}
     >
       <div className="max-w-7xl w-full">
@@ -294,11 +294,11 @@ export default function FeaturedProjects() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative inline-flex items-center gap-3 px-8 py-4 mt-10 rounded-full text-white font-semibold text-lg border border-purple-500 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50"
+                className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 mt-10 rounded-full text-white font-semibold text-sm sm:text-lg border border-purple-500 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50"
               >
                 <span className="relative z-10">Land on Projects</span>
                 <svg
-                  className="relative z-10 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

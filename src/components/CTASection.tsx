@@ -74,7 +74,7 @@ export default function CTASection() {
   ];
 
   return (
-    <div id="consultation" className="relative mt-0 mb-10 w-full bg-[#0B0011] px-4 pt-12 md:pt-16 pb-24 md:pb-32 overflow-hidden">
+    <div id="consultation" className="relative mt-0 mb-10 w-full bg-[#0B0011] px-4 pt-12 md:pt-16 pb-16 sm:pb-24 md:pb-32 overflow-hidden">
       {/* Background Orbs */}
       <div className="absolute top-0 -left-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 -right-1/4 w-[500px] h-[500px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none" />
@@ -112,7 +112,7 @@ export default function CTASection() {
       </AnimatePresence>
 
       <div className="mx-auto max-w-7xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           {/* Content Left */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

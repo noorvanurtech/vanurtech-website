@@ -76,7 +76,7 @@ export default function TrustedBrands() {
 
       <div className="max-w-full w-full">
         {/* Header Text */}
-        <div className="text-center mx-5 mb-16 space-y-8">
+        <div className="text-center mx-4 sm:mx-5 mb-12 sm:mb-16 space-y-6 sm:space-y-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -134,23 +134,23 @@ export default function TrustedBrands() {
       </div>
 
       {/* Logo Scrolling Rows */}
-      <div className="space-y-4 overflow-hidden py-10">
+      <div className="space-y-3 sm:space-y-4 overflow-hidden py-6 sm:py-10">
         {/* First Row - Scroll Right to Left */}
         <div className="relative flex max-w-[100vw] overflow-hidden group">
           <div className="flex animate-scroll-left w-max">
             {[...Array(4)].map((_, chunkIndex) => (
-              <div key={chunkIndex} className="flex gap-4 pr-4">
+              <div key={chunkIndex} className="flex gap-3 sm:gap-4 pr-3 sm:pr-4">
                 {firstRow.map((logo, index) => (
                   <div
                     key={index}
-                    className="rounded-full border border-gray-200 bg-white p-3 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 min-w-32 sm:min-w-40 md:min-w-48 min-h-12 md:min-h-[60px]"
+                    className="rounded-full border border-gray-200 bg-white p-2 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 w-24 h-14 sm:w-40 sm:h-[60px] md:w-48 md:h-[72px]"
                   >
                     <div className="flex items-center justify-center w-full h-full relative group">
                       <Image
                         src={logo}
                         alt={`Client logo left`}
-                        width={120}
-                        height={60}
+                        width={100}
+                        height={50}
                         className="object-contain hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
                       />
                     </div>
@@ -162,21 +162,21 @@ export default function TrustedBrands() {
         </div>
 
         {/* Second Row - Scroll Left to Right */}
-        <div className="relative flex max-w-[100vw] overflow-hidden group mt-4">
+        <div className="relative flex max-w-[100vw] overflow-hidden group mt-3 sm:mt-4">
           <div className="flex animate-scroll-right w-max">
             {[...Array(4)].map((_, chunkIndex) => (
-              <div key={chunkIndex} className="flex gap-4 pr-4">
+              <div key={chunkIndex} className="flex gap-3 sm:gap-4 pr-3 sm:pr-4">
                 {secondRow.map((logo, index) => (
                   <div
                     key={index}
-                    className="rounded-full border border-gray-200 bg-white p-3 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 min-w-32 sm:min-w-40 md:min-w-48 min-h-12 md:min-h-[60px]"
+                    className="rounded-full border border-gray-200 bg-white p-2 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 w-24 h-14 sm:w-40 sm:h-[60px] md:w-48 md:h-[72px]"
                   >
                     <div className="flex items-center justify-center w-full h-full relative group">
                       <Image
                         src={logo}
                         alt={`Client logo right`}
-                        width={120}
-                        height={60}
+                        width={100}
+                        height={50}
                         className="object-contain hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
                       />
                     </div>

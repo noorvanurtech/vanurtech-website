@@ -20,7 +20,7 @@ export default function Footer() {
       style={{ backgroundColor: "#0B0011" }}
     >
       <div
-        className="max-w-7xl mx-auto rounded-3xl p-8 md:p-12 overflow-hidden relative"
+        className="max-w-7xl mx-auto rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 overflow-hidden relative"
         style={{
           background: "linear-gradient(135deg, #6B21A8 0%, #4C1D95 100%)",
         }}
@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
 
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-12 relative z-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8 mb-10 sm:mb-12 relative z-10">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3">
               <Image
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
           <div className="max-w-md">
             <p className="text-purple-100 text-base leading-relaxed opacity-90">
-              Specializing in premium Website Development, Custom CRM, SaaS Solutions, 
+              Specializing in premium Website Development, Custom CRM, SaaS Solutions,
               and AI-driven Business Automation to scale your enterprise globally.
             </p>
           </div>
@@ -61,11 +61,11 @@ export default function Footer() {
         <div className="border-t border-white/20 mb-12"></div>
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 relative z-10">
           {/* Contact Information Section */}
           <div className="space-y-6">
             <h3 className="text-white text-lg font-bold">Contact Us</h3>
-            
+
             <div className="space-y-4">
               <div className="flex items-start gap-3 group">
                 <MapPin size={20} className="text-purple-300 mt-1 shrink-0 group-hover:text-white transition-colors" />
@@ -176,7 +176,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-16 pt-8 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10">
+        <div className="mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10">
           <p className="text-purple-200 text-xs">
             &copy; {currentYear} Vanurtech Media Pvt. Ltd. All rights reserved.
           </p>
