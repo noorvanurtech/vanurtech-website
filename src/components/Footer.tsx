@@ -152,7 +152,7 @@ export default function Footer() {
           {/* Find Us Section */}
           <div className="space-y-6">
             <h3 className="text-white text-lg font-bold">Find Us</h3>
-            <div className="rounded-2xl overflow-hidden border border-white/20 aspect-video group relative">
+            <div className="rounded-2xl overflow-hidden border border-white/20 aspect-video relative">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.461613126023!2d85.85367567495925!3d20.281151481187703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19098d17fb7bbf%3A0x156cc539fe9c5433!2sVanurtech%20media%20Pvt.%20Ltd.-%20Software%20Development%20Company%20Bhubaneswar%2C%20India!5e0!3m2!1sen!2sin!4v1763795212984!5m2!1sen!2sin"
                 width="100%"
@@ -160,18 +160,8 @@ export default function Footer() {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                className="grayscale contrast-125 opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                className="w-full h-full"
               ></iframe>
-              <a
-                href="https://maps.app.goo.gl/spJrdpJyv8zwmu7HA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity"
-              >
-                <span className="px-3 py-1.5 bg-white text-purple-700 text-xs font-bold rounded-lg flex items-center gap-2">
-                  View Map <ExternalLink size={12} />
-                </span>
-              </a>
             </div>
             <a
               href="https://maps.app.goo.gl/spJrdpJyv8zwmu7HA"

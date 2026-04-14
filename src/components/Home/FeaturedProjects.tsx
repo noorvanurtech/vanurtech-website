@@ -86,7 +86,7 @@ export default function FeaturedProjects() {
 
           <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto">
             A glimpse into some of the impactful digital experiences we’ve
-            crafted across industries — from website design to custom
+            crafted across industries from website design to custom
             applications.
           </p>
 
@@ -285,7 +285,7 @@ export default function FeaturedProjects() {
 
             <p className="mt-4 text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl">
               Every scroll reveals thoughtful design, intuitive UX, and purposeful
-              development — crafted to keep users engaged and businesses ahead.
+              development crafted to keep users engaged and businesses ahead.
             </p>
           </div>
 

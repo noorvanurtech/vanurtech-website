@@ -88,7 +88,7 @@ export default function OurBeginning() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight"
               >
-                Our Journey – From Curiosity to Creating <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Impact</span>
+                Our Journey From Curiosity to Creating <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Impact</span>
               </motion.h2>
 
               <motion.div
@@ -99,7 +99,7 @@ export default function OurBeginning() {
                 className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-light max-w-3xl mx-auto lg:mx-0"
               >
                 <p>
-                  We started with a singular vision — to bridge the gap between complex business challenges and intelligent technological solutions.
+                  We started with a singular vision to bridge the gap between complex business challenges and intelligent technological solutions.
                 </p>
                 <p>
                   What began as a passionate initiative in 2016 has transformed into a high-impact software powerhouse, empowering <span className="text-white font-medium">200+ global brands</span>. From stealth-mode startups to industrial giants, we refine operations and amplify growth through data-driven precision.

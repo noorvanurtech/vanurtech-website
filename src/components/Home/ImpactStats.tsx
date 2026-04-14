@@ -76,7 +76,7 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
             </h2>
 
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl">
-              With over 10+ years of experience, we specialize in building intelligent software solutions that solve real-world business challenges — from lead management to operations automation.
+              With over 10+ years of experience, we specialize in building intelligent software solutions that solve real-world business challenges from lead management to operations automation.
             </p>
 
             {/* Replacement Contact Buttons */}

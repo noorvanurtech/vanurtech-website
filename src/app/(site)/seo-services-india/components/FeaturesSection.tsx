@@ -65,7 +65,7 @@ export function FeaturesSection() {
             </span>
           </h3>
           <p className="text-zinc-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed">
-            We don't just 'do SEO'—we build comprehensive search strategies that turn search engines into your most powerful customer acquisition channel.
+            We don't just 'do SEO' we build comprehensive search strategies that turn search engines into your most powerful customer acquisition channel.
           </p>
         </div>
 

@@ -33,7 +33,7 @@ export function DifferentiatorSection() {
             Unlike generic tools, our AI systems are fully customized based on your business workflows and goals.
           </p>
           <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-            We don&apos;t just integrate AI — we build intelligent systems that <span className="text-purple-300 font-semibold">understand your business</span> and continuously improve performance.
+            We don&apos;t just integrate AI we build intelligent systems that <span className="text-purple-300 font-semibold">understand your business</span> and continuously improve performance.
           </p>
         </motion.div>
       </div>

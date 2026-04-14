@@ -46,14 +46,14 @@ export default function TrustedBrands() {
       className="flex flex-col items-center justify-center py-8"
       style={{ backgroundColor: "#0A0012" }}
     >
-      {/* Plain <style> instead of <style jsx> — no hydration mismatch */}
+      {/* Plain <style> instead of <style jsx> no hydration mismatch */}
       <style>{`
         @keyframes scroll-left {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-33.333%); }
+          100% { transform: translateX(-25%); }
         }
         @keyframes scroll-right {
-          0% { transform: translateX(-33.333%); }
+          0% { transform: translateX(-25%); }
           100% { transform: translateX(0); }
         }
         .animate-scroll-left {
@@ -67,7 +67,9 @@ export default function TrustedBrands() {
           .animate-scroll-right { animation-duration: 15s; }
         }
         .animate-scroll-left:hover,
-        .animate-scroll-right:hover {
+        .animate-scroll-right:hover,
+        .pause-on-hover:hover .animate-scroll-left,
+        .pause-on-hover:hover .animate-scroll-right {
           animation-play-state: paused;
         }
       `}</style>
@@ -134,44 +136,52 @@ export default function TrustedBrands() {
       {/* Logo Scrolling Rows */}
       <div className="space-y-4 overflow-hidden py-10">
         {/* First Row - Scroll Right to Left */}
-        <div className="relative">
-          <div className="flex animate-scroll-left pause-on-hover gap-4">
-            {[...firstRow, ...firstRow, ...firstRow].map((logo, index) => (
-              <div
-                key={index}
-                className="rounded-full border border-gray-200 bg-white p-3 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer group shrink-0 min-w-32 sm:min-w-40 md:min-w-48 min-h-12 md:min-h-[60px]"
-              >
-                <div className="flex items-center justify-center w-full h-full">
-                  <Image
-                    src={logo}
-                    alt={`Client logo ${index + 1}`}
-                    width={120}
-                    height={60}
-                    className="object-contain group-hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
-                  />
-                </div>
+        <div className="relative flex max-w-[100vw] overflow-hidden group">
+          <div className="flex animate-scroll-left w-max">
+            {[...Array(4)].map((_, chunkIndex) => (
+              <div key={chunkIndex} className="flex gap-4 pr-4">
+                {firstRow.map((logo, index) => (
+                  <div
+                    key={index}
+                    className="rounded-full border border-gray-200 bg-white p-3 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 min-w-32 sm:min-w-40 md:min-w-48 min-h-12 md:min-h-[60px]"
+                  >
+                    <div className="flex items-center justify-center w-full h-full relative group">
+                      <Image
+                        src={logo}
+                        alt={`Client logo left`}
+                        width={120}
+                        height={60}
+                        className="object-contain hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
             ))}
           </div>
         </div>
 
         {/* Second Row - Scroll Left to Right */}
-        <div className="relative">
-          <div className="flex animate-scroll-right pause-on-hover gap-4">
-            {[...secondRow, ...secondRow, ...secondRow].map((logo, index) => (
-              <div
-                key={index}
-                className="rounded-full border border-gray-200 bg-white p-3 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer group shrink-0 min-w-32 sm:min-w-40 md:min-w-48 min-h-12 md:min-h-[60px]"
-              >
-                <div className="flex items-center justify-center w-full h-full">
-                  <Image
-                    src={logo}
-                    alt={`Client logo ${index + 7}`}
-                    width={120}
-                    height={60}
-                    className="object-contain group-hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
-                  />
-                </div>
+        <div className="relative flex max-w-[100vw] overflow-hidden group mt-4">
+          <div className="flex animate-scroll-right w-max">
+            {[...Array(4)].map((_, chunkIndex) => (
+              <div key={chunkIndex} className="flex gap-4 pr-4">
+                {secondRow.map((logo, index) => (
+                  <div
+                    key={index}
+                    className="rounded-full border border-gray-200 bg-white p-3 sm:p-4 md:p-6 flex items-center justify-center hover:border-purple-400 hover:shadow-lg transition-all duration-300 cursor-pointer shrink-0 min-w-32 sm:min-w-40 md:min-w-48 min-h-12 md:min-h-[60px]"
+                  >
+                    <div className="flex items-center justify-center w-full h-full relative group">
+                      <Image
+                        src={logo}
+                        alt={`Client logo right`}
+                        width={120}
+                        height={60}
+                        className="object-contain hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
             ))}
           </div>

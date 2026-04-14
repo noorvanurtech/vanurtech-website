@@ -21,9 +21,28 @@ axiosInstance.interceptors.request.use(
   }
 );
 
+// Recursive function to strip out em-dashes and en-dashes from any database response string
+const sanitizeStrings = (obj: any): any => {
+  if (typeof obj === 'string') {
+    return obj.replace(/—/g, ' ').replace(/–/g, ' ');
+  } else if (Array.isArray(obj)) {
+    return obj.map(sanitizeStrings);
+  } else if (obj !== null && typeof obj === 'object') {
+    const newObj: any = {};
+    for (const key in obj) {
+      newObj[key] = sanitizeStrings(obj[key]);
+    }
+    return newObj;
+  }
+  return obj;
+};
+
 // Response interceptor
 axiosInstance.interceptors.response.use(
   (response) => {
+    if (response && response.data) {
+      response.data = sanitizeStrings(response.data);
+    }
     return response;
   },
   (error) => {

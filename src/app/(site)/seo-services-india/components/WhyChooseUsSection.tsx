@@ -39,7 +39,7 @@ export function WhyChooseUsSection() {
     },
     {
       title: "Holistic SEO Strategy",
-      desc: "From technical backend to high-end content—we cover every ranking factor.",
+      desc: "From technical backend to high-end content we cover every ranking factor.",
       icon: Coffee,
       color: "text-emerald-400",
       bg: "bg-emerald-500/10",
@@ -93,7 +93,7 @@ export function WhyChooseUsSection() {
               transition={{ delay: 0.2 }}
               className="text-zinc-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We don't just 'do SEO'—we engineer comprehensive search strategies that turn search engines into your most powerful customer acquisition channel.
+              We don't just 'do SEO' we engineer comprehensive search strategies that turn search engines into your most powerful customer acquisition channel.
             </motion.p>
           </div>
         </div>

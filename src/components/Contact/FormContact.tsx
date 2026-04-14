@@ -32,7 +32,7 @@ export default function FormContact() {
     }));
   };
 
-  // ✅ Only this function changed — redirects to WhatsApp with form data
+  // ✅ Only this function changed redirects to WhatsApp with form data
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);

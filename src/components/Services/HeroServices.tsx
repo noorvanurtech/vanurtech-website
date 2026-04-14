@@ -80,7 +80,7 @@ export default function HeroServices() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gray-300 text-base md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            From vision to execution — Vanutech Media crafts bold digital experiences through strategy, design, code, and beyond.
+            From vision to execution Vanutech Media crafts bold digital experiences through strategy, design, code, and beyond.
           </motion.p>
 
           <motion.div

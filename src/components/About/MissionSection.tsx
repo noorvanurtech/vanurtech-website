@@ -120,7 +120,7 @@ export default function MissionSection() {
             </motion.div>
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                Our Mission – Simplifying Business Through <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Technology</span>
+                Our Mission Simplifying Business Through <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Technology</span>
               </h2>
               <div className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-light">
                 <p>Our mission is to <span className="text-white font-medium">empower businesses</span> with smart, scalable, and easy-to-use software solutions that simplify operations and drive growth.</p>
@@ -150,7 +150,7 @@ export default function MissionSection() {
             </motion.div>
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                Our Vision – Becoming a <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Global AI Solution Provider</span>
+                Our Vision Becoming a <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Global AI Solution Provider</span>
               </h2>
               <div className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-light">
                 <p>We envision becoming a <span className="text-white font-medium">global leader</span> in AI-powered business solutions, helping organizations across <span className="text-white">India, USA, UK, and Canada</span> transform their operations through innovation and technology.</p>

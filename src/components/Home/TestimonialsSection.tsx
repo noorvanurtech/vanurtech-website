@@ -12,7 +12,7 @@ export default function TestimonialsSection() {
 
   const defaultTestimonials = [
     {
-      quote: "Vanurtech Media Pvt. Ltd. delivered our website in a few days with exceptional customization, seamless SEO optimization, and a stunning custom brochure—truly unmatched level of quality and service!",
+      quote: "Vanurtech Media Pvt. Ltd. delivered our website in a few days with exceptional customization, seamless SEO optimization, and a stunning custom brochure truly unmatched level of quality and service!",
       name: "Jagannatha Constructions",
       designation: "Construction & Design Company",
       src: "/images/test/test-1.webp",
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
         const response = await testimonialApi.getAllTestimonials();
         if (response.success && response.result) {
           const formattedTestimonials = response.result.map((testimonial: Testimonial) => ({
-            quote: testimonial.description,
+            quote: testimonial.description ? testimonial.description.replace(/—/g, ' ').replace(/–/g, ' ') : "",
             name: testimonial.company,
             designation: testimonial.position,
             src: testimonial.coverImage,
@@ -58,14 +58,16 @@ export default function TestimonialsSection() {
   }, []);
 
   // Automatic Paging Logic
+  const [isPaused, setIsPaused] = useState(false);
+
   useEffect(() => {
-    if (testimonials.length > 0) {
+    if (testimonials.length > 0 && !isPaused) {
       const interval = setInterval(() => {
         setActive((prev) => (prev + 1) % testimonials.length);
       }, 5000);
       return () => clearInterval(interval);
     }
-  }, [testimonials.length]);
+  }, [testimonials.length, isPaused]);
 
   if (isLoading) {
     return (
@@ -79,17 +81,28 @@ export default function TestimonialsSection() {
     if (testimonials.length === 0) return [];
     const visible = [];
     for (let i = 0; i < 3; i++) {
-        visible.push(testimonials[(active + i) % testimonials.length]);
+      visible.push(testimonials[(active + i) % testimonials.length]);
     }
     return visible;
   };
 
   const visibleItems = getVisibleTestimonials();
 
+  const handleDragEnd = (event: any, info: any) => {
+    const threshold = 50;
+    if (info.offset.x < -threshold) {
+      // swipe left (next)
+      setActive((prev) => (prev + 1) % testimonials.length);
+    } else if (info.offset.x > threshold) {
+      // swipe right (prev)
+      setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    }
+  };
+
   return (
     <section className="w-full bg-[#0B0011] pt-24 md:pt-32 pb-12 md:pb-16 border-t border-white/5 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10">
-        
+
         {/* Header - Matching FeaturedProjects Style */}
         <div className="text-center mb-12 md:mb-16">
           <motion.div
@@ -123,78 +136,88 @@ export default function TestimonialsSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto"
           >
-            Hear directly from the visionaries we've partnered with to automate operations, 
+            Hear directly from the visionaries we've partnered with to automate operations,
             scale platforms, and solve critical business challenges through intelligent software.
           </motion.p>
         </div>
 
         {/* SWAP CAROUSEL - Smooth Position Swapping */}
-        <div className="relative mt-24">
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 min-h-[400px]">
-              <AnimatePresence mode="popLayout" initial={false}>
-                 {visibleItems.map((item, idx) => (
-                    <motion.div
-                      key={item.name}
-                      layout
-                      initial={{ opacity: 0, x: 50, scale: 0.9 }}
-                      animate={{ 
-                        opacity: 1, 
-                        x: 0, 
-                        scale: 1,
-                        filter: idx === 1 ? "blur(0px)" : "blur(0.5px)",
-                      }}
-                      exit={{ opacity: 0, x: -50, scale: 0.9 }}
-                      transition={{ 
-                        duration: 0.6, 
-                        ease: [0.32, 0.72, 0, 1] 
-                      }}
-                      className="group"
-                    >
-                       <div className={`relative p-8 rounded-[2.5rem] flex flex-col justify-between h-full border transition-all duration-300 ${
-                         idx === 1 
-                         ? "bg-white/10 border-purple-500/40 shadow-2xl shadow-purple-500/10 scale-105 z-10" 
-                         : "bg-white/5 border-white/10 opacity-60 z-0"
-                       }`}>
-                          <div className="relative z-10">
-                             <div className="flex gap-1 mb-6">
-                                {[1, 2, 3, 4, 5].map((star) => (
-                                   <Star key={star} size={12} fill="#EAB308" className="text-yellow-500" />
-                                ))}
-                             </div>
-                             <p className="text-gray-200 text-base leading-relaxed mb-10 font-medium line-clamp-6">
-                                &ldquo;{item.quote}&rdquo;
-                             </p>
-                          </div>
+        <motion.div
+          className="relative mt-24 cursor-grab active:cursor-grabbing"
+          onPointerDown={() => setIsPaused(true)}
+          onPointerUp={() => setIsPaused(false)}
+          onPointerCancel={() => setIsPaused(false)}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.1}
+          onDragEnd={handleDragEnd}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 min-h-[400px]">
+            <AnimatePresence mode="popLayout" initial={false}>
+              {visibleItems.map((item, idx) => (
+                <motion.div
+                  key={item.name}
+                  layout
+                  initial={{ opacity: 0, x: 50, scale: 0.9 }}
+                  animate={{
+                    opacity: 1,
+                    x: 0,
+                    scale: 1,
+                    filter: idx === 1 ? "blur(0px)" : "blur(0.5px)",
+                  }}
+                  exit={{ opacity: 0, x: -50, scale: 0.9 }}
+                  transition={{
+                    duration: 0.6,
+                    ease: [0.32, 0.72, 0, 1]
+                  }}
+                  className="group"
+                >
+                  <div className={`relative p-8 rounded-[2.5rem] flex flex-col justify-between h-full border transition-all duration-300 ${idx === 1
+                      ? "bg-white/10 border-purple-500/40 shadow-2xl shadow-purple-500/10 scale-105 z-10"
+                      : "bg-white/5 border-white/10 opacity-60 z-0"
+                    }`}>
+                    <div className="relative z-10">
+                      <div className="flex gap-1 mb-6">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <Star key={star} size={12} fill="#EAB308" className="text-yellow-500" />
+                        ))}
+                      </div>
+                      <p className="text-gray-200 text-base leading-relaxed mb-10 font-medium line-clamp-6">
+                        &ldquo;{item.quote}&rdquo;
+                      </p>
+                    </div>
 
-                          <div className="relative z-10 flex items-center gap-4 pt-6 border-t border-white/10 mt-auto">
-                             <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-purple-500/30">
-                                <img src={item.src} alt={item.name} className="w-full h-full object-cover" />
-                             </div>
-                             <div>
-                                <div className="font-bold tracking-tight text-sm text-white">{item.name}</div>
-                                <div className="text-[10px] font-semibold uppercase tracking-wider text-purple-400">{item.designation}</div>
-                             </div>
-                          </div>
-                          {idx === 1 && (
-                            <div className="absolute inset-x-0 bottom-0 top-1/2 bg-linear-to-t from-purple-600/10 to-transparent z-0 rounded-[2rem]" />
-                          )}
-                       </div>
-                    </motion.div>
-                 ))}
-              </AnimatePresence>
-           </div>
-           
-           <div className="flex justify-center flex-wrap gap-2 mt-16 max-w-2xl mx-auto">
-              {testimonials.map((_, i) => (
-                <button 
-                  key={i}
-                  onClick={() => setActive(i)}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${active === i ? "w-8 bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.5)]" : "w-2 bg-white/20 hover:bg-white/40"}`}
-                  aria-label={`Go to testimonial ${i + 1}`}
-                />
+                    <div className="relative z-10 flex items-center gap-4 pt-6 border-t border-white/10 mt-auto">
+                      <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-purple-500/30">
+                        <img src={item.src} alt={item.name} className="w-full h-full object-cover pointer-events-none" />
+                      </div>
+                      <div>
+                        <div className="font-bold tracking-tight text-sm text-white">{item.name}</div>
+                        <div className="text-[10px] font-semibold uppercase tracking-wider text-purple-400">{item.designation}</div>
+                      </div>
+                    </div>
+                    {idx === 1 && (
+                      <div className="absolute inset-x-0 bottom-0 top-1/2 bg-linear-to-t from-purple-600/10 to-transparent z-0 rounded-[2rem]" />
+                    )}
+                  </div>
+                </motion.div>
               ))}
-           </div>
-        </div>
+            </AnimatePresence>
+          </div>
+
+          <div className="flex justify-center flex-wrap gap-2 mt-16 max-w-2xl mx-auto">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                // To fix interaction: prevent default on mousedown to stop drag conflicting with click
+                onPointerDownCapture={(e) => e.stopPropagation()}
+                onClick={() => setActive(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${active === i ? "w-8 bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.5)]" : "w-2 bg-white/20 hover:bg-white/40"}`}
+                aria-label={`Go to testimonial ${i + 1}`}
+              />
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

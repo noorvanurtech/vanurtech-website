@@ -32,7 +32,7 @@ export function WhyChooseUsSection() {
     },
     {
       title: "Conversion Focused",
-      desc: "Our designs are not just art—they are strategic tools built to increase your ROI and user retention.",
+      desc: "Our designs are not just art they are strategic tools built to increase your ROI and user retention.",
       icon: Flame,
       color: "text-amber-400",
       bg: "bg-amber-500/10",

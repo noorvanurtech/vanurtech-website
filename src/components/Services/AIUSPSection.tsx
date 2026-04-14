@@ -100,7 +100,7 @@ export default function AIUSPSection() {
                   </div>
                   <div>
                     <p className="text-white text-xl md:text-2xl font-semibold leading-tight">
-                      "We don&apos;t just build software — we build{" "}
+                      "We don&apos;t just build software we build{" "}
                       <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">
                         intelligent systems
                       </span>{" "}

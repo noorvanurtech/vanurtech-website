@@ -179,7 +179,7 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
           className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <p className="text-gray-400 text-sm italic text-center md:text-left opacity-60">
-            "We don&apos;t just build software — we build solutions that solve real business problems."
+            "We don&apos;t just build software we build solutions that solve real business problems."
           </p>
           <div className="flex gap-6 opacity-20 select-none grayscale hover:grayscale-0 hover:opacity-50 transition-all duration-700">
             {[Award, Rocket, Zap].map((Icon, i) => <Icon key={i} size={22} className="text-white" />)}

@@ -106,7 +106,7 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
                 </h4>
 
                 <p className="text-gray-200 text-xl leading-relaxed">
-                  Our <span className="font-bold text-purple-400">AI-powered systems</span> streamline your operations, providing automated follow-ups, advanced analytics, and strategic insights—saving time and multiplying your revenue.
+                  Our <span className="font-bold text-purple-400">AI-powered systems</span> streamline your operations, providing automated follow-ups, advanced analytics, and strategic insights saving time and multiplying your revenue.
                 </p>
                 <div className="mt-8">
                   <button onClick={onConsultClick} className="flex items-center gap-2 px-6 py-3 bg-purple-500/20 border border-purple-500/30 rounded-xl text-purple-300 font-medium hover:bg-purple-500 hover:text-white transition-all duration-300">

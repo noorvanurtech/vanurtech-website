@@ -147,7 +147,7 @@ export default function AboutStatsSection() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight"
               >
-                Who We Are – <br />
+                Who We Are <br />
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
                   AI-Powered Business Solutions
                 </span>
@@ -162,7 +162,7 @@ export default function AboutStatsSection() {
               className="space-y-6 text-gray-400 text-base md:text-lg leading-relaxed font-light"
             >
               <p>
-                Vanurtech Media is not just another development agency — we are your <span className="text-white font-medium">Strategic Growth Partner</span>. Based in the heart of India’s tech landscape, we empower businesses to leapfrog competition through AI-driven intelligence.
+                Vanurtech Media is not just another development agency we are your <span className="text-white font-medium">Strategic Growth Partner</span>. Based in the heart of India’s tech landscape, we empower businesses to leapfrog competition through AI-driven intelligence.
               </p>
               <p>
                 From custom CRM ecosystems that close deals faster to SaaS platforms that redefine industries, we build software that <span className="text-purple-400 font-medium italic">actually works</span> for your bottom line.
