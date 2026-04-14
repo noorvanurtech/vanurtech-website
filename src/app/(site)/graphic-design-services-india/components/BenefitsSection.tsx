@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Lightbulb, TrendingUp, Search, UserCheck, ShieldCheck, ChevronRight, Sparkles, Heart, Eye, Target } from "lucide-react";
+import { Lightbulb, TrendingUp, Search, UserCheck, ShieldCheck, Sparkles, Heart, Eye, Target } from "lucide-react";
 
 const benefits = [
   { title: "Boost Brand Recognition", icon: <Eye className="w-6 h-6" /> },
@@ -96,7 +96,7 @@ export function BenefitsSection() {
                     </motion.span>
                   </div>
 
-                  <div className="flex items-center justify-between p-5 sm:p-6 rounded-4xl border border-purple-500/10 bg-white/2 hover:bg-white/5 backdrop-blur-xl group-hover:border-purple-500/30 transition-all duration-500 relative overflow-hidden">
+                  <div className="flex items-center p-5 sm:p-6 rounded-4xl border border-purple-500/10 bg-white/2 hover:bg-white/5 backdrop-blur-xl group-hover:border-purple-500/30 transition-all duration-500 relative overflow-hidden">
                     <div className="absolute inset-0 bg-linear-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl" />
 
                     <motion.div
@@ -136,20 +136,7 @@ export function BenefitsSection() {
                       </motion.span>
                     </div>
 
-                    <motion.div
-                      animate={{
-                        backgroundColor: ['rgba(255,255,255,0.05)', 'rgba(168,85,247,0.2)', 'rgba(255,255,255,0.05)']
-                      }}
-                      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: idx * 0.4 }}
-                      className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors relative z-10 shrink-0"
-                    >
-                      <motion.div
-                        animate={{ x: [0, 4, 0], color: ['#6b7280', '#d8b4fe', '#6b7280'] }}
-                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: idx * 0.4 }}
-                      >
-                        <ChevronRight size={20} className="text-gray-500 group-hover:text-purple-300 transform group-hover:translate-x-1 transition-all duration-300" />
-                      </motion.div>
-                    </motion.div>
+
                   </div>
                 </motion.div>
               ))}

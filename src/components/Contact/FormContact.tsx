@@ -191,16 +191,6 @@ I'd like to know more about your services!`;
                 )}
               </button>
 
-              <div className="mt-6 text-gray-400 text-sm">
-                Or{' '}
-                <a
-                  href="mailto:info@vanurmedia.com,vanurtechmedia@gmail.com"
-                  className="text-white underline hover:text-purple-400 transition-colors"
-                >
-                  email us at info@vanurmedia.com or vanurtechmedia@gmail.com
-                </a>
-              </div>
-
               <div className="mt-3 flex items-center justify-center gap-2 text-green-400 text-sm">
                 <Check size={16} />
                 <span>We usually reply within a few hours</span>

@@ -30,7 +30,7 @@ export default function HeroServices() {
   ];
 
   return (
-    <div className="relative pt-16 pb-8 w-full overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
+    <div className="relative pt-36 pb-8 w-full overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
       {/* Sparkles Background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <SparklesCore

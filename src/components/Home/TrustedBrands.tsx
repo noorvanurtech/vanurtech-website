@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ShieldCheck } from "lucide-react";
 
 export default function TrustedBrands() {
   const clientImages = [
@@ -83,6 +83,7 @@ export default function TrustedBrands() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-sm self-center"
           >
+            <ShieldCheck className="w-4 h-4 text-purple-400" />
             <span className="text-xs md:text-sm font-medium text-purple-300 tracking-wide">
               Trusted by 200+ Businesses Worldwide
             </span>
