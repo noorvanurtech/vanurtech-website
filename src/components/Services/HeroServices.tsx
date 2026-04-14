@@ -30,7 +30,7 @@ export default function HeroServices() {
   ];
 
   return (
-    <div className="relative pt-24 pb-12 w-full overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
+    <div className="relative pt-16 pb-8 w-full overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
       {/* Sparkles Background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <SparklesCore
@@ -49,12 +49,12 @@ export default function HeroServices() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
-        <div className="text-center max-w-4xl mx-auto mb-16 sm:mb-24">
+        <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-5"
           >
             <Sparkles size={16} className="text-purple-400" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">

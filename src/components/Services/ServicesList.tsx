@@ -214,12 +214,12 @@ export default function ServicesList() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8 py-12 sm:py-16 md:py-20"
+      className="min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8 py-8 sm:py-10 md:py-12"
       style={{ backgroundColor: "#0A0012" }}
     >
       <div className="max-w-7xl w-full">
-        <div className="mb-16 sm:mb-24">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8">
+        <div className="mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-6">
             <Sparkles size={16} className="text-purple-400" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
               Strategic Service Ecosystem

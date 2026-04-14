@@ -56,12 +56,12 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
   ];
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 relative overflow-hidden" style={{ backgroundColor: "#0B0011" }}>
+    <section className="py-10 sm:py-14 md:py-16 relative overflow-hidden" style={{ backgroundColor: "#0B0011" }}>
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16 sm:mb-20 md:mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 sm:mb-14 md:mb-16">
           {/* Left Side - Content */}
           <div className="space-y-6 sm:space-y-8">
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-sm">
@@ -124,8 +124,8 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
         </div>
 
         {/* Problem -> Solution Section Reverted to Two Boxes */}
-        <div className="mt-20 border-t border-white/5 pt-20">
-          <div className="text-center mb-20 space-y-4">
+        <div className="mt-12 border-t border-white/5 pt-12">
+          <div className="text-center mb-12 space-y-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -140,7 +140,7 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
             </motion.div>
             <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1]">
               Bridge the Gap: <br className="md:hidden" />
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-8">Chaos</span> to{" "}
+              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-4 md:underline-offset-8">Chaos</span> to{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600">Precision</span>
             </h3>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">

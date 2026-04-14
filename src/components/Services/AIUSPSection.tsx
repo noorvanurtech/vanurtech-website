@@ -13,7 +13,7 @@ const uspItems = [
 
 export default function AIUSPSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#050505] relative overflow-hidden">
+    <section className="py-12 sm:py-16 bg-[#050505] relative overflow-hidden">
       {/* Background Ambient Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-600/10 blur-[150px] rounded-full pointer-events-none" />
@@ -27,7 +27,7 @@ export default function AIUSPSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-5"
             >
               <Sparkles size={16} className="text-purple-400" />
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
@@ -83,7 +83,7 @@ export default function AIUSPSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
-              className="mt-16 relative group w-full lg:max-w-4xl"
+              className="mt-10 relative group w-full lg:max-w-4xl"
             >
               {/* Animated Gradient Border */}
               <div className="absolute -inset-px bg-linear-to-r from-purple-600 via-pink-600 to-cyan-600 rounded-3xl blur-xs group-hover:blur-sm transition-all duration-500 opacity-30 group-hover:opacity-60" />

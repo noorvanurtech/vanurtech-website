@@ -4,7 +4,7 @@ import { Sparkles } from 'lucide-react';
 
 export default function OurBeginning() {
   return (
-    <div className="py-24 sm:py-32 md:py-40 flex items-center justify-center px-4 md:px-8 relative overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
+    <div className="py-14 sm:py-20 md:py-28 flex items-center justify-center px-4 md:px-8 relative overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
       {/* Background Decorative Element */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-purple-600/5 blur-[100px] rounded-full pointer-events-none" />
 

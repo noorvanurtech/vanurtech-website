@@ -50,14 +50,14 @@ export default function AboutStatsSection() {
   ];
 
   return (
-    <div className="py-24 sm:py-32 flex items-center justify-center px-4 sm:px-6 md:px-8 relative overflow-hidden" style={{ backgroundColor: '#07000D' }}>
+    <div className="py-14 sm:py-20 flex items-center justify-center px-4 sm:px-6 md:px-8 relative overflow-hidden" style={{ backgroundColor: '#07000D' }}>
       {/* Background Decorative Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-pink-600/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl w-full relative z-10">
         {/* Stats Grid - Top Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 mb-32 border-b border-white/5 pb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 mb-16 border-b border-white/5 pb-12">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

@@ -119,7 +119,7 @@ export default function WorkflowSection() {
   return (
     <div className="w-full bg-[#0B0011]">
       {/* Header Section */}
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 md:px-8 lg:py-14">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -157,7 +157,7 @@ export default function WorkflowSection() {
       </div>
 
       {/* Timeline */}
-      <div className="pb-20">
+      <div className="pb-12">
         <Timeline data={data} />
       </div>
     </div>

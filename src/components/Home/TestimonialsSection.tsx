@@ -100,16 +100,16 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="w-full bg-[#0B0011] pt-24 md:pt-32 pb-12 md:pb-16 border-t border-white/5 overflow-hidden">
+    <section className="w-full bg-[#0B0011] pt-14 md:pt-20 pb-8 md:pb-10 border-t border-white/5 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10">
 
         {/* Header - Matching FeaturedProjects Style */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-8 md:mb-10">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-5"
           >
             <Sparkles size={16} className="text-purple-400" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
@@ -143,7 +143,7 @@ export default function TestimonialsSection() {
 
         {/* SWAP CAROUSEL - Smooth Position Swapping */}
         <motion.div
-          className="relative mt-10 sm:mt-16 md:mt-24 cursor-grab active:cursor-grabbing"
+          className="relative mt-6 sm:mt-10 md:mt-14 cursor-grab active:cursor-grabbing"
           onPointerDown={() => setIsPaused(true)}
           onPointerUp={() => setIsPaused(false)}
           onPointerCancel={() => setIsPaused(false)}

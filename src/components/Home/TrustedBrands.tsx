@@ -43,7 +43,7 @@ export default function TrustedBrands() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center py-8"
+      className="flex flex-col items-center justify-center py-4"
       style={{ backgroundColor: "#0A0012" }}
     >
       {/* Plain <style> instead of <style jsx> no hydration mismatch */}
@@ -76,7 +76,7 @@ export default function TrustedBrands() {
 
       <div className="max-w-full w-full">
         {/* Header Text */}
-        <div className="text-center mx-4 sm:mx-5 mb-12 sm:mb-16 space-y-6 sm:space-y-8">
+        <div className="text-center mx-4 sm:mx-5 mb-8 sm:mb-10 space-y-4 sm:space-y-6">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -134,7 +134,7 @@ export default function TrustedBrands() {
       </div>
 
       {/* Logo Scrolling Rows */}
-      <div className="space-y-3 sm:space-y-4 overflow-hidden py-6 sm:py-10">
+      <div className="space-y-3 sm:space-y-4 overflow-hidden py-4 sm:py-6">
         {/* First Row - Scroll Right to Left */}
         <div className="relative flex max-w-[100vw] overflow-hidden group">
           <div className="flex animate-scroll-left w-max">

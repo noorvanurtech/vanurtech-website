@@ -102,9 +102,9 @@ export default function MissionSection() {
   ];
 
   return (
-    <div className="py-24 sm:py-32 md:py-48 flex flex-col items-center justify-center px-4 md:px-8 relative overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
+    <div className="py-14 sm:py-20 md:py-28 flex flex-col items-center justify-center px-4 md:px-8 relative overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
       
-      <div className="max-w-7xl w-full relative z-10 space-y-40 md:space-y-64">
+      <div className="max-w-7xl w-full relative z-10 space-y-20 md:space-y-32">
         
         {/* Mission Row: Content Untouched, Graphics Repetitive Trigger */}
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">

@@ -52,12 +52,12 @@ export default function FeaturedProjects() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-16 sm:py-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-10 sm:py-12"
       style={{ backgroundColor: "#0A0012" }}
     >
       <div className="max-w-7xl w-full">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-8 md:mb-10">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -271,7 +271,7 @@ export default function FeaturedProjects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mt-20 mb-10"
+          className="text-center mt-12 mb-6"
         >
           <div className="flex flex-col items-center text-center px-4">
 

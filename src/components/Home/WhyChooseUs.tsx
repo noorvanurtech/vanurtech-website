@@ -57,14 +57,14 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
   ];
 
   return (
-    <section className="py-20 bg-[#0B0011] relative overflow-hidden">
+    <section className="py-12 bg-[#0B0011] relative overflow-hidden">
       {/* Subtle Glows */}
       <div className="absolute top-1/2 left-0 w-64 h-64 bg-purple-600/5 blur-[100px] rounded-full" />
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-pink-600/5 blur-[100px] rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Header */}
-        <div className="mb-10 sm:mb-14">
+        <div className="mb-7 sm:mb-10">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6"
+          className="mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <p className="text-gray-400 text-sm italic text-center md:text-left opacity-60">
             "We don&apos;t just build software we build solutions that solve real business problems."

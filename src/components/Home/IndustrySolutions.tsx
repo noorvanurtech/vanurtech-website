@@ -68,13 +68,13 @@ const solutions = [
 
 export default function IndustrySolutions() {
   return (
-    <section className="py-24 relative overflow-hidden" style={{ backgroundColor: "#0B0011" }}>
+    <section className="py-14 relative overflow-hidden" style={{ backgroundColor: "#0B0011" }}>
       {/* Background Orbs */}
       <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-purple-600/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-pink-600/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-16">
+        <div className="mb-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
