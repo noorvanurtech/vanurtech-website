@@ -6,6 +6,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+const productLinks = [
+  { href: "/products/crm", label: "CRM Software" },
+  { href: "/products/erp", label: "ERP Software" },
+  { href: "/products/pos", label: "POS System" },
+  { href: "/products/inventory", label: "Inventory Management" },
+  { href: "/products/analytics", label: "Analytics Dashboard" },
+  { href: "/products/warehouse", label: "Warehouse Management" },
+];
+
 const serviceLinks = [
   { href: "/website-development-company-india", label: "Website Development" },
   { href: "/mobile-app-development-company-india", label: "Mobile App Development" },
@@ -22,7 +31,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const productsDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +47,9 @@ const Navbar = () => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setServicesOpen(false);
+      }
+      if (productsDropdownRef.current && !productsDropdownRef.current.contains(e.target as Node)) {
+        setProductsOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -137,6 +151,50 @@ const Navbar = () => {
               </AnimatePresence>
             </div>
 
+            {/* Products Dropdown */}
+            <div
+              ref={productsDropdownRef}
+              className="relative"
+              onMouseEnter={() => setProductsOpen(true)}
+              onMouseLeave={() => setProductsOpen(false)}
+            >
+              <motion.a
+                href="/products"
+                whileHover={{ scale: 1.05 }}
+                className="text-white hover:text-purple-400 font-medium transition-colors duration-200 flex items-center gap-1 cursor-pointer"
+              >
+                Products
+              </motion.a>
+
+              <AnimatePresence>
+                {productsOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-[#0B0011]/95 backdrop-blur-md border border-purple-900/30 rounded-xl shadow-xl overflow-hidden"
+                  >
+                    {productLinks.map((product, i) => (
+                      <motion.div
+                        key={product.href}
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: i * 0.04 }}
+                      >
+                        <Link
+                          href={product.href}
+                          className="block px-4 py-3 text-sm text-white hover:text-purple-400 hover:bg-purple-900/20 transition-colors duration-150 border-b border-purple-900/10 last:border-b-0"
+                        >
+                          {product.label}
+                        </Link>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             {["Projects", "Blog", "Contact Us"].map((label) => {
               const href = label === "Contact Us" ? "/contact" : `/${label.toLowerCase()}`;
               return (
@@ -225,6 +283,18 @@ const Navbar = () => {
                 Services
               </motion.a>
 
+              {/* Mobile Products Link */}
+              <motion.a
+                href="/products"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+                onClick={() => setIsOpen(false)}
+                className="block text-white hover:text-purple-400 font-medium py-2 border-b border-purple-900/20"
+              >
+                Products
+              </motion.a>
+
               {/* Projects, Blog, Contact */}
               {[{ href: "/projects", label: "Projects" }, { href: "/blog", label: "Blog" }, { href: "/contact", label: "Contact Us" }].map((item, index) => (
                 <motion.a
@@ -232,7 +302,7 @@ const Navbar = () => {
                   href={item.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: (index + 3) * 0.1 }}
+                  transition={{ delay: (index + 4) * 0.1 }}
                   onClick={() => setIsOpen(false)}
                   className="block text-white hover:text-purple-400 font-medium py-2 border-b border-purple-900/20"
                 >
