@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
 const TARGET_REGIONS = [
-  { id: "usa", name: "USA", x: 190, y: 190 },
-  { id: "can", name: "Canada", x: 250, y: 110 },
-  { id: "uk", name: "UK", x: 480, y: 150 },
-  { id: "ind", name: "India (HQ)", x: 700, y: 260 },
+  { id: "usa", name: "USA", x: 220, y: 200 },
+  { id: "can", name: "Canada", x: 220, y: 107 },
+  { id: "uk", name: "UK", x: 490, y: 122 },
+  { id: "ind", name: "India (HQ)", x: 710, y: 230 },
 ];
 
 const HUB = TARGET_REGIONS.find((r) => r.id === "ind")!; 
@@ -18,7 +18,7 @@ export function GlobalTargeting() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-12 sm:pt-24 pb-10 font-sans border-t border-purple-900/20">
+    <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-12 sm:pt-24 pb-0 font-sans border-t border-purple-900/20">
 
       {/* Main Centered Content */}
       <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto mb-8 sm:mb-16">
@@ -58,7 +58,7 @@ export function GlobalTargeting() {
       </div>
 
       {/* Futuristic Dotted World Map Network Area */}
-      <div className="relative w-full max-w-[1000px] h-[280px] sm:h-[500px] lg:h-[600px] mx-auto opacity-90 border-t border-white/2">
+      <div className="relative w-full max-w-[1000px] h-[280px] sm:h-[420px] lg:h-[480px] mx-auto opacity-90 border-t border-white/2">
         
         {/* Glow behind the map */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
