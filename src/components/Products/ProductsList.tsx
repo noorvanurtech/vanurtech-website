@@ -28,11 +28,11 @@ const products = [
     description: "Automate invoicing, track expenses, and stay GST-compliant with a powerful all-in-one finance platform.",
     link: "/products/finance-management-software",
     icon: DollarSign,
-    gradient: "from-green-500/20 to-emerald-500/10",
-    border: "hover:border-green-500/60",
-    iconColor: "text-green-400",
-    iconBg: "bg-green-500/10 border-green-500/20",
-    titleHover: "group-hover:text-green-300",
+    gradient: "from-blue-500/20 to-cyan-500/10",
+    border: "hover:border-blue-500/60",
+    iconColor: "text-blue-400",
+    iconBg: "bg-blue-500/10 border-blue-500/20",
+    titleHover: "group-hover:text-blue-300",
     tag: "FinTech",
     features: ["Invoicing & Billing Automation", "Expense & Budget Management", "GST & Tax Compliance", "Profit & Loss Dashboards"],
   },
@@ -140,7 +140,7 @@ export default function ProductsList() {
 
                   {/* Finance Dashboard Preview */}
                   {product.id === 2 && (
-                    <div className="rounded-xl overflow-hidden border border-green-500/20 shadow-lg shadow-green-500/10">
+                    <div className="rounded-xl overflow-hidden border border-blue-500/20 shadow-lg shadow-blue-500/10">
                       <div className="bg-gray-50 flex" style={{ minHeight: 190 }}>
                         {/* Sidebar */}
                         <div className="bg-[#2563eb] w-28 flex-shrink-0 p-2 flex flex-col gap-1">
@@ -167,7 +167,7 @@ export default function ProductsList() {
                                 <p className="text-lg font-bold text-white leading-none">13</p>
                                 <p className="text-[6px] text-blue-200 leading-tight">total active sales documents</p>
                               </div>
-                              <div className="bg-green-50 border border-green-100 rounded-lg p-2">
+                              <div className="bg-blue-50 border border-blue-100 rounded-lg p-2">
                                 <p className="text-[6px] text-gray-400 mb-0.5">COLLECTIONS</p>
                                 <p className="text-[10px] font-bold text-gray-800">₹74,200</p>
                                 <p className="text-[6px] text-gray-400">via Payment Received</p>
@@ -178,7 +178,7 @@ export default function ProductsList() {
                           <div className="grid grid-cols-4 gap-1">
                             {[
                               { label: "Quotations", val: "5", color: "text-blue-500" },
-                              { label: "Invoices", val: "7", color: "text-green-500" },
+                              { label: "Invoices", val: "7", color: "text-blue-600" },
                               { label: "Proforma Invoices", val: "2", color: "text-purple-500" },
                               { label: "Sales Orders", val: "1", color: "text-orange-500" },
                             ].map((s) => (
