@@ -16,36 +16,36 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
         {/* Animated Beams (Streaks) */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Vertical Streaks */}
-          {[...Array(25)].map((_, i) => (
+          {[...Array(10)].map((_, i) => (
             <motion.div
               key={`v-${i}`}
               initial={{ top: "-20%", left: `${Math.random() * 100}%`, opacity: 0 }}
               animate={{
                 top: ["-20%", "120%"],
-                opacity: [0, 1, 1, 0],
+                opacity: [0, 0.7, 0.7, 0],
               }}
               transition={{
-                duration: 2 + Math.random() * 2,
+                duration: 5 + Math.random() * 4,
                 repeat: Infinity,
-                delay: Math.random() * 5,
+                delay: Math.random() * 8,
                 ease: "linear",
               }}
               className={`absolute w-px h-32 bg-linear-to-b from-transparent ${i % 3 === 0 ? 'via-purple-500' : i % 3 === 1 ? 'via-cyan-500' : 'via-blue-500'} to-transparent blur-[1px] shadow-[0_0_8px_rgba(168,85,247,0.4)]`}
             />
           ))}
           {/* Horizontal Streaks */}
-          {[...Array(20)].map((_, i) => (
+          {[...Array(8)].map((_, i) => (
             <motion.div
               key={`h-${i}`}
               initial={{ left: "-20%", top: `${Math.random() * 100}%`, opacity: 0 }}
               animate={{
                 left: ["-20%", "120%"],
-                opacity: [0, 1, 1, 0],
+                opacity: [0, 0.7, 0.7, 0],
               }}
               transition={{
-                duration: 2.5 + Math.random() * 2,
+                duration: 6 + Math.random() * 4,
                 repeat: Infinity,
-                delay: Math.random() * 5,
+                delay: Math.random() * 8,
                 ease: "linear",
               }}
               className={`absolute h-px w-40 bg-linear-to-r from-transparent ${i % 2 === 0 ? 'via-pink-500' : 'via-indigo-500'} to-transparent blur-[1px] shadow-[0_0_8px_rgba(236,72,153,0.4)]`}

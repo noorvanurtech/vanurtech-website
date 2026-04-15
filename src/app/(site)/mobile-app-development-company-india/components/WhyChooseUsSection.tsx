@@ -11,7 +11,7 @@ import {
   CheckCircle2
 } from "lucide-react";
 
-export function WhyChooseUsSection() {
+export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => void }) {
   const points = [
     {
       title: "Experts in Mobile UX",
@@ -158,14 +158,7 @@ export function WhyChooseUsSection() {
             </div>
             
             <button
-               onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  window.location.href = '/contact';
-                }
-              }}
+               onClick={onConsultClick}
               className="relative z-10 mt-6 w-full py-3 bg-white text-black font-bold rounded-xl text-sm hover:bg-purple-500 hover:text-white transition-all active:scale-95 shadow-lg group-hover:shadow-purple-500/20"
             >
               Start Your App

@@ -24,7 +24,7 @@ export default function WebDevServiceContent() {
       <FeaturesSection />
       <BenefitsSection />
       <GlobalTargeting />
-      <WhyChooseUsSection />
+      <WhyChooseUsSection onConsultClick={onConsultClick} />
 
       <div className="py-24 bg-white/2">
         <Partners />

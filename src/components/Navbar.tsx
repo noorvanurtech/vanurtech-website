@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const serviceLinks = [
@@ -22,7 +22,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -190,62 +189,56 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-[#0B0011]/95 backdrop-blur-md border-t border-purple-900/20"
           >
             <div className="px-4 py-4 space-y-4">
-              {navItems.map((item, index) => (
+              {/* Home */}
+              <motion.a
+                href="/"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0 }}
+                onClick={() => setIsOpen(false)}
+                className="block text-white hover:text-purple-400 font-medium py-2 border-b border-purple-900/20"
+              >
+                Home
+              </motion.a>
+
+              {/* About */}
+              <motion.a
+                href="/about"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1 }}
+                onClick={() => setIsOpen(false)}
+                className="block text-white hover:text-purple-400 font-medium py-2 border-b border-purple-900/20"
+              >
+                About
+              </motion.a>
+
+              {/* Mobile Services Link */}
+              <motion.a
+                href="/services"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+                onClick={() => setIsOpen(false)}
+                className="block text-white hover:text-purple-400 font-medium py-2 border-b border-purple-900/20"
+              >
+                Services
+              </motion.a>
+
+              {/* Projects, Blog, Contact */}
+              {[{ href: "/projects", label: "Projects" }, { href: "/blog", label: "Blog" }, { href: "/contact", label: "Contact Us" }].map((item, index) => (
                 <motion.a
                   key={item.href}
                   href={item.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={{ delay: (index + 3) * 0.1 }}
                   onClick={() => setIsOpen(false)}
                   className="block text-white hover:text-purple-400 font-medium py-2 border-b border-purple-900/20"
                 >
                   {item.label}
                 </motion.a>
               ))}
-
-              {/* Mobile Services Accordion */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: navItems.length * 0.1 }}
-                className="border-b border-purple-900/20"
-              >
-                <button
-                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className="w-full flex items-center justify-between text-white hover:text-purple-400 font-medium py-2"
-                >
-                  <span>Services</span>
-                  <motion.span
-                    animate={{ rotate: mobileServicesOpen ? 180 : 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <ChevronDown className="h-4 w-4" />
-                  </motion.span>
-                </button>
-                <AnimatePresence>
-                  {mobileServicesOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="overflow-hidden pl-4 pb-2 space-y-1"
-                    >
-                      {serviceLinks.map((service) => (
-                        <Link
-                          key={service.href}
-                          href={service.href}
-                          onClick={() => setIsOpen(false)}
-                          className="block text-sm text-gray-300 hover:text-purple-400 py-1.5 transition-colors"
-                        >
-                          {service.label}
-                        </Link>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
 
               <div className="pt-4">
                 <Link href="/contact">

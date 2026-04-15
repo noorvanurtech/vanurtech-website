@@ -27,7 +27,7 @@ export default function AIBusinessAutomationContent() {
       <AIUseCases />
       <BenefitsSection />
       <GlobalTargeting />
-      <WhyChooseUsSection />
+      <WhyChooseUsSection onConsultClick={onConsultClick} />
       <MiniCaseStudy />
 
       <div className="py-24 bg-white/2 border-t border-white/5">
