@@ -91,8 +91,8 @@ export default function AboutStatsSection() {
 
             <div className="relative rounded-[2.4rem] overflow-hidden bg-[#0A0012]">
               <img
-                src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=1000&h=800&auto=format&fit=crop"
-                alt="AI Development"
+                src="/images/about/WhatsApp Image 2026-04-15 at 3.31.34 PM.jpeg"
+                alt="About Vanurtech"
                 className="w-full h-[260px] sm:h-[350px] md:h-[550px] object-cover transition-all duration-1000 hover:scale-110 shadow-2xl"
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#0A0012] via-transparent to-transparent opacity-80" />
