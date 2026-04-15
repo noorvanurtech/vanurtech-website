@@ -7,12 +7,10 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const productLinks = [
-  { href: "/products/crm", label: "CRM Software" },
-  { href: "/products/erp", label: "ERP Software" },
-  { href: "/products/pos", label: "POS System" },
-  { href: "/products/inventory", label: "Inventory Management" },
-  { href: "/products/analytics", label: "Analytics Dashboard" },
-  { href: "/products/warehouse", label: "Warehouse Management" },
+  { href: "/products/solar-management-software", label: "Solar Management Software" },
+  { href: "/products/finance-management-software", label: "Finance Management Software" },
+  { href: "/products/whatsapp-ai-chatbot", label: "WhatsApp AI Chatbot" },
+  { href: "/products/hrms-field-tracking-software", label: "HRMS & Field Tracking Software" },
 ];
 
 const serviceLinks = [

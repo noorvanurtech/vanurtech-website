@@ -3,14 +3,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SparklesCore } from "@/components/ui/sparkles";
-import { Sparkles, LayoutDashboard, ShoppingCart, Users, Package } from "lucide-react";
+import { Sparkles, Sun, DollarSign, MessageCircle, Users } from "lucide-react";
 
 export default function HeroProducts() {
   const products = [
-    { id: 1, title: "CRM Software", icon: Users },
-    { id: 2, title: "ERP Software", icon: LayoutDashboard },
-    { id: 3, title: "POS System", icon: ShoppingCart },
-    { id: 4, title: "Inventory", icon: Package },
+    { id: 1, title: "Solar Management", icon: Sun },
+    { id: 2, title: "Finance Software", icon: DollarSign },
+    { id: 3, title: "WhatsApp AI Chatbot", icon: MessageCircle },
+    { id: 4, title: "HRMS & Field Tracking", icon: Users },
   ];
 
   return (
