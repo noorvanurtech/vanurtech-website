@@ -187,7 +187,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#0B0011]/95 backdrop-blur-md border-t border-purple-900/20"
+            className="md:hidden overflow-hidden bg-[#0B0011]/95 backdrop-blur-md border-t border-purple-900/20"
           >
             <div className="px-4 py-4 space-y-4">
               {navItems.map((item, index) => (
@@ -230,7 +230,7 @@ const Navbar = () => {
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="pl-4 pb-2 space-y-1"
+                      className="overflow-hidden pl-4 pb-2 space-y-1"
                     >
                       {serviceLinks.map((service) => (
                         <Link

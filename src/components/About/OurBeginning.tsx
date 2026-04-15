@@ -9,7 +9,7 @@ export default function OurBeginning() {
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-purple-600/5 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl w-full relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-20">
           {/* Large 2021 Text */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -41,7 +41,7 @@ export default function OurBeginning() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="text-[100px] sm:text-[140px] md:text-[180px] lg:text-[230px] font-black leading-none select-none tracking-tighter cursor-default"
+              className="text-[72px] sm:text-[120px] md:text-[160px] lg:text-[230px] font-black leading-none select-none tracking-tighter cursor-default"
               style={{
                 WebkitTextStroke: '1.5px transparent',
                 backgroundImage: 'linear-gradient(to right, #A855F7, #EC4899, #A855F7)',
@@ -55,7 +55,7 @@ export default function OurBeginning() {
 
             {/* Sharp stroke overlay for extra definition */}
             <div
-              className="absolute inset-0 text-[100px] sm:text-[140px] md:text-[180px] lg:text-[230px] font-black leading-none select-none tracking-tighter pointer-events-none"
+              className="absolute inset-0 text-[72px] sm:text-[120px] md:text-[160px] lg:text-[230px] font-black leading-none select-none tracking-tighter pointer-events-none"
               style={{
                 WebkitTextStroke: '1px rgba(168, 85, 247, 0.3)',
                 color: 'transparent',

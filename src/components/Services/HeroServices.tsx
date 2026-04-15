@@ -30,7 +30,7 @@ export default function HeroServices() {
   ];
 
   return (
-    <div className="relative pt-36 pb-8 w-full overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
+    <div className="relative pt-24 sm:pt-32 md:pt-36 pb-8 w-full overflow-hidden" style={{ backgroundColor: '#0A0012' }}>
       {/* Sparkles Background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <SparklesCore
@@ -117,11 +117,21 @@ export default function HeroServices() {
 
                     {/* Icon Box */}
                     <div 
-                      className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl sm:rounded-3xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 cursor-pointer bg-linear-to-br from-purple-600 to-indigo-600 shadow-2xl shadow-purple-500/20"
+                      className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl sm:rounded-3xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 cursor-pointer bg-linear-to-br from-purple-600 to-indigo-600 shadow-2xl shadow-purple-500/20"
                     >
                       <service.icon 
-                        size={32} 
-                        className="text-white sm:w-12 sm:h-12"
+                        size={28}
+                        className="text-white sm:hidden"
+                        strokeWidth={2}
+                      />
+                      <service.icon 
+                        size={36}
+                        className="text-white hidden sm:block md:hidden"
+                        strokeWidth={2}
+                      />
+                      <service.icon 
+                        size={44}
+                        className="text-white hidden md:block"
                         strokeWidth={2}
                       />
                     </div>

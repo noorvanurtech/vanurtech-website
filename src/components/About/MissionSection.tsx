@@ -10,7 +10,7 @@ const PuzzleAssembly = ({ images, color = "purple" }: { images: string[], color?
     : "from-blue-600/40 to-emerald-600/40 border-blue-500/30 shadow-blue-500/10";
     
   return (
-    <div className="relative w-[320px] h-[320px] sm:w-[500px] sm:h-[500px] flex items-center justify-center">
+    <div className="relative w-[260px] h-[260px] sm:w-[380px] sm:h-[380px] md:w-[500px] md:h-[500px] flex items-center justify-center">
       {/* Background Atmosphere Glow */}
       <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-${color === "purple" ? "purple" : "blue"}-500/[0.05] blur-[120px] -z-10`} />
 

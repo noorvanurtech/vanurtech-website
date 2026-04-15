@@ -99,7 +99,7 @@ export default function AIUSPSection() {
                     <Zap size={20} className="text-purple-400" />
                   </div>
                   <div>
-                    <p className="text-white text-xl md:text-2xl font-semibold leading-tight">
+                    <p className="text-white text-lg md:text-xl lg:text-2xl font-semibold leading-tight">
                       "We don&apos;t just build software we build{" "}
                       <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">
                         intelligent systems
@@ -125,7 +125,7 @@ export default function AIUSPSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative w-full aspect-square max-w-[500px] mx-auto"
+              className="relative w-full aspect-square max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] mx-auto"
             >
               {/* Central Core */}
               <div className="absolute inset-0 flex items-center justify-center">
