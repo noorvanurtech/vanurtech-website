@@ -8,6 +8,7 @@ const comparisons = [
   { problem: "Manual invoicing wastes hours and causes billing errors", solution: "Automated Invoicing & Billing in One Click" },
   { problem: "No real-time view of cash flow or outstanding payments", solution: "Live Cash Flow & Payment Tracking Dashboard" },
   { problem: "GST filing is complex, error-prone, and time-consuming", solution: "Auto GST Calculation & Compliance Reports" },
+  { problem: "No clear picture of profit, loss, or business performance", solution: "Real-Time P&L & Financial Analytics Reports" },
 ];
 
 export function ProblemSection() {
@@ -52,13 +53,14 @@ export function ProblemSection() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="relative group">
-            <div className="absolute -inset-[1px] bg-linear-to-r from-blue-500/40 via-blue-400/40 to-blue-500/40 rounded-[2.6rem] opacity-40 group-hover:opacity-70 blur-[3px] transition-opacity duration-500" />
+            <div className="absolute -inset-[2px] bg-linear-to-r from-blue-500 via-blue-400 to-blue-500 rounded-[2.6rem] opacity-20 group-hover:opacity-60 blur-[2px] transition-opacity duration-500" />
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               className="relative h-full p-6 sm:p-10 rounded-[2.5rem] bg-linear-to-br from-[#12001A] to-[#0B0011] border border-blue-500/25 backdrop-blur-xl overflow-hidden shadow-xl shadow-blue-500/5"
             >
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/5 blur-[100px] rounded-full" />
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/10 blur-[80px] rounded-full" />
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/15 blur-[80px] rounded-full" />
               <h4 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-8 flex items-center gap-3">
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/15 flex items-center justify-center border border-blue-500/30 shadow-[0_0_10px_rgba(59,130,246,0.15)]">
                   <CheckCircle2 size={24} className="text-blue-400" />
