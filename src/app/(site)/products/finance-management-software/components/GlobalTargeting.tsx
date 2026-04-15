@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
 const TARGET_REGIONS = [
-  { id: "usa", name: "USA", x: 220, y: 200 },
-  { id: "can", name: "Canada", x: 220, y: 107 },
-  { id: "uk", name: "UK", x: 490, y: 122 },
-  { id: "ind", name: "India (HQ)", x: 710, y: 230 },
+  { id: "usa", name: "USA", x: 265, y: 210 },
+  { id: "can", name: "Canada", x: 195, y: 145 },
+  { id: "uk", name: "UK", x: 460, y: 148 },
+  { id: "ind", name: "India (HQ)", x: 670, y: 258 },
 ];
 const HUB = TARGET_REGIONS.find((r) => r.id === "ind")!;
 
