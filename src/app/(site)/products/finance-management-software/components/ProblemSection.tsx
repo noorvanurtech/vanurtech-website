@@ -33,18 +33,31 @@ export function ProblemSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-          <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="p-6 sm:p-10 rounded-[2.5rem] bg-white/2 border border-red-500/10 backdrop-blur-sm relative overflow-hidden hover:bg-white/5 transition-colors">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="p-5 sm:p-8 rounded-[2.5rem] bg-white/2 border border-red-500/10 backdrop-blur-sm relative overflow-hidden hover:bg-white/5 transition-colors"
+          >
             <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/5 blur-3xl rounded-full" />
-            <h4 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-8 flex items-center gap-3">
+            <h4 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-6 flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20">
                 <XCircle size={22} className="text-red-500" />
               </div>
               The Pain Points:
             </h4>
-            <ul className="space-y-4 sm:space-y-6">
+            <ul className="space-y-4 sm:space-y-5">
               {comparisons.map((item, idx) => (
-                <motion.li key={idx} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 * idx }} viewport={{ once: true }} className="flex items-start gap-3 sm:gap-4 text-gray-400 text-base sm:text-lg hover:text-gray-300 transition-colors">
+                <motion.li
+                  key={idx}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 * idx }}
+                  viewport={{ once: true }}
+                  className="flex items-start gap-3 sm:gap-4 text-gray-400 text-base sm:text-lg hover:text-gray-300 transition-colors"
+                >
                   <span className="mt-2.5 w-2 h-2 rounded-full bg-red-500/30 shrink-0" />
                   {item.problem}
                 </motion.li>
@@ -52,28 +65,43 @@ export function ProblemSection() {
             </ul>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="relative group">
-            <div className="absolute -inset-[2px] bg-linear-to-r from-blue-500 via-blue-400 to-blue-500 rounded-[2.6rem] opacity-20 group-hover:opacity-60 blur-[2px] transition-opacity duration-500" />
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative group mt-0"
+          >
+            <div className="absolute -inset-[2px] bg-linear-to-r from-blue-500 via-cyan-400 to-blue-500 rounded-[2.6rem] opacity-10 group-hover:opacity-40 blur-[2px] transition-opacity duration-500" />
             <motion.div
-              animate={{ y: [0, -8, 0] }}
+              animate={{ y: [0, -15, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="relative h-full p-6 sm:p-10 rounded-[2.5rem] bg-linear-to-br from-[#12001A] to-[#0B0011] border border-blue-500/25 backdrop-blur-xl overflow-hidden shadow-xl shadow-blue-500/5"
+              className="relative p-7 sm:p-12 rounded-[2.5rem] bg-linear-to-br from-[#00081A] to-[#0B0011] border border-blue-500/20 backdrop-blur-xl overflow-hidden shadow-2xl shadow-blue-500/20"
             >
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/10 blur-[80px] rounded-full" />
-              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/15 blur-[80px] rounded-full" />
-              <h4 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-8 flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/15 flex items-center justify-center border border-blue-500/30 shadow-[0_0_10px_rgba(59,130,246,0.15)]">
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-cyan-500/5 blur-[80px] rounded-full" />
+              <h4 className="text-xl sm:text-2xl font-bold text-white mb-5 sm:mb-6 flex items-center gap-3">
+                <div className="w-12 h-12 rounded-2xl bg-blue-500/20 flex items-center justify-center border border-blue-500/40 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
                   <CheckCircle2 size={24} className="text-blue-400" />
                 </div>
                 Your Finance Advantage:
               </h4>
-              <ul className="space-y-4 sm:space-y-6">
+              <ul className="space-y-4 sm:space-y-5">
                 {comparisons.map((item, idx) => (
-                  <motion.li key={idx} initial={{ opacity: 0, x: 10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 + 0.1 * idx }} viewport={{ once: true }} className="flex items-center gap-3 sm:gap-4 text-gray-100 text-base sm:text-lg group/item">
-                    <div className="p-2 rounded-xl bg-blue-500/10 border border-blue-500/20 group-hover/item:bg-blue-500/20 group-hover/item:scale-110 group-hover/item:border-blue-400/50 transition-all duration-300">
+                  <motion.li
+                    key={idx}
+                    initial={{ opacity: 0, x: 10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3 + 0.1 * idx }}
+                    viewport={{ once: true }}
+                    className="flex items-center gap-3 sm:gap-4 text-gray-100 text-base sm:text-lg group/item"
+                  >
+                    <div className="p-2 rounded-xl bg-blue-500/10 border border-blue-500/20 group-hover/item:bg-blue-500/30 group-hover/item:scale-110 group-hover/item:border-blue-400 transition-all duration-300">
                       <ArrowRight size={18} className="text-blue-400 group-hover/item:translate-x-1 transition-transform" />
                     </div>
-                    <span className="font-bold tracking-tight text-white group-hover/item:text-blue-300 transition-colors">{item.solution}</span>
+                    <span className="font-bold tracking-tight text-white group-hover/item:text-blue-300 transition-colors">
+                      {item.solution}
+                    </span>
                   </motion.li>
                 ))}
               </ul>
