@@ -63,25 +63,25 @@ export default function ServicesList() {
     {
       id: 3,
       category: "Scale & Automation",
-      title: "CRM & SaaS Solutions",
-      link: "/crm-development-company-india",
+      title: "CRM & ERP Solutions",
+      link: "/crm-erp-development-company-india",
       icon: Layers,
       features: [
         {
-          title: "Customizable CRM Solutions:",
-          description: "tailored to your business workflows and processes",
+          title: "Custom CRM & ERP Development:",
+          description: "tailored systems for sales, operations & resource planning",
         },
         {
-          title: "Seamless Software Integration:",
-          description: "connect with existing tools and platforms",
+          title: "Seamless Module Integration:",
+          description: "connect finance, HR, inventory & CRM in one platform",
         },
         {
           title: "Advanced Analytics & Reporting:",
-          description: "data-driven insights for better decisions",
+          description: "real-time dashboards and data-driven business insights",
         },
         {
-          title: "Automated Workflows System:",
-          description: "streamline operations and boost productivity",
+          title: "Automated Workflows & Processes:",
+          description: "eliminate manual tasks and boost operational efficiency",
         },
       ],
     },

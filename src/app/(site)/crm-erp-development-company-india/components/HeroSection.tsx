@@ -4,63 +4,40 @@ import React from "react";
 import Link from "next/link";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { SparklesCore } from "@/components/ui/sparkles";
 
 export function HeroSection({ onConsultClick }: { onConsultClick?: () => void }) {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-[#0A0012]">
       {/* Background Layer */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        {/* Sharp Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-size-[40px_40px] mask-[radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
-        {/* CRM Radar Pulses */}
+        {/* Radar Pulses */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           {[...Array(4)].map((_, i) => (
             <motion.div
               key={`pulse-${i}`}
               initial={{ scale: 0.5, opacity: 0.8 }}
               animate={{ scale: 3, opacity: 0 }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                delay: i * 2,
-                ease: "easeOut",
-              }}
-              className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] border border-purple-500/30 rounded-full shadow-[0_0_30px_rgba(168,85,247,0.2)_inset]"
+              transition={{ duration: 8, repeat: Infinity, delay: i * 2, ease: "easeOut" }}
+              className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] border border-purple-500/30 rounded-full"
             />
           ))}
         </div>
 
-        {/* Floating Data Shards */}
+        {/* Floating Shards */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(24)].map((_, i) => (
+          {[...Array(20)].map((_, i) => (
             <motion.div
               key={`shard-${i}`}
-              initial={{ 
-                top: "110%", 
-                left: `${Math.random() * 100}%`, 
-                scale: Math.random() * 0.8 + 0.2,
-                opacity: 0,
-                rotate: 45
-              }}
-              animate={{
-                top: "-10%",
-                opacity: [0, 0.8, 0.8, 0],
-                rotate: 45 + (Math.random() * 180)
-              }}
-              transition={{
-                duration: 12 + Math.random() * 10,
-                repeat: Infinity,
-                delay: Math.random() * 8,
-                ease: "linear",
-              }}
-              className={`absolute w-4 h-4 rounded-sm blur-[0.5px] ${i % 3 === 0 ? 'bg-purple-500/30 shadow-[0_0_15px_rgba(168,85,247,0.6)]' : i % 3 === 1 ? 'bg-pink-500/20 shadow-[0_0_15px_rgba(236,72,153,0.5)]' : 'bg-cyan-500/20 shadow-[0_0_15px_rgba(6,182,212,0.5)]'}`}
+              initial={{ top: "110%", left: `${Math.random() * 100}%`, opacity: 0, rotate: 45 }}
+              animate={{ top: "-10%", opacity: [0, 0.8, 0.8, 0], rotate: 45 + Math.random() * 180 }}
+              transition={{ duration: 12 + Math.random() * 10, repeat: Infinity, delay: Math.random() * 8, ease: "linear" }}
+              className={`absolute w-4 h-4 rounded-sm blur-[0.5px] ${i % 3 === 0 ? "bg-purple-500/30" : i % 3 === 1 ? "bg-pink-500/20" : "bg-cyan-500/20"}`}
             />
           ))}
         </div>
 
-        {/* Dynamic Glows */}
         <div className="absolute top-0 left-[20%] w-[500px] h-[500px] bg-purple-700/40 blur-[130px] rounded-full animate-pulse" />
         <div className="absolute top-0 right-[20%] w-[500px] h-[500px] bg-pink-700/30 blur-[130px] rounded-full animate-pulse delay-700" />
       </div>
@@ -75,7 +52,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
           >
             <Sparkles size={16} className="text-purple-400" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Leading CRM Solutions in India
+              Leading CRM & ERP Solutions in India
             </span>
           </motion.div>
 
@@ -85,7 +62,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            CRM Development <br className="hidden md:block" />
+            CRM & ERP Development <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
               Company in India
             </span>
@@ -97,7 +74,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            We build SEO-optimized, fast, and high-converting CRM systems for businesses. Get custom CRM development services in India for global clients.
+            We build powerful, scalable CRM & ERP systems for businesses — unifying sales, finance, HR, inventory & operations on one intelligent platform.
           </motion.p>
 
           <motion.div

@@ -71,25 +71,25 @@ export default function ServicesSection({ onConsultClick }: { onConsultClick?: (
     {
       id: 3,
       category: "Scale & Automation",
-      title: "CRM & SaaS Solutions",
-      link: "/crm-development-company-india",
+      title: "CRM & ERP Solutions",
+      link: "/crm-erp-development-company-india",
       icon: Layers,
       features: [
         {
-          title: "Cloud-Native SaaS:",
-          description: "scalable multi-tenant platforms built for global performance",
-        },
-        {
-          title: "Bespoke CRM Systems:",
+          title: "Custom CRM Development:",
           description: "tailored workflows to manage your unique business sales pipeline",
         },
         {
-          title: "Subscription Management:",
-          description: "integrated recurring billing and membership automation systems",
+          title: "ERP System Integration:",
+          description: "unify finance, HR, inventory & operations in one powerful platform",
+        },
+        {
+          title: "Real-Time Dashboards:",
+          description: "actionable insights and analytics to drive smarter business decisions",
         },
         {
           title: "Process Automation:",
-          description: "intelligent tools to eliminate manual data entry and save resources",
+          description: "intelligent tools to eliminate manual tasks and boost productivity",
         },
       ],
     },
