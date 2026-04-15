@@ -54,13 +54,13 @@ export function AIUseCases() {
         </div>
 
         {/* Feature Grid - Using CometCard for consistency */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 items-stretch">
           {useCases.map((useCase, index) => {
             const Icon = useCase.icon;
 
             return (
               <CometCard key={index} className="h-full [&>div]:h-full">
-                <div className="p-8 sm:p-10 rounded-3xl border border-purple-900/50 bg-linear-to-br from-purple-950/30 to-purple-900/10 hover:border-purple-600 transition-all duration-500 h-full relative group overflow-hidden flex flex-col">
+                <div className="p-6 sm:p-10 rounded-3xl border border-purple-900/50 bg-linear-to-br from-purple-950/30 to-purple-900/10 hover:border-purple-600 transition-all duration-500 h-full relative group overflow-hidden flex flex-col">
                   <div className="flex items-start gap-5 flex-1">
                     <div className="w-12 h-12 rounded-2xl bg-purple-900/40 border border-purple-500/30 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-purple-500/10">
                       <Icon size={24} className="text-purple-400" />

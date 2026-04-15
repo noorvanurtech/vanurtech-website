@@ -6,7 +6,7 @@ import { Sparkles, Rocket, Clock, Zap } from "lucide-react";
 
 export function MiniCaseStudy() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#0A0012]">
+    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0012]">
       {/* Dynamic Glows */}
       <div className="absolute top-0 right-1/3 w-[400px] h-[400px] bg-purple-600/10 blur-[130px] rounded-full pointer-events-none animate-pulse" />
 
@@ -16,12 +16,12 @@ export function MiniCaseStudy() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="p-8 md:p-12 rounded-[2.5rem] border border-purple-500/20 bg-[#120524] backdrop-blur-xl relative overflow-hidden shadow-2xl"
+          className="p-6 sm:p-8 md:p-12 rounded-[2.5rem] border border-purple-500/20 bg-[#120524] backdrop-blur-xl relative overflow-hidden shadow-2xl"
         >
           {/* subtle grid background inside the card */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-size-[20px_20px] pointer-events-none" />
 
-          <div className="flex flex-col lg:flex-row gap-12 lg:items-center relative z-10">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:items-center relative z-10">
             {/* Left Info */}
             <div className="lg:w-1/2">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8">
@@ -31,7 +31,7 @@ export function MiniCaseStudy() {
                 </span>
               </div>
 
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 AI Calling & <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500">CRM Automation</span>
               </h3>
 
@@ -69,7 +69,7 @@ export function MiniCaseStudy() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="p-8 rounded-3xl bg-linear-to-br from-purple-900/30 to-black/50 border border-purple-500/30 w-full relative"
+                className="p-5 sm:p-8 rounded-3xl bg-linear-to-br from-purple-900/30 to-black/50 border border-purple-500/30 w-full relative"
               >
                 <h4 className="text-xl font-semibold text-white mb-6 flex items-center gap-2 border-b border-white/10 pb-4">
                   <Rocket className="text-pink-400" /> The Result

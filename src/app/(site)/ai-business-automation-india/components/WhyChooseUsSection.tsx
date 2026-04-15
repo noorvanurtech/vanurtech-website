@@ -56,14 +56,14 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
   ];
 
   return (
-    <section className="py-20 bg-[#0A0014] relative overflow-hidden flex items-center">
+    <section className="py-12 sm:py-20 bg-[#0A0014] relative overflow-hidden">
       {/* Subtle Glows */}
       <div className="absolute top-1/2 left-0 w-64 h-64 bg-purple-600/5 blur-[100px] rounded-full" />
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-pink-600/5 blur-[100px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         {/* Header */}
-        <div className="mb-14">
+        <div className="mb-8 sm:mb-14">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

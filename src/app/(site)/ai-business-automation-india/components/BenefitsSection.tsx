@@ -14,13 +14,13 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#0A0014]">
+    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0014]">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-pink-600/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-center">
 
           {/* Left Text Column */}
           <motion.div
@@ -36,14 +36,14 @@ export function BenefitsSection() {
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white leading-[1.1] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 sm:mb-8 text-white leading-[1.1] tracking-tight">
               How AI Transforms <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
                 Your Business
               </span>
             </h2>
 
-            <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-xl">
+            <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-6 sm:mb-10 max-w-xl">
               Integrate intelligent systems that streamline workflows, cut costs, and supercharge your team's output so you can focus on scaling efficiently.
             </p>
 
