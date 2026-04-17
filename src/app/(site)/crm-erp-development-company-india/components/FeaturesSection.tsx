@@ -39,12 +39,11 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0014]">
+    <section className="py-12 sm:py-16 relative overflow-hidden bg-[#0A0014]">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-pink-600/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 sm:mb-20">
+        <div className="text-center mb-10 sm:mb-14">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -57,13 +56,13 @@ export function FeaturesSection() {
               </span>
             </div>
           </motion.div>
-          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto">
-            Everything Your Business <br className="md:hidden" />
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto">
+            Everything Your Business{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
               Needs in One System
             </span>
           </h3>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
             Our custom ERP solutions integrate every department — from finance to operations — into a single, intelligent platform built for your business.
           </p>
         </div>
@@ -79,12 +78,12 @@ export function FeaturesSection() {
               className="relative group h-full"
             >
               <div className="absolute inset-0 bg-linear-to-br from-purple-600/20 to-pink-500/20 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
-              <div className="relative h-full p-8 rounded-[2rem] bg-white/2 hover:bg-white/5 border border-purple-500/10 group-hover:border-purple-500/30 backdrop-blur-xl transition-all duration-500 overflow-hidden text-left flex flex-col justify-start">
+              <div className="relative h-full p-5 sm:p-7 rounded-[2rem] bg-white/2 hover:bg-white/5 border border-purple-500/10 group-hover:border-purple-500/30 backdrop-blur-xl transition-all duration-500 overflow-hidden text-left flex flex-col justify-start">
                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-purple-600/10 blur-[50px] rounded-full group-hover:bg-purple-600/20 transition-all duration-500" />
-                <div className="mb-5 sm:mb-8 inline-flex self-start p-4 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:-translate-y-2 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 border border-purple-500/20">
+                <div className="mb-4 sm:mb-6 inline-flex self-start p-3 sm:p-4 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:-translate-y-2 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 border border-purple-500/20">
                   {feature.icon}
                 </div>
-                <h4 className="text-xl font-bold text-white mb-4 tracking-tight group-hover:text-purple-300 transition-colors">
+                <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 tracking-tight group-hover:text-purple-300 transition-colors">
                   {feature.title}
                 </h4>
                 <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">

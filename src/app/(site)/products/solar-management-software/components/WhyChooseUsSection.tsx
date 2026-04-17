@@ -54,13 +54,13 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-yellow-500/5 blur-[100px] rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8 sm:mb-14">
+        <div className="mb-8 sm:mb-14 text-center lg:text-left">
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm mb-6">
             <Trophy size={14} className="text-yellow-400" />
             <span className="text-yellow-300 text-sm font-medium tracking-wide">Why Choose Us</span>
           </motion.div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 text-center lg:text-left">
             <motion.h2 initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1]">
               The Solar Software <br className="hidden lg:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 to-yellow-300">Built to Last</span>

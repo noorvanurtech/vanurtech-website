@@ -30,7 +30,7 @@ export default function AIBusinessAutomationContent() {
       <WhyChooseUsSection onConsultClick={onConsultClick} />
       <MiniCaseStudy />
 
-      <div className="py-24 bg-white/2 border-t border-white/5">
+      <div className="py-12 bg-white/2 border-t border-white/5">
         <Partners />
       </div>
 

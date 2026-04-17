@@ -14,7 +14,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0014]">
+    <section className="py-12 sm:py-16 relative overflow-hidden bg-[#0A0014]">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-pink-600/5 blur-[150px] rounded-full pointer-events-none" />
@@ -27,9 +27,9 @@ export function BenefitsSection() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="order-1"
+            className="order-1 text-center lg:text-left"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8 mx-auto lg:mx-0">
               <Sparkles size={16} className="text-purple-400" />
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide mb-0.5">
                 Design Benefits
@@ -47,7 +47,7 @@ export function BenefitsSection() {
               We don't just make things look pretty; we build strategic design systems that solve complex business problems and create lasting value for your customers.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t border-purple-500/10">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 pt-6 border-t border-purple-500/10">
               <div className="flex items-center gap-1.5">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 text-yellow-500 drop-shadow-[0_0_8px_rgba(234,179,8,0.4)]" fill="currentColor" viewBox="0 0 20 20">
@@ -119,7 +119,7 @@ export function BenefitsSection() {
 
                     <div className="flex items-center gap-5 sm:gap-0 relative z-10">
                       {/* Mobile icon */}
-                      <div className="p-3 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 border border-purple-500/20 shadow-[0_0_10px_rgba(168,85,247,0.1)] sm:hidden relative overflow-hidden">
+                      <div className="p-3 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 border border-purple-500/20 shadow-[0_0_10px_rgba(168,85,247,0.1)] sm:hidden relative overflow-hidden flex items-center justify-center">
                         <motion.div
                           className="absolute inset-0 bg-purple-500 z-0"
                           animate={{ opacity: [0, 1, 0] }}

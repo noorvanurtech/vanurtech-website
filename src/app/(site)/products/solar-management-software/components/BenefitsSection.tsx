@@ -14,7 +14,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0014]">
+    <section className="py-12 sm:py-16 relative overflow-hidden bg-[#0A0014]">
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-yellow-600/10 blur-[150px] rounded-full pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-yellow-500/5 blur-[150px] rounded-full pointer-events-none" />
 
@@ -22,7 +22,7 @@ export function BenefitsSection() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-center">
 
           {/* Left Text */}
-          <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="order-1">
+          <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="order-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-8">
               <Sparkles size={16} className="text-yellow-400" />
               <span className="text-yellow-300 text-xs sm:text-sm font-medium tracking-wide mb-0.5">Business Benefits</span>
@@ -36,7 +36,7 @@ export function BenefitsSection() {
             <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-6 sm:mb-10 max-w-xl">
               Built specifically for solar businesses in India — whether you manage 10 rooftop systems or 500+ commercial plants.
             </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t border-yellow-500/10">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 pt-6 border-t border-yellow-500/10">
               <div className="flex items-center gap-1.5">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 text-yellow-500 drop-shadow-[0_0_8px_rgba(234,179,8,0.4)]" fill="currentColor" viewBox="0 0 20 20">
@@ -77,7 +77,7 @@ export function BenefitsSection() {
                     <motion.div className="absolute inset-0 border border-yellow-500/40 rounded-4xl pointer-events-none" animate={{ opacity: [0, 1, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: idx * 0.4 }} />
 
                     <div className="flex items-center gap-5 sm:gap-0 relative z-10">
-                      <div className="p-3 rounded-2xl bg-yellow-500/10 text-yellow-400 group-hover:bg-yellow-500 group-hover:text-white transition-all duration-500 border border-yellow-500/20 sm:hidden relative overflow-hidden">
+                      <div className="p-3 rounded-2xl bg-yellow-500/10 text-yellow-400 group-hover:bg-yellow-500 group-hover:text-white transition-all duration-500 border border-yellow-500/20 sm:hidden relative overflow-hidden flex items-center justify-center">
                         <motion.div className="absolute inset-0 bg-yellow-500 z-0" animate={{ opacity: [0, 1, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: idx * 0.4 }} />
                         <motion.span animate={{ color: ["#fde68a", "#ffffff", "#fde68a"] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: idx * 0.4 }} className="relative z-10">
                           {benefit.icon}

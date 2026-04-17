@@ -18,8 +18,8 @@ export function GlobalTargeting() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-12 sm:pt-24 pb-0 font-sans border-t border-purple-900/20">
-      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto mb-8 sm:mb-16">
+    <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-10 sm:pt-16 pb-0 font-sans border-t border-purple-900/20">
+      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto mb-6 sm:mb-10">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8">
             <Sparkles size={16} className="text-purple-400" />

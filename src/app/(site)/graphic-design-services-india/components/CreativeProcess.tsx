@@ -33,7 +33,7 @@ const steps = [
 
 export function CreativeProcess() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0014]">
+    <section className="py-12 sm:py-16 relative overflow-hidden bg-[#0A0014]">
       {/* Background decoration */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.05)_0%,transparent_70%)] pointer-events-none" />
 

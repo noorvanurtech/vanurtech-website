@@ -18,8 +18,8 @@ export function GlobalTargeting() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-12 sm:pt-24 pb-0 font-sans border-t border-purple-900/20">
-      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto mb-8 sm:mb-16">
+    <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-10 sm:pt-16 pb-0 font-sans border-t border-purple-900/20">
+      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto mb-6 sm:mb-10">
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -37,7 +37,7 @@ export function GlobalTargeting() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto px-2 sm:px-0"
         >
           Delivering Digital Excellence <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">

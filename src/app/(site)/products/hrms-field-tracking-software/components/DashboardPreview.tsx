@@ -6,7 +6,7 @@ import { Sparkles } from "lucide-react";
 
 export function DashboardPreview() {
   return (
-    <section className="py-16 sm:py-24 relative overflow-hidden bg-[#0B0011]">
+    <section className="py-12 sm:py-16 relative overflow-hidden bg-[#0B0011]">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-blue-500/8 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

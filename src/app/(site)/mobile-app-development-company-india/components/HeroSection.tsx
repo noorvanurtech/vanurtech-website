@@ -70,17 +70,19 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
+          <div className="flex justify-center px-4 sm:px-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8"
           >
-            <Smartphone size={16} className="text-purple-400" />
+            <Smartphone size={16} className="text-purple-400 shrink-0" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Top-Tier Mobile App Development in India
+              Mobile App Development in India
             </span>
           </motion.div>
+          </div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -111,14 +113,14 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
           >
             <button
               onClick={onConsultClick}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-purple-600 to-pink-600 hover:scale-105 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg shadow-purple-500/25 flex items-center justify-center gap-2 tracking-wide"
+              className="w-full sm:w-auto px-5 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-purple-600 to-pink-600 hover:scale-105 rounded-full text-white font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg shadow-purple-500/25 flex items-center justify-center gap-2 whitespace-nowrap"
             >
               Start Your App Journey
               <ArrowRight size={20} />
             </button>
             <Link
               href="/projects"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 hover:bg-white/10 hover:border-white/30 border border-white/10 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 backdrop-blur-sm tracking-wide text-center"
+              className="w-full sm:w-auto px-5 sm:px-8 py-3 sm:py-4 bg-white/5 hover:bg-white/10 hover:border-white/30 border border-white/10 rounded-full text-white font-semibold text-sm sm:text-base transition-all duration-300 backdrop-blur-sm text-center whitespace-nowrap"
             >
               Our App Portfolio
             </Link>

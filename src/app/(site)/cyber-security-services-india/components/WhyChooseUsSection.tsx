@@ -64,7 +64,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-8 sm:mb-14">
+        <div className="mb-8 sm:mb-14 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
             <span className="text-purple-300 text-sm font-medium tracking-wide">Elite Security Partnership</span>
           </motion.div>
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 text-center lg:text-left">
             <motion.h2
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}

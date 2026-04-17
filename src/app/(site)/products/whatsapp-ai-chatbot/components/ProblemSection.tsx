@@ -24,11 +24,11 @@ const comparisons = [
 
 export function ProblemSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden" style={{ backgroundColor: "#0B0011" }}>
+    <section className="py-12 sm:py-16 relative overflow-hidden" style={{ backgroundColor: "#0B0011" }}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-10 sm:mb-12">
           <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8">
               <Sparkles size={16} className="text-purple-400" />
@@ -36,7 +36,7 @@ export function ProblemSection() {
             </div>
           </motion.div>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-            From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-8">Missed Messages</span> to{" "}
+            From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Missed Messages</span> to{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-purple-500">Instant Replies</span>
           </h3>
           <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">

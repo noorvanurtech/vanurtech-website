@@ -14,8 +14,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0014]">
-      {/* Background Glow */}
+    <section className="py-12 sm:py-16 relative overflow-hidden bg-[#0A0014]">
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-pink-600/5 blur-[150px] rounded-full pointer-events-none" />
 
@@ -27,17 +26,18 @@ export function BenefitsSection() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="order-1"
+            className="order-1 text-center lg:text-left"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8 mx-auto lg:mx-0">
               <Sparkles size={16} className="text-purple-400" />
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide mb-0.5">
                 Business Benefits
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 sm:mb-8 text-white leading-[1.1] tracking-tight">
-              How Our CRM <br className="hidden md:block" />
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-5 sm:mb-8 text-white leading-[1.1] tracking-tight">
+              How Our CRM{" "}
+              <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
                 Grows Your Business
               </span>
@@ -47,7 +47,7 @@ export function BenefitsSection() {
               We build intelligent CRM systems that keep your pipeline full, your team productive, and your customers coming back for more.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6 border-t border-purple-500/10">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 pt-6 border-t border-purple-500/10">
               <div className="flex items-center gap-1.5">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 text-yellow-500 drop-shadow-[0_0_8px_rgba(234,179,8,0.4)]" fill="currentColor" viewBox="0 0 20 20">
@@ -98,7 +98,7 @@ export function BenefitsSection() {
                     </motion.span>
                   </div>
 
-                  <div className="flex items-center p-5 sm:p-6 rounded-4xl border border-purple-500/10 bg-white/2 hover:bg-white/5 backdrop-blur-xl group-hover:border-purple-500/30 transition-all duration-500 relative overflow-hidden">
+                  <div className="flex items-center p-4 sm:p-6 rounded-4xl border border-purple-500/10 bg-white/2 hover:bg-white/5 backdrop-blur-xl group-hover:border-purple-500/30 transition-all duration-500 relative overflow-hidden">
 
                     {/* Inner Hover Glow (Manual) */}
                     <div className="absolute inset-0 bg-linear-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl" />
@@ -119,7 +119,7 @@ export function BenefitsSection() {
 
                     <div className="flex items-center gap-5 sm:gap-0 relative z-10">
                       {/* Mobile icon */}
-                      <div className="p-3 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 border border-purple-500/20 shadow-[0_0_10px_rgba(168,85,247,0.1)] sm:hidden relative overflow-hidden">
+                      <div className="p-3 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-500 border border-purple-500/20 shadow-[0_0_10px_rgba(168,85,247,0.1)] sm:hidden relative overflow-hidden flex items-center justify-center">
                         <motion.div
                           className="absolute inset-0 bg-purple-500 z-0"
                           animate={{ opacity: [0, 1, 0] }}
@@ -135,9 +135,9 @@ export function BenefitsSection() {
                       </div>
 
                       <motion.span
-                        animate={{ color: ['#d1d5db', '#ffffff', '#d1d5db'] }} // gray-300 to white
+                        animate={{ color: ['#d1d5db', '#ffffff', '#d1d5db'] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: idx * 0.4 }}
-                        className="text-gray-300 text-lg font-semibold group-hover:text-white transition-colors tracking-wide"
+                        className="text-gray-300 text-sm sm:text-base font-semibold group-hover:text-white transition-colors tracking-wide"
                       >
                         {benefit.title}
                       </motion.span>

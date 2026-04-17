@@ -15,7 +15,7 @@ export function DifferentiatorSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="p-6 sm:p-10 md:p-14 rounded-[3rem] bg-linear-to-br from-purple-900/40 to-[#0B0011] border border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.15)] relative overflow-hidden"
+          className="p-5 sm:p-8 md:p-12 rounded-[3rem] bg-linear-to-br from-purple-900/40 to-[#0B0011] border border-purple-500/30 shadow-[0_0_50px_rgba(168,85,247,0.15)] relative overflow-hidden"
         >
           {/* Inner Glow */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-pink-600/20 blur-[80px] rounded-full" />
@@ -25,14 +25,14 @@ export function DifferentiatorSection() {
             <BrainCircuit size={40} />
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-5 sm:mb-8 tracking-tight">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-4 sm:mb-6 tracking-tight">
             Why Our AI Solutions Are <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500">Different</span>
           </h2>
 
-          <p className="text-base sm:text-xl md:text-2xl text-gray-300 font-medium leading-relaxed mb-4 sm:mb-6">
+          <p className="text-sm sm:text-lg md:text-xl text-gray-300 font-medium leading-relaxed mb-3 sm:mb-5">
             Unlike generic tools, our AI systems are fully customized based on your business workflows and goals.
           </p>
-          <p className="text-sm sm:text-lg md:text-xl text-gray-400 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
             We don&apos;t just integrate AI we build intelligent systems that <span className="text-purple-300 font-semibold">understand your business</span> and continuously improve performance.
           </p>
         </motion.div>

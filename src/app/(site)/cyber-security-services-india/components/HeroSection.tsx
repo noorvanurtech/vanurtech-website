@@ -88,11 +88,11 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-8 max-w-max mx-auto"
           >
-            <ShieldCheck size={16} className="text-purple-400" />
+            <ShieldCheck size={16} className="text-purple-400 shrink-0" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Elite Cyber Defense & Threat Intelligence
+              Cyber Defense Services in India
             </span>
           </motion.div>
 
@@ -125,7 +125,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
           >
             <button
               onClick={onConsultClick}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-purple-600 to-pink-600 hover:scale-105 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg shadow-purple-500/25 flex items-center justify-center gap-2 tracking-wide"
+              className="w-full sm:w-auto px-5 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-purple-600 to-pink-600 hover:scale-105 rounded-full text-white font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg shadow-purple-500/25 flex items-center justify-center gap-2 whitespace-nowrap"
             >
               Secure Your Stack
               <Lock size={20} />
