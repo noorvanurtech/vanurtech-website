@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from 'axios';
+import axios, { AxiosRequestConfig, InternalAxiosRequestConfig } from 'axios';
 
 // Create axios instance
 const axiosInstance = axios.create({
@@ -14,15 +14,16 @@ const controllers = new Map<string, AbortController>();
 
 // Request interceptor
 axiosInstance.interceptors.request.use(
-  (config: AxiosRequestConfig & { requestId?: string }) => {
+  (config: InternalAxiosRequestConfig) => {
+    const customConfig = config as InternalAxiosRequestConfig & { requestId?: string };
 
     // Create controller for each request
     const controller = new AbortController();
     config.signal = controller.signal;
 
     // Optional: attach unique requestId to track/cancel later
-    if (config.requestId) {
-      controllers.set(config.requestId, controller);
+    if (customConfig.requestId) {
+      controllers.set(customConfig.requestId, controller);
     }
 
     return config;
