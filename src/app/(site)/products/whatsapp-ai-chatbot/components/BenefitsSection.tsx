@@ -27,7 +27,7 @@ export function BenefitsSection() {
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide mb-0.5">Business Benefits</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 sm:mb-8 text-white leading-[1.1] tracking-tight">
-              How Our Chatbot{" "}
+              How Our Chatbot <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-purple-500">
                 Grows Your Business
               </span>

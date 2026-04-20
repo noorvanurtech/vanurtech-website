@@ -23,12 +23,12 @@ export function BenefitsSection() {
 
           {/* Left Text */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="order-1 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-8 mx-auto lg:mx-0">
               <Sparkles size={16} className="text-yellow-400" />
               <span className="text-yellow-300 text-xs sm:text-sm font-medium tracking-wide mb-0.5">Business Benefits</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 sm:mb-8 text-white leading-[1.1] tracking-tight">
-              How Our Software{" "}
+              How Our Software <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-yellow-300 to-yellow-500">
                 Powers Your Growth
               </span>

@@ -20,13 +20,13 @@ export function GlobalTargeting() {
     <section className="relative w-full bg-[#0A0014] overflow-hidden flex flex-col items-center pt-10 sm:pt-16 pb-0 font-sans border-t border-blue-900/20">
       <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto mb-6 sm:mb-10">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-md mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-md mb-8 mx-auto">
             <Sparkles size={16} className="text-blue-400" />
             <span className="text-blue-300 text-xs sm:text-sm font-medium tracking-wide mb-0.5">Global Reach</span>
           </div>
         </motion.div>
         <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-          Powering Finance Operations{" "}
+          Powering Finance Operations <br className="md:hidden" />
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-blue-300 to-blue-500">Across The Globe</span>
         </motion.h3>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">

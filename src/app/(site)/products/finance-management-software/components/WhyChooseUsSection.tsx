@@ -20,16 +20,16 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-14 text-center lg:text-left">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-sm mb-6">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-sm mb-6 mx-auto lg:mx-0">
             <Trophy size={14} className="text-blue-400" />
             <span className="text-blue-300 text-sm font-medium tracking-wide">Why Choose Us</span>
           </motion.div>
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 text-center lg:text-left">
             <motion.h2 initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1]">
-              The Finance Software <br className="hidden lg:block" />
+              The Finance Software <br className="md:hidden lg:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-300">Built to Scale</span>
             </motion.h2>
-            <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed">
+            <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed mx-auto lg:mx-0">
               We combine deep financial domain knowledge with modern software to deliver a platform that keeps your business compliant and profitable.
             </motion.p>
           </div>

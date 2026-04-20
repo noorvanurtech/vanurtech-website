@@ -20,12 +20,12 @@ export function DashboardPreview() {
           viewport={{ once: true }}
           className="flex flex-col items-center text-center mb-10"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-4 mx-auto">
             <Sparkles size={14} className="text-yellow-400" />
             <span className="text-yellow-300 text-xs sm:text-sm font-medium tracking-wide">Live Product Preview</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
-            See the Dashboard{" "}
+            See the Dashboard <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-yellow-300 to-yellow-500">
               in Action
             </span>
@@ -55,8 +55,8 @@ export function DashboardPreview() {
                 <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                 <div className="w-3 h-3 rounded-full bg-green-500/80" />
               </div>
-              <div className="flex-1 flex justify-center">
-                <div className="bg-white/5 border border-white/8 rounded-md px-4 py-1 text-[11px] text-gray-500 w-52 text-center">
+              <div className="flex-1 flex justify-center overflow-hidden">
+                <div className="bg-white/5 border border-white/8 rounded-md px-3 sm:px-4 py-1 text-[9px] sm:text-[11px] text-gray-500 w-auto max-w-[160px] sm:max-w-xs truncate text-center">
                   app.solarsoftware.in/dashboard
                 </div>
               </div>

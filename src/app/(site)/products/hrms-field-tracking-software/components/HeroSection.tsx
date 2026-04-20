@@ -89,9 +89,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-md mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 backdrop-blur-md mb-8 max-w-max mx-auto"
           >
-            <Users size={16} className="text-blue-400" />
+            <Users size={16} className="text-blue-400 shrink-0" />
             <span className="text-blue-300 text-xs sm:text-sm font-medium tracking-wide">
               HRMS & Field Tracking Software
             </span>
@@ -103,7 +103,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Manage Your Workforce &<br className="hidden md:block" />
+            Manage Your Workforce & <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500">
               Track Field Agents in Real-Time
             </span>
@@ -122,11 +122,11 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center justify-center px-4 sm:px-0"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0"
           >
             <button
               onClick={onConsultClick}
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-blue-500 to-cyan-500 hover:scale-105 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg shadow-blue-500/25 flex items-center gap-2 tracking-wide"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-blue-500 to-cyan-500 hover:scale-105 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2 tracking-wide whitespace-nowrap"
             >
               Get a Free Demo
               <ArrowRight size={20} />

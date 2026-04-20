@@ -129,9 +129,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-md mb-8 max-w-max mx-auto"
           >
-            <Sun size={16} className="text-yellow-400" />
+            <Sun size={16} className="text-yellow-400 shrink-0" />
             <span className="text-yellow-300 text-xs sm:text-sm font-medium tracking-wide">
               Solar Management Software
             </span>
@@ -143,7 +143,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Monitor & Manage Your <br className="hidden md:block" />
+            Monitor & Manage Your <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-yellow-300 to-yellow-500">
               Solar Plant Performance
             </span>
@@ -162,11 +162,11 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center justify-center px-4 sm:px-0"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0"
           >
             <button
               onClick={onConsultClick}
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-yellow-500 to-yellow-400 hover:scale-105 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg shadow-yellow-500/25 flex items-center gap-2 tracking-wide"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-yellow-500 to-yellow-400 hover:scale-105 rounded-full text-white font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg shadow-yellow-500/25 flex items-center justify-center gap-2 tracking-wide whitespace-nowrap"
             >
               Get a Free Demo
               <ArrowRight size={20} />
