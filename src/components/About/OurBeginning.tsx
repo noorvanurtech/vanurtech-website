@@ -23,7 +23,7 @@ export default function OurBeginning() {
             <div className="relative rounded-[2.4rem] overflow-hidden bg-[#0A0012]">
               <img
                 src="/images/about/WhatsApp Image 2026-04-15 at 3.31.34 PM (1).jpeg"
-                alt="Our Story"
+                alt="Vanurtech Media founders and team — custom software company in Bhubaneswar and Delhi"
                 className="w-[280px] sm:w-[380px] md:w-[460px] h-[320px] sm:h-[420px] md:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#0A0012] via-transparent to-transparent opacity-60" />
@@ -41,7 +41,7 @@ export default function OurBeginning() {
             >
               <Sparkles size={16} className="text-purple-400" />
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-                Our Story
+                How It Started
               </span>
             </motion.div>
 
@@ -53,7 +53,10 @@ export default function OurBeginning() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight"
               >
-                Our Journey From Curiosity to Creating <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Impact</span>
+                Started Small in Bhubaneswar.{" "}
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
+                  Now Serving Businesses Across India.
+                </span>
               </motion.h2>
 
               <motion.div
@@ -64,13 +67,13 @@ export default function OurBeginning() {
                 className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-light max-w-3xl mx-auto lg:mx-0"
               >
                 <p>
-                  We started with a singular vision to bridge the gap between complex business challenges and intelligent technological solutions.
+                  Vanurtech started in 2015 when our founders noticed the same problem repeating itself — small and mid-sized Indian businesses were paying for software that didn&apos;t fit their operations and getting stuck with tools built for someone else&apos;s workflow.
                 </p>
                 <p>
-                  What began as a passionate initiative in 2016 has transformed into a high-impact software powerhouse, empowering <span className="text-white font-medium">200+ global brands</span>. From stealth-mode startups to industrial giants, we refine operations and amplify growth through data-driven precision.
+                  We began by building websites and simple CRM tools for local businesses in Bhubaneswar, Odisha. Word spread. Clients came back with bigger problems — disconnected teams, manual follow-up nightmares, billing systems that didn&apos;t talk to each other. We solved those too.
                 </p>
                 <p>
-                  Today, Vanurtech Media Pvt. Ltd. stands at the forefront of the AI revolution, driven by an unwavering commitment to excellence and business transformation.
+                  Ten years later, we&apos;ve delivered <span className="text-white font-medium">300+ projects</span> for businesses in real estate, healthcare, solar energy, education, travel, and manufacturing — across Delhi, Bhubaneswar, and cities in between. The problems change. Our approach doesn&apos;t: understand the business first, then build.
                 </p>
               </motion.div>
 

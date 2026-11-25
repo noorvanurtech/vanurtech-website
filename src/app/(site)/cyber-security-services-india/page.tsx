@@ -1,13 +1,13 @@
-import { Metadata } from "next";
 import CyberSecurityContent from "./CyberSecurityContent";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Elite Cyber Security Services in India | Vanurtech Media Pvt. Ltd.",
-  description: "Secure your digital assets with India's leading cyber security experts. Pentesting, 24/7 monitoring, and compliance solutions for global businesses.",
-  alternates: {
-    canonical: "https://Vanurtech Media Pvt. Ltd..com/cyber-security-services-india",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Cyber Security Services in India | Vanurtech Media",
+  description:
+    "Vanurtech helps businesses review application security, close common risks, and put practical monitoring in place for websites and software.",
+  path: "/cyber-security-services-india",
+  keywords: ["cyber security services India", "website security", "application security company"],
+});
 
 export default function CyberSecurityPage() {
   const jsonLd = {
@@ -18,12 +18,18 @@ export default function CyberSecurityPage() {
     "provider": {
       "@type": "Organization",
       "name": "Vanurtech Media Pvt. Ltd.",
-      "url": "https://Vanurtech Media Pvt. Ltd..com"
+      "url": "https://vanurmedia.com"
     },
     "serviceType": "Cyber Security",
+    "url": "https://vanurmedia.com/cyber-security-services-india",
     "areaServed": {
       "@type": "Country",
       "name": "India"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
     }
   };
 

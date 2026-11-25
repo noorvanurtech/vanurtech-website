@@ -47,12 +47,11 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
               </div>
             </motion.div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-              Bridge the Gap: <br className="md:hidden" />
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Invisible</span> to{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Unstoppable</span>
+              From idea to a{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">SaaS users can subscribe to</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Don't settle for a SaaS that just sits there. We build machines that drive traffic and capture revenue.
+              Vanurtech Media helps founders ship SaaS with sign-up, billing, admin panels, and deployment — so you focus on customers, not plumbing.
             </p>
           </div>
 

@@ -32,8 +32,8 @@ export default function WorkHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-              <span className="text-white">Selected Projects</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-white">
+              Portfolio
             </h1>
           </motion.div>
 
@@ -41,9 +41,9 @@ export default function WorkHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-gray-400 text-sm sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-4"
+            className="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8 max-w-lg mx-auto px-4"
           >
-            Crafting digital experiences that make an impact
+            Websites, CRM, and custom software we&apos;ve delivered.
           </motion.p>
 
           {/* Decorative Line */}

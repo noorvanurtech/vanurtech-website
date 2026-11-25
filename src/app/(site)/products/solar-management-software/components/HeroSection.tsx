@@ -143,9 +143,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Monitor & Manage Your <br className="md:hidden" />
+            Solar plant management software <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-yellow-300 to-yellow-500">
-              Solar Plant Performance
+              that tracks every panel, job, and customer
             </span>
           </motion.h1>
 
@@ -153,9 +153,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            Real-time insights, automated alerts, and complete customer & AMC management — all in one powerful solar software platform built for India&apos;s growing solar industry.
+            Plant monitoring, AMC alerts, and customer records for solar EPCs.
           </motion.p>
 
           <motion.div

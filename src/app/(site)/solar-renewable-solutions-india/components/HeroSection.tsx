@@ -112,10 +112,10 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight text-white tracking-tight px-2 sm:px-0"
           >
-            Powering the Future of{" "}
+            Solar and renewable energy software{" "}
             <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-500 to-violet-600">
-              Renewable Energy in India
+              for solar installers and EPC companies
             </span>
           </motion.h1>
 
@@ -123,9 +123,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            End-to-end installation tracking, field team reporting, and automated energy calculation tools. We help solar companies digitize workflows for maximum efficiency.
+            Leads, installs, field GPS, and reports for solar businesses.
           </motion.p>
 
           <motion.div

@@ -86,7 +86,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
           >
             Graphic Design <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Agency in India
+              that makes your brand impossible to ignore
             </span>
           </motion.h1>
 
@@ -94,9 +94,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            We transform visions into stunning visual realities. From high-impact logos to complete brand identities, we create designs that resonate and convert.
+            Logos, social creatives, and brand assets that match your website.
           </motion.p>
 
           <motion.div

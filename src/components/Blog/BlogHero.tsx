@@ -32,8 +32,8 @@ export default function BlogHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight">
-              <span className="text-white">Blog & Insights</span>
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight text-white">
+              Blog
             </h1>
           </motion.div>
 
@@ -41,9 +41,9 @@ export default function BlogHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-gray-400 text-xs sm:text-base md:text-xl mb-5 sm:mb-6 md:mb-8 max-w-2xl mx-auto px-2 sm:px-4"
+            className="text-gray-400 text-sm sm:text-base mb-5 sm:mb-6 md:mb-8 max-w-lg mx-auto px-2 sm:px-4"
           >
-            Discover the latest trends, tips, and insights in digital innovation
+            Software, SEO, and web tips from our team.
           </motion.p>
 
           {/* Decorative Line */}

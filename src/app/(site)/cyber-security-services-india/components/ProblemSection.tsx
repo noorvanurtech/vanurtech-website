@@ -7,20 +7,20 @@ import { ShieldAlert, XCircle, CheckCircle2, ArrowRight } from "lucide-react";
 export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void }) {
   const comparisons = [
     {
-      problem: "Unprotected servers & data leaks",
-      solution: "Military-Grade Data Encryption",
+      problem: "Unprotected servers and exposed customer data",
+      solution: "Hardened hosting, HTTPS, and access controls",
     },
     {
-      problem: "Vulnerability to ransomware & malware",
-      solution: "AI-Powered Threat Detection",
+      problem: "Outdated plugins or dependencies with known CVEs",
+      solution: "Patch reviews and dependency updates",
     },
     {
-      problem: "Lack of compliance (ISO, GDPR, HIPPA)",
-      solution: "Global Standard Regulatory Compliance",
+      problem: "No backup or recovery plan after an incident",
+      solution: "Backup checks and incident response playbooks",
     },
     {
-      problem: "Poor employee security awareness",
-      solution: "Managed Security & Response Team",
+      problem: "Teams unsure about phishing or weak passwords",
+      solution: "Security guidance and configuration best practices",
     },
   ];
 
@@ -46,12 +46,11 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
               </div>
             </motion.div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-              Defend Your Future: <br className="md:hidden" />
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Vulnerable</span> to{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Invincible</span>
+              Close common security gaps on{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">your website and web apps</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Cyber threats are evolving every second. We build resilient defenses that protect your reputation and your revenue.
+              Vanurtech Media helps Indian businesses reduce breach risk with practical audits, hardening, and monitoring — not fear-based sales copy.
             </p>
           </div>
 

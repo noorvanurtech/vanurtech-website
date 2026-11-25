@@ -104,9 +104,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Automate Customer Conversations <br className="md:hidden" />
+            WhatsApp AI chatbot <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-purple-500">
-              on WhatsApp with AI
+              that replies instantly, 24/7
             </span>
           </motion.h1>
 
@@ -114,9 +114,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            Engage customers 24/7, capture leads automatically, and handle support — all through WhatsApp powered by AI. No missed messages, no manual effort.
+            24/7 WhatsApp replies, lead capture, and follow-ups on autopilot.
           </motion.p>
 
           <motion.div

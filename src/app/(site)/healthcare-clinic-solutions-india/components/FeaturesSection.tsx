@@ -74,7 +74,7 @@ export function FeaturesSection() {
           </h3>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            Our healthcare management platform provides the tools you need to streamline operations and deliver superior patient outcomes.
+            Clinic and hospital software from Vanurtech Media — appointments, patient records, billing, and reminders tailored to healthcare workflows in India.
           </p>
         </div>
 

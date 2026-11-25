@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function WorkflowSection() {
   const data = [
     {
-      title: "We Listen, Learn & Strategize",
+      title: "Step 1 — We Listen & Plan",
       icon: (
         <Image
           src="/images/logo-1.png"
@@ -22,14 +22,14 @@ export default function WorkflowSection() {
         <div>
           <div className="mb-6 sm:mb-8 rounded-xl sm:rounded-2xl border border-purple-900/30 bg-linear-to-br from-purple-950/20 to-transparent p-4 sm:p-6">
             <p className="text-sm text-gray-300 md:text-base leading-relaxed">
-              Every project begins with deep research. Understanding your specific goals, audience, and market challenges comes first. We listen to your vision and learn about your industry to build a rock-solid strategic roadmap that ensures long-term efficiency and success.
+              We start by understanding your business deeply — not just what you want to build, but why. What's slowing you down today? Where are leads falling through? What does your team do manually that software should handle? The answers shape a detailed plan before we write a single line of code.
             </p>
           </div>
 
           <div className="overflow-hidden rounded-2xl sm:rounded-3xl">
             <Image
               src="/images/home/WhatsApp Image 2026-04-08 at 3.56.00 PM.webp"
-              alt="Understand & Strategize"
+              alt="Vanurtech team planning a custom software project"
               width={800}
               height={400}
               className="h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 w-full rounded-2xl sm:rounded-3xl object-cover shadow-2xl"
@@ -39,7 +39,7 @@ export default function WorkflowSection() {
       ),
     },
     {
-      title: "We Design Experiences That Work",
+      title: "Step 2 — We Design It Your Way",
       icon: (
         <Image
           src="/images/logo-1.png"
@@ -53,14 +53,14 @@ export default function WorkflowSection() {
         <div>
           <div className="mb-6 sm:mb-8 rounded-xl sm:rounded-2xl border border-purple-900/30 bg-linear-to-br from-purple-950/20 to-transparent p-4 sm:p-6">
             <p className="text-sm text-gray-300 md:text-base leading-relaxed">
-              We craft clean UI, intuitive UX, and brand-aligned visuals that don't just look stunning but are engineered for performance. Our focus is on creating seamless user journeys that drive measurable engagement and align with your brand's digital identity.
+              You review every screen before development begins. We design clean, intuitive interfaces in Figma that match your brand, your users, and your workflow. No guessing — you approve the design, we build exactly what you see.
             </p>
           </div>
 
           <div className="overflow-hidden rounded-2xl sm:rounded-3xl">
             <Image
               src="/images/home/WhatsApp Image 2026-04-08 at 3.56.02 PM.webp"
-              alt="Design Experiences"
+              alt="Vanurtech UI/UX design process for custom software"
               width={800}
               height={400}
               className="h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 w-full rounded-2xl sm:rounded-3xl object-cover shadow-2xl"
@@ -70,7 +70,7 @@ export default function WorkflowSection() {
       ),
     },
     {
-      title: "We Build, Test & Launch",
+      title: "Step 3 — We Build, Test & Hand Over",
       icon: (
         <Image
           src="/images/logo-1.png"
@@ -84,20 +84,20 @@ export default function WorkflowSection() {
         <div>
           <div className="mb-6 sm:mb-8 rounded-xl sm:rounded-2xl border border-purple-900/30 bg-linear-to-br from-purple-950/20 to-transparent p-4 sm:p-6">
             <p className="mb-3 sm:mb-4 text-sm text-gray-300 md:text-base leading-relaxed">
-              Robust development using cutting-edge technologies. We build scalable architectures that grow with your business, followed by rigorous testing and deployment strategies to ensure zero-friction performance.
+              Development runs in short cycles — you see working software regularly, not just at the end. Before launch, everything is tested across devices and real-world conditions. After go-live, we stay involved.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300">
                 <div className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-purple-500 shadow-[0_0_5px_rgba(168,85,247,0.5)]"></div>
-                <span>Development with elite technologies (Next.js, AI, Cloud)</span>
+                <span>Built on Next.js, React Native, Node.js, and cloud infrastructure</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300">
                 <div className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-pink-500 shadow-[0_0_5px_rgba(236,72,153,0.5)]"></div>
-                <span>Comprehensive device & browser stress testing</span>
+                <span>Tested on real devices, browsers, and edge-case scenarios</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300">
                 <div className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-blue-500 shadow-[0_0_5px_rgba(59,130,246,0.5)]"></div>
-                <span>Strategic launch and continuous optimization support</span>
+                <span>Post-launch support, training, and ongoing improvements included</span>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function WorkflowSection() {
           <div className="overflow-hidden rounded-2xl sm:rounded-3xl">
             <Image
               src="/images/home/WhatsApp Image 2026-04-08 at 3.56.04 PM.webp"
-              alt="Build, Test & Launch"
+              alt="Vanurtech software development, testing, and launch process"
               width={800}
               height={400}
               className="h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 w-full rounded-2xl sm:rounded-3xl object-cover shadow-2xl"
@@ -128,7 +128,7 @@ export default function WorkflowSection() {
         >
           <Sparkles size={16} className="text-purple-400" />
           <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-            Our Workflow
+            How We Work
           </span>
         </motion.div>
 
@@ -139,9 +139,9 @@ export default function WorkflowSection() {
           transition={{ delay: 0.1 }}
           className="mb-6 max-w-4xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight"
         >
-          We Make It <br />
+          How We Go From <br />
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            Happen Every Day
+            Your Idea to a Live Product
           </span>
         </motion.h2>
 
@@ -152,7 +152,7 @@ export default function WorkflowSection() {
           transition={{ delay: 0.2 }}
           className="max-w-2xl text-sm sm:text-base md:text-xl text-gray-300 leading-relaxed font-sans"
         >
-          Our proven transformation process bridges the gap between complex business challenges and scalable automation. From first audit to global launch, we ensure precision engineering and absolute clarity at every single milestone.
+          A clear three-step process — no surprises, no scope creep. You know what's happening at every stage and why.
         </motion.p>
       </div>
 

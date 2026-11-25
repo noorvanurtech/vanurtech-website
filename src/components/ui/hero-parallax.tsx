@@ -96,7 +96,7 @@ export const HeroParallax = ({
 import { Rocket, PhoneCall, Briefcase } from "lucide-react";
 
 export const Header = ({ onConsultClick }: { onConsultClick?: () => void }) => {
-  const services = ["Web Design", "Mobile Apps", "CRM & Automation"];
+  const services = ["Custom Software", "CRM & ERP", "SaaS & Mobile Apps"];
 
   return (
     <div className="max-w-7xl relative mx-auto py-10 md:py-20 px-4 w-full z-50 flex items-center justify-center min-h-screen">
@@ -110,7 +110,7 @@ export const Header = ({ onConsultClick }: { onConsultClick?: () => void }) => {
         >
           <Rocket className="w-4 h-4 text-purple-400 animate-pulse shrink-0" />
           <span className="text-[10px] md:text-xs font-semibold text-purple-300 tracking-widest">
-            10+ Years Experience | Innovating for Global Brands
+            10+ Years · 300+ Projects Delivered · Delhi & Bhubaneswar
           </span>
         </motion.div>
 
@@ -144,19 +144,22 @@ export const Header = ({ onConsultClick }: { onConsultClick?: () => void }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 sm:mb-8 md:mb-10 flex flex-col items-center justify-center gap-1 md:gap-2"
         >
-          <div className="flex flex-col lg:flex-row items-center lg:items-baseline justify-center gap-1 md:gap-4">
-            <div className="flex items-baseline gap-2 md:gap-3">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-bold text-white tracking-widest">
-                VANUR
-              </h1>
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-light text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-                TECH
+          <h1 className="flex flex-col items-center gap-3 md:gap-4">
+            <span className="flex flex-col lg:flex-row items-center lg:items-baseline justify-center gap-1 md:gap-4">
+              <span className="flex items-baseline gap-2 md:gap-3">
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-bold text-white tracking-widest">
+                  VANUR
+                </span>
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-light text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
+                  TECH
+                </span>
               </span>
-            </div>
-            <span className="text-lg sm:text-xl lg:text-2xl font-light text-white/90 tracking-[0.4em] uppercase">
-              Media
+              <span className="text-lg sm:text-xl lg:text-2xl font-light text-white/90 tracking-[0.4em] uppercase">
+                Media
+              </span>
             </span>
-          </div>
+  
+          </h1>
         </motion.div>
 
         {/* CTA Buttons */}
@@ -171,14 +174,14 @@ export const Header = ({ onConsultClick }: { onConsultClick?: () => void }) => {
             className="group relative px-6 py-3 sm:px-8 bg-linear-to-r from-purple-600 to-pink-600 rounded-full text-white text-sm font-semibold transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] active:scale-95 flex items-center gap-2"
           >
             <PhoneCall className="w-4 h-4 transition-transform group-hover:rotate-12" />
-            Get Free Consultation
+            Book Free Consultation
           </button>
           <Link
             href="/projects"
             className="px-6 py-3 sm:px-8 rounded-full border border-white/10 bg-white/5 text-white text-sm font-semibold backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/30 active:scale-95 flex items-center gap-2"
           >
             <Briefcase className="w-4 h-4" />
-            View Our Work
+            See Our Work
           </Link>
         </motion.div>
       </div>

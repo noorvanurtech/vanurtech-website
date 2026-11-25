@@ -25,10 +25,11 @@ export default function FormContact() {
   };
 
   const interests = [
-    'Website Design',
+    'Website Development',
     'Mobile Application',
-    'CRM Solutions',
-    'Graphics Design',
+    'CRM / ERP',
+    'SaaS Development',
+    'AI Automation',
     'SEO Services',
   ];
 
@@ -111,10 +112,10 @@ I'd like to know more about your services!`;
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
               <span className="text-white">Get in </span>
-              <span className="text-purple-500">Touch</span>
+              <span className="text-purple-500">touch</span>
             </h2>
-            <p className="text-gray-400 text-sm sm:text-base">
-              Fill out the form below and we'll get back to you shortly
+            <p className="text-gray-400 text-sm sm:text-base max-w-lg mx-auto">
+              Whether you need a website, CRM, mobile app, SaaS product, or AI automation — share a few details and we&apos;ll respond with next steps. You can also call <a href="tel:+917077004890" className="text-purple-400 hover:text-purple-300">+91-7077004890</a> or email <a href="mailto:info@vanurmedia.com" className="text-purple-400 hover:text-purple-300">info@vanurmedia.com</a>.
             </p>
           </div>
 

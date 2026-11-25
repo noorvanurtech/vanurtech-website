@@ -99,10 +99,10 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight text-white tracking-tight px-2 sm:px-0"
           >
-            Digital Transformation for{" "}
+            Software for small and medium{" "}
             <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-500 to-violet-600">
-              Small & Medium Businesses
+              businesses that want to stop doing things manually
             </span>
           </motion.h1>
 
@@ -110,9 +110,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            Empower your business with custom ERPs, automated billing, and localized digital systems. We help Indian SMEs scale operations with enterprise-grade technology.
+            CRM, billing, and ops software sized for Indian SMEs.
           </motion.p>
 
           <motion.div

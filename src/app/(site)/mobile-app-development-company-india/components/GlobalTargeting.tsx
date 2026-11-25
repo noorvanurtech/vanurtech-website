@@ -41,9 +41,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto"
         >
-          Scaling Your Apps <br className="hidden md:block" />
+          Mobile apps built in India,{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            For A Global Audience
+            published worldwide
           </span>
         </motion.h3>
         
@@ -53,7 +53,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          We build high-performance mobile applications and scale them for users in India, USA, UK, and Canada through our expert cross-border development framework.
+          Vanurtech Media develops React Native apps for Indian companies and helps launch on App Store and Play Store, including rollouts for users in the USA, UK, and Canada.
         </motion.p>
       </div>
 

@@ -1,32 +1,28 @@
-import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: { absolute: "Page Not Found | Vanurtech Media" },
+  description: "This page is not on the Vanurtech Media website.",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        textAlign: "center",
-      }}
-    >
-      <Image
-        src="https://img.freepik.com/free-vector/flat-404-error-template_23-2147740353.jpg?t=st=1770112596~exp=1770116196~hmac=c519dcadf37d604f239ba7a3d8e4407b60374cc7ecc97cbe23525c54016ff685"   // 👈 your error image
-        alt="Page Not Found"
-        width={400}
-        height={300}
-      />
-
-      <h1 style={{ fontSize: "28px", marginTop: "20px" }}>
-        Page Not Found
-      </h1>
-
-      <Link href="/" style={{ marginTop: "10px", color: "blue" }}>
-        Go Back Home
-      </Link>
+    <div className="min-h-screen bg-[#0A0012] text-white flex flex-col items-center justify-center px-6 text-center">
+      <p className="text-purple-300 text-sm tracking-[0.2em] uppercase mb-4">404</p>
+      <h1 className="text-3xl sm:text-5xl font-bold mb-4">Page not found</h1>
+      <p className="text-gray-400 max-w-md mb-8">
+        The page you requested is not available. Browse our services or go back to the homepage.
+      </p>
+      <div className="flex flex-wrap gap-3 justify-center">
+        <Link href="/" className="px-6 py-3 rounded-full bg-purple-600 text-white font-semibold">
+          Home
+        </Link>
+        <Link href="/services" className="px-6 py-3 rounded-full border border-white/20 text-white font-semibold">
+          Services
+        </Link>
+      </div>
     </div>
   );
 }

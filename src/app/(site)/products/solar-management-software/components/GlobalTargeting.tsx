@@ -27,11 +27,11 @@ export function GlobalTargeting() {
           </div>
         </motion.div>
         <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto">
-          Powering Solar Businesses <br className="md:hidden" />
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-yellow-300 to-yellow-500">Across The Globe</span>
+          Solar management software for{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-yellow-300 to-yellow-500">installers across India</span>
         </motion.h3>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed">
-          Our solar management platform serves installers, EPC companies, and plant operators in India, USA, UK, and Canada with localized compliance and reporting.
+          Vanurtech Media&apos;s solar product helps EPC teams track plants, AMC visits, and customer records — built for India&apos;s renewable market, with rollout support for international solar operations.
         </motion.p>
       </div>
 

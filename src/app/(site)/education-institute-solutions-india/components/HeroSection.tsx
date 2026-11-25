@@ -138,10 +138,10 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight text-white tracking-tight px-2 sm:px-0"
           >
-            Empowering Institutes with{" "}
+            School and institute ERP{" "}
             <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-500 to-violet-600">
-              Next-Gen Management ERPs
+              that handles admissions, fees, and operations
             </span>
           </motion.h1>
 
@@ -149,9 +149,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            Automated student enrollment, fee management, high-performance learning portals, and teacher-parent communication systems built for modern institutes in India.
+            Admissions, fees, attendance, and parent updates in one ERP.
           </motion.p>
 
           <motion.div

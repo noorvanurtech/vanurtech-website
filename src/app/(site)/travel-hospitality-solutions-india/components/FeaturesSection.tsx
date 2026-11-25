@@ -74,7 +74,7 @@ export function FeaturesSection() {
           </h3>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            Our hospitality management platform provides the tools you need to automate bookings and deliver exceptional travel experiences.
+            Travel and hospitality software by Vanurtech Media — bookings, itineraries, agent dashboards, and WhatsApp guest updates for Indian operators.
           </p>
         </div>
 

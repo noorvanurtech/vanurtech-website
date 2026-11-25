@@ -23,7 +23,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
     },
     {
       title: "AI + Custom Software Expertise",
-      desc: "We don't just build software, we engineer intelligent systems that learn and adapt.",
+      desc: "Automation flows mapped to your real sales and ops steps — not a one-size chatbot demo.",
       icon: Brain,
       color: "text-pink-400",
       bg: "bg-pink-500/10",
@@ -94,7 +94,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, scalability, and solving real-world business problems through intelligent automation engineering.
+              Vanurtech Media wires automation into tools you already use — WhatsApp, calls, CRM, and spreadsheets — instead of selling a generic bot template.
             </motion.p>
           </div>
         </div>

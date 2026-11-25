@@ -15,7 +15,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div
+    <footer
       className="w-full py-12 px-4 sm:px-6 md:px-8 border-t border-purple-900/10"
       style={{ backgroundColor: "#0B0011" }}
     >
@@ -34,7 +34,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/images/logo-1.png"
-                alt="Vanur Logo"
+                alt="Vanurtech Media logo"
                 width={50}
                 height={50}
                 className="brightness-0 invert"
@@ -51,8 +51,7 @@ export default function Footer() {
           </div>
           <div className="max-w-md">
             <p className="text-purple-100 text-base leading-relaxed opacity-90">
-              Specializing in premium Website Development, Custom CRM, SaaS Solutions,
-              and AI-driven Business Automation to scale your enterprise globally.
+              Custom software, CRM, ERP, SaaS, mobile apps, and AI automation for businesses in India. Offices in Delhi and Bhubaneswar — building since 2015.
             </p>
           </div>
         </div>
@@ -184,6 +183,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

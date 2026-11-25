@@ -47,12 +47,11 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
               </div>
             </motion.div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight px-2 sm:px-0">
-              Bridge the Gap:{" "}
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Invisible</span> to{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Unstoppable</span>
+              From scattered leads to a{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">CRM your team uses every day</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Don't let leads slip away. We build CRM systems that keep your sales pipeline full and your team focused on closing.
+              Vanurtech Media builds custom CRM for Indian businesses — so follow-ups, assignments, and deal status live in one place instead of spreadsheets and chat threads.
             </p>
           </div>
 

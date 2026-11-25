@@ -7,26 +7,10 @@ import { Sparkles, Briefcase, Palette, Cpu, Zap } from 'lucide-react';
 
 export default function HeroServices() {
   const services = [
-    {
-      id: 1,
-      title: 'Consulting',
-      icon: Briefcase
-    },
-    {
-      id: 2,
-      title: 'Design',
-      icon: Palette
-    },
-    {
-      id: 3,
-      title: 'Development',
-      icon: Cpu
-    },
-    {
-      id: 4,
-      title: 'Optimization',
-      icon: Zap
-    }
+    { id: 1, title: 'Strategy First', icon: Briefcase },
+    { id: 2, title: 'Design', icon: Palette },
+    { id: 3, title: 'Development', icon: Cpu },
+    { id: 4, title: 'AI & Growth', icon: Zap }
   ];
 
   return (
@@ -58,7 +42,7 @@ export default function HeroServices() {
           >
             <Sparkles size={16} className="text-purple-400" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Strategic Service Ecosystem
+              9 Services · One Team · Delhi & Bhubaneswar
             </span>
           </motion.div>
 
@@ -68,9 +52,9 @@ export default function HeroServices() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight tracking-tight text-white"
           >
-            One team. <br className="sm:hidden" />
+            Everything your business needs <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Infinite capabilities.
+              built by one team
             </span>
           </motion.h1>
 
@@ -78,9 +62,9 @@ export default function HeroServices() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-gray-300 text-base md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed"
+            className="text-gray-300 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed"
           >
-            From vision to execution Vanutech Media crafts bold digital experiences through strategy, design, code, and beyond.
+            Web, CRM, SaaS, apps, AI, SEO, design, and security — one team.
           </motion.p>
 
           <motion.div

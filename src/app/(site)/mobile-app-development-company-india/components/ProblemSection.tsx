@@ -46,12 +46,11 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
               </div>
             </motion.div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-              Elevate Your Business: <br className="md:hidden" />
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Standard</span> to{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Extraordinary</span>
+              Mobile apps that work on{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">iOS and Android without two teams</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Don't let a poorly built app hold your business back. We build mobile solutions that engage users and drive consistent growth.
+              Vanurtech Media builds React Native apps for Indian businesses — stable releases, clear navigation, and backend integration when you need it.
             </p>
           </div>
 

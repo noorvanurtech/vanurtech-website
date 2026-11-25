@@ -45,13 +45,11 @@ export default function Partners() {
       <div className="max-w-full w-full">
         {/* Header Text */}
         <div className="text-center mx-5 mb-8">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
-            <span className="text-white">Partners </span>
-          </h1>
-          <p className="text-gray-400 text-base sm:text-lg">
-            <span className="text-purple-400">✦</span> Trusted by{" "}
-            <span className="text-white font-semibold">200+ innovators</span>{" "}
-            worldwide. <span className="text-purple-400">✦</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
+            <span className="text-white">Clients and partners</span>
+          </h2>
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+            <span className="text-purple-400">✦</span> Brands across India trust Vanurtech Media for websites, CRM, and custom software — from startups to established enterprises. <span className="text-purple-400">✦</span>
           </p>
         </div>
 
@@ -70,7 +68,7 @@ export default function Partners() {
                       <div className="flex items-center justify-center w-full h-full relative group">
                         <Image
                           src={logo}
-                          alt={`Client logo left`}
+                          alt={`Vanurtech client partner logo`}
                           width={100}
                           height={50}
                           className="object-contain hover:scale-110 transition-transform duration-300 max-w-full max-h-full"
@@ -96,7 +94,7 @@ export default function Partners() {
                       <div className="flex items-center justify-center w-full h-full relative group">
                         <Image
                           src={logo}
-                          alt={`Client logo right`}
+                          alt={`Vanurtech client partner logo`}
                           width={100}
                           height={50}
                           className="object-contain hover:scale-110 transition-transform duration-300 max-w-full max-h-full"

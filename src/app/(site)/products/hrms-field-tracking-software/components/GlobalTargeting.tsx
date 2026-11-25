@@ -27,11 +27,11 @@ export function GlobalTargeting() {
           </div>
         </motion.div>
         <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-          Powering Workforces <br className="md:hidden" />
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500">Across The Globe</span>
+          HRMS and GPS tracking for{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500">field teams in India</span>
         </motion.h3>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-          Our HRMS platform serves businesses in India, USA, UK, and Canada — with localized compliance, multi-currency payroll, and regional reporting built in.
+          Vanurtech Media&apos;s HRMS covers attendance, visit logs, and manager dashboards for distributed teams — with configuration support for overseas subsidiaries when you scale.
         </motion.p>
       </div>
 

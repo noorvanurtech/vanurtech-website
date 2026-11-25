@@ -41,9 +41,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto"
         >
-          Visual Storytelling <br className="hidden md:block" />
+          Graphic design for brands in India and{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            For Global Impact
+            overseas markets
           </span>
         </motion.h3>
         
@@ -53,7 +53,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          From our design hub in India, we craft high-end visual identities and branding for ambitious startups and established enterprises across the USA, UK, and Canada.
+          Vanurtech Media delivers logos, social creatives, and brochures from Delhi and Bhubaneswar, with remote design support for clients in the USA, UK, and Canada.
         </motion.p>
       </div>
 

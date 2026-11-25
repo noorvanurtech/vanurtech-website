@@ -26,11 +26,11 @@ export function GlobalTargeting() {
           </div>
         </motion.div>
         <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-          Powering Finance Operations <br className="md:hidden" />
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-blue-300 to-blue-500">Across The Globe</span>
+          GST-ready finance software for{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-blue-300 to-blue-500">Indian businesses</span>
         </motion.h3>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-          Our finance platform serves businesses in India, USA, UK, and Canada with localized GST, tax compliance, and multi-currency support.
+          Invoicing, expenses, and reports aligned to how Indian companies file GST — with export billing options for teams that sell to clients in the USA, UK, or Canada.
         </motion.p>
       </div>
 

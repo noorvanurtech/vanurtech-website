@@ -81,9 +81,9 @@ export default function ProductsList() {
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">Our Product Suite</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-            Products Built to{" "}
+            Solar, finance, WhatsApp and HRMS{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Scale Your Business
+              software you can deploy
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl">

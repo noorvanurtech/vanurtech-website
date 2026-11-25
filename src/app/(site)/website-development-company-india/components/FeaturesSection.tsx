@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "SEO-First Structure",
-    description: "Built-in technical SEO optimizations that put your website at the top of Google search results right from day one.",
+    description: "Clean URLs, meta tags, headings, and sitemaps so search engines can crawl and index your site properly from launch.",
     icon: <Globe className="w-6 h-6" />
   },
   {
@@ -65,7 +65,7 @@ export function FeaturesSection() {
             </span>
           </h3>
           <p className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed">
-            We don't just build websites; we engineer powerful digital assets equipped with everything you need to scale your traffic and capture more revenue.
+            Website development for Indian businesses: custom design, Next.js performance, SEO-ready structure, mobile layouts, and admin tools your team can use after go-live.
           </p>
         </div>
 

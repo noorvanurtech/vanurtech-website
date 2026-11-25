@@ -1,13 +1,13 @@
-import { Metadata } from "next";
 import UIUXServiceContent from "./UIUXServiceContent";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Best UI/UX Design Services in India | Vanurtech Media Pvt. Ltd.",
-  description: "Elite UI/UX design studio in India. We create intuitive, conversion-focused user experiences for web and mobile apps. Figma experts.",
-  alternates: {
-    canonical: "https://Vanurtech Media Pvt. Ltd..com/ui-ux-design-services-india",
-  },
-};
+export const metadata = pageMetadata({
+  title: "UI/UX Design Services in India | Vanurtech Media",
+  description:
+    "Vanurtech designs clear web and mobile interfaces, prototypes, and design systems that help customers complete tasks and enquire faster.",
+  path: "/ui-ux-design-services-india",
+  keywords: ["UI UX design services India", "website UI design", "mobile app UX"],
+});
 
 export default function UIUXServicePage() {
   const jsonLd = {
@@ -18,12 +18,18 @@ export default function UIUXServicePage() {
     "provider": {
       "@type": "Organization",
       "name": "Vanurtech Media Pvt. Ltd.",
-      "url": "https://Vanurtech Media Pvt. Ltd..com"
+      "url": "https://vanurmedia.com"
     },
     "serviceType": "UI/UX Design",
+    "url": "https://vanurmedia.com/ui-ux-design-services-india",
     "areaServed": {
       "@type": "Country",
       "name": "India"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
     }
   };
 

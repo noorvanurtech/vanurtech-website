@@ -2,10 +2,14 @@ import React from 'react';
 import { Shield, Lock, Eye, FileText, Bell, Globe, Mail } from 'lucide-react';
 import PageLoader from '@/components/PageLoader';
 
-export const metadata = {
-  title: "Privacy Policy | Vanurtech Media Pvt. Ltd.",
-  description: "Read our privacy policy to understand how Vanurtech Media Pvt. Ltd. collects, uses, and protects your personal data.",
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Privacy Policy | Vanurtech Media",
+  description:
+    "How Vanurtech Media collects, uses, and protects personal information submitted through our website, forms, and client conversations.",
+  path: "/privacy-policy",
+});
 
 const PrivacyPolicy = () => {
   return (

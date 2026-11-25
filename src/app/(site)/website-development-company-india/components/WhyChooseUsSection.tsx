@@ -94,7 +94,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, scalability, and solving real-world business problems through intelligent web engineering.
+              Vanurtech Media ships fast, SEO-structured websites on modern stacks — with the same team handling design, development, and post-launch updates from Delhi and Bhubaneswar.
             </motion.p>
           </div>
         </div>

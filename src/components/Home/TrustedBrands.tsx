@@ -85,7 +85,7 @@ export default function TrustedBrands() {
           >
             <ShieldCheck className="w-4 h-4 text-purple-400" />
             <span className="text-xs md:text-sm font-medium text-purple-300 tracking-wide">
-              Trusted by 200+ Businesses Worldwide
+              Trusted by 200+ Businesses Across India
             </span>
           </motion.div>
 
@@ -95,11 +95,11 @@ export default function TrustedBrands() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight lg:leading-[1.1]"
           >
-            Build AI-Powered{" "}
+            Stop Managing Your Business{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Custom Software, CRM & SaaS Solutions
+              With Spreadsheets
             </span>{" "}
-            That Solve Real Business Problems
+            — Let Smart Software Do It
           </motion.h2>
 
           <motion.p
@@ -108,7 +108,7 @@ export default function TrustedBrands() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="hidden md:block text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-light"
           >
-            We design & build high-performance websites, mobile apps, and digital platforms that help businesses grow faster.
+            Vanurtech builds custom software that fits your exact workflow — from capturing leads to automating operations, billing, and team management. No off-the-shelf tools, no compromise.
           </motion.p>
 
           <motion.div
@@ -118,10 +118,10 @@ export default function TrustedBrands() {
             className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto text-left md:px-10"
           >
             {[
-              { label: "Custom CRM for Lead & Sales Management", href: "/crm-development-company-india" },
-              { label: "AI Calling & Follow-up Automation", href: "/ai-business-automation-india" },
-              { label: "SaaS Platforms for Business Growth", href: "/saas-development-company-india" },
-              { label: "Mobile & Web Apps for End-to-End Operations", href: "/website-development-company-india" },
+              { label: "Custom CRM to track leads & close more sales", href: "/crm-development-company-india" },
+              { label: "AI-powered calling & follow-up automation", href: "/ai-business-automation-india" },
+              { label: "SaaS platforms built for your business model", href: "/saas-development-company-india" },
+              { label: "Mobile & web apps for end-to-end operations", href: "/website-development-company-india" },
             ].map((item, index) => (
               <Link key={index} href={item.href} className="flex items-center gap-3 group/link">
                 <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0 group-hover/link:scale-110 transition-transform" />

@@ -1,23 +1,33 @@
-import { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import SolarServiceContent from "./SolarServiceContent";
 
 
-export const metadata: Metadata = {
-  title: "Solar & Renewable Energy Software Solutions India | Vanurtech Media Pvt. Ltd.",
-  description: "Advanced software solutions for solar installers and renewable energy firms. Track installations, manage field teams, and automate energy calculations.",
-  alternates: {
-    canonical: "/solar-renewable-solutions-india",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Solar & Renewable Energy Software in India | Vanurtech Media",
+  description:
+    "Software for solar installers: site tracking, field teams, AMC follow-ups, and installation progress. Built by Vanurtech for renewable businesses.",
+  path: "/solar-renewable-solutions-india",
+  keywords: ["solar software India", "renewable energy software", "solar installation tracking"],
+});
 
 export default function SolarDevPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Solar & Renewable Energy Software Solutions",
+    "description": "Software for solar installers covering site tracking, field teams, AMC follow-ups, and installation progress management.",
+    "url": "https://vanurmedia.com/solar-renewable-solutions-india",
+    "serviceType": "Solar & Renewable Energy Software",
+    "areaServed": { "@type": "Country", "name": "India" },
     "provider": {
       "@type": "Organization",
-      "name": "Vanurtech Media Pvt. Ltd."
+      "name": "Vanurtech Media Pvt. Ltd.",
+      "url": "https://vanurmedia.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
     }
   };
 

@@ -15,40 +15,40 @@ import {
 export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () => void }) {
   const points = [
     {
-      title: "10+ Years Experience",
-      desc: "A decade of mastery in delivering robust digital ecosystems.",
+      title: "10+ Years in the Industry",
+      desc: "We've built software for 200+ businesses across India — we know what works and what doesn't.",
       icon: Award,
       color: "text-purple-400",
       bg: "bg-purple-500/10",
       borderColor: "group-hover:border-purple-500/50"
     },
     {
-      title: "Custom-Built Solutions",
-      desc: "No templates. Every line of code is written for your logic.",
+      title: "Built from Scratch, Every Time",
+      desc: "No templates or off-the-shelf tools. Every feature is coded around your specific business logic.",
       icon: Rocket,
       color: "text-pink-400",
       bg: "bg-pink-500/10",
       borderColor: "group-hover:border-pink-500/50"
     },
     {
-      title: "AI Automation",
-      desc: "Integrating next-gen AI to eliminate manual overhead.",
+      title: "AI Built Into Everything",
+      desc: "Automation, predictive analytics, and smart workflows come standard — not as expensive add-ons.",
       icon: Zap,
       color: "text-amber-400",
       bg: "bg-amber-500/10",
       borderColor: "group-hover:border-amber-500/50"
     },
     {
-      title: "Dedicated Support",
-      desc: "Continuous consultation and strategic technical partnership.",
+      title: "One Team, Start to Finish",
+      desc: "The same team that designs your software builds it and supports it. No handoffs, no gaps.",
       icon: HeartHandshake,
       color: "text-emerald-400",
       bg: "bg-emerald-500/10",
       borderColor: "group-hover:border-emerald-500/50"
     },
     {
-      title: "Proven Track Record",
-      desc: "Reliable execution across diverse global industries.",
+      title: "We've Delivered, Not Just Promised",
+      desc: "300+ completed projects across real estate, healthcare, solar, education, and more — results you can verify.",
       icon: ShieldCheck,
       color: "text-blue-400",
       bg: "bg-blue-500/10",
@@ -72,7 +72,7 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-sm mb-6"
           >
             <Sparkles size={14} className="text-purple-400" />
-            <span className="text-purple-300 text-xs font-medium tracking-wide">The Vanurtech Media Pvt. Ltd. Edge</span>
+            <span className="text-purple-300 text-xs font-medium tracking-wide">Why Choose Vanurtech</span>
           </motion.div>
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
@@ -83,8 +83,8 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight"
             >
-              Why Businesses <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500">Choose Our Expertise</span>
+              Why Clients Keep <br />
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-500">Coming Back to Us</span>
             </motion.h2>
 
             <motion.p
@@ -94,7 +94,7 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light"
             >
-              We focus on precision, scalability, and solving real-world business problems through intelligent engineering.
+              It's not just the software — it's the partnership. We stay accountable from the first call to years after launch.
             </motion.p>
           </div>
         </div>
@@ -154,10 +154,10 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
             <div className="relative z-10">
               <div className="flex items-center gap-2 text-purple-300 text-xs font-bold uppercase tracking-widest mb-3">
                 <CheckCircle2 size={14} className="text-purple-400 animate-pulse" />
-                <span>Ready to scale</span>
+                <span>No commitment needed</span>
               </div>
               <p className="text-white text-base font-semibold leading-snug">
-                Let&apos;s build a solution tailored for your business success.
+                Tell us your problem. We&apos;ll tell you how we&apos;d solve it — for free.
               </p>
             </div>
             
@@ -165,7 +165,7 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
               onClick={onConsultClick}
               className="relative z-10 mt-6 w-full py-3 bg-white text-black font-bold rounded-xl text-sm hover:bg-purple-500 hover:text-white transition-all active:scale-95 shadow-lg group-hover:shadow-purple-500/20"
             >
-              Partner With Us
+              Start a Free Conversation
             </button>
           </motion.div>
         </div>
@@ -179,7 +179,7 @@ export default function WhyChooseUs({ onConsultClick }: { onConsultClick?: () =>
           className="mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <p className="text-gray-400 text-sm italic text-center md:text-left opacity-60">
-            "We don&apos;t just build software we build solutions that solve real business problems."
+            &ldquo;We don&apos;t just hand over software — we stay involved until it&apos;s working for your business the way it should.&rdquo;
           </p>
           <div className="flex gap-6 opacity-20 select-none grayscale hover:grayscale-0 hover:opacity-50 transition-all duration-700">
             {[Award, Rocket, Zap].map((Icon, i) => <Icon key={i} size={22} className="text-white" />)}

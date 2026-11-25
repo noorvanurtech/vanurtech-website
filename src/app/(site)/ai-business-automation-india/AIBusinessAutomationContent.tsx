@@ -51,13 +51,6 @@ export default function AIBusinessAutomationContent() {
             >
               Website Engineering
             </Link>{" "}
-            and{" "}
-            <Link
-              href="/seo-services-india"
-              className="text-[#D3B4FF] hover:text-white transition-colors duration-300 underline underline-offset-4"
-            >
-              SEO Campaigns
-            </Link>{" "}
             for comprehensive business growth.
           </p>
         </div>

@@ -41,9 +41,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto px-2 sm:px-0"
         >
-          Delivering Digital Excellence <br className="hidden md:block" />
+          Custom CRM built in India for{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            Across The Globe
+            local and overseas teams
           </span>
         </motion.h3>
         
@@ -53,7 +53,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          We engineer scalable CRM solutions and drive growth for ambitious businesses in India, USA, UK, and Canada through our interconnected global delivery framework.
+          Our CRM projects serve sales teams across India. We also onboard international clients who need a dedicated offshore development partner with offices in Delhi and Bhubaneswar.
         </motion.p>
       </div>
 

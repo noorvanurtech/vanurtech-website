@@ -39,9 +39,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto px-2 sm:px-0"
         >
-          Delivering Digital Excellence <br className="hidden md:block" />
+          AI automation built in India for{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            Across The Globe
+            sales and operations teams
           </span>
         </motion.h3>
         
@@ -51,7 +51,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          We provide AI business automation solutions to companies across India, USA, UK, and Canada, helping businesses adopt intelligent systems at a cost-effective scale.
+          Vanurtech Media deploys WhatsApp bots, calling workflows, and office automation for businesses in India, with remote delivery for clients in the USA, UK, and Canada.
         </motion.p>
       </div>
 

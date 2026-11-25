@@ -41,9 +41,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto"
         >
-          Boosting Search Visibility <br className="hidden md:block" />
+          SEO for Indian businesses that also{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            For Markets Worldwide
+            serve overseas customers
           </span>
         </motion.h3>
         
@@ -53,7 +53,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-zinc-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          Our SEO strategies are custom-tailored for international markets, helping businesses in India, USA, UK, and Canada dominate local and global search results.
+          Vanurtech Media optimizes technical SEO and on-page content for India-first rankings, with hreflang and English content support when you target the USA, UK, or Canada.
         </motion.p>
       </div>
 

@@ -45,12 +45,11 @@ export function ProblemSection() {
               </div>
             </motion.div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-              Bridge the Gap: <br className="md:hidden" />
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Invisible</span> to{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Unforgettable</span>
+              Graphic design that looks{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">consistent across every channel</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Design is more than just looks. It's how you communicate your brand's authority and build instant trust with your audience.
+              Vanurtech Media delivers logos, brand kits, social creatives, and marketing PDFs for Indian businesses — aligned with your website and sales collateral.
             </p>
           </div>
 

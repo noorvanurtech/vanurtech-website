@@ -1,23 +1,32 @@
-import { Metadata } from "next";
 import CRMERPServiceContent from "./CRMERPServiceContent";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Custom CRM & ERP Development Company in India | Business Software Solutions",
+export const metadata = pageMetadata({
+  title: "CRM & ERP Development Company in India | Vanurtech Media",
   description:
-    "Build custom CRM & ERP software for your business — sales automation, lead management, finance, HR, inventory & operations. Trusted CRM & ERP development company in India.",
-  alternates: {
-    canonical: "/crm-erp-development-company-india",
-  },
-};
+    "Custom CRM and ERP systems for sales, finance, HR, inventory, and operations. Vanurtech builds one platform for Indian businesses.",
+  path: "/crm-erp-development-company-india",
+  keywords: ["CRM ERP development India", "custom ERP software", "business management software"],
+});
 
 export default function CRMERPDevPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Custom CRM & ERP Development",
+    description: "Integrated CRM and ERP systems for sales, finance, HR, inventory, and operations — one platform for Indian businesses.",
+    url: "https://vanurmedia.com/crm-erp-development-company-india",
+    serviceType: "CRM & ERP Development",
+    areaServed: { "@type": "Country", name: "India" },
     provider: {
       "@type": "Organization",
       name: "Vanurtech Media Pvt. Ltd.",
+      url: "https://vanurmedia.com",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
     },
   };
 

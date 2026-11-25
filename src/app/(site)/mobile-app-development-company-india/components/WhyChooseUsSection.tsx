@@ -93,7 +93,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, scalability, and solving real-world business problems through professional mobile application engineering.
+              Vanurtech Media ships React Native apps with store-ready builds, crash-free releases, and the same developers supporting you after launch.
             </motion.p>
           </div>
         </div>

@@ -196,7 +196,7 @@ export default function ProjectsGrid() {
       <div className="max-w-7xl w-full">
         {/* Header */}
         <div className="mb-12 sm:mb-16">
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -204,7 +204,7 @@ export default function ProjectsGrid() {
           >
             <span className="text-white">All </span>
             <span className="text-purple-500">Projects</span>
-          </motion.h1>
+          </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

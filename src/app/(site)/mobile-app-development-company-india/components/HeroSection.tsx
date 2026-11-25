@@ -90,9 +90,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Mobile Application <br className="hidden md:block" />
+            Mobile app development <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Development Experts
+              company in India
             </span>
           </motion.h1>
 
@@ -100,9 +100,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            We build high-performance, user-centric iOS & Android applications. From concept to App Store launch, get end-to-end mobile solutions in India.
+            React Native apps for iOS and Android — built and supported in India.
           </motion.p>
 
           <motion.div

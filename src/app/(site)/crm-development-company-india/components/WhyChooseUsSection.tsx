@@ -24,7 +24,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
     },
     {
       title: "300+ Projects Delivered",
-      desc: "Proven track record of successful and robust launches globally.",
+      desc: "CRM launches for businesses across India — real estate, healthcare, solar, and more.",
       icon: Star,
       color: "text-pink-400",
       bg: "bg-pink-500/10",
@@ -95,7 +95,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, scalability, and solving real-world business problems through intelligent CRM engineering.
+              Vanurtech Media designs CRM around your pipeline, roles, and reports — not a generic template — with direct access to the developers building your system.
             </motion.p>
           </div>
         </div>

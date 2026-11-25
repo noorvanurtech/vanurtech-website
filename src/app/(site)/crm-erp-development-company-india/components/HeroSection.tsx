@@ -65,7 +65,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             CRM & ERP Development{" "}
             <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Company in India
+              built for how your business works
             </span>
           </motion.h1>
 
@@ -73,9 +73,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            We build powerful, scalable CRM & ERP systems for businesses — unifying sales, finance, HR, inventory & operations on one intelligent platform.
+            CRM and ERP tailored to how your team sells and operates.
           </motion.p>
 
           <motion.div

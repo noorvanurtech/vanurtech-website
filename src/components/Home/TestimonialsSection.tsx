@@ -125,7 +125,7 @@ export default function TestimonialsSection() {
             </span>
           </motion.div>
 
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -136,7 +136,7 @@ export default function TestimonialsSection() {
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
               {" "}Real Impact.
             </span>
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             initial={{ opacity: 0, y: -10 }}

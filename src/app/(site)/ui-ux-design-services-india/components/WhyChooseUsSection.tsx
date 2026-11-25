@@ -94,7 +94,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, user psychology, and solving real-world business problems through intelligent UI/UX design.
+              Vanurtech Media runs user research, wireframes, and UI kits in Figma before development — so your product is tested on paper, not after launch.
             </motion.p>
           </div>
         </div>

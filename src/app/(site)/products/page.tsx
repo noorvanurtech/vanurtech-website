@@ -1,14 +1,63 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import ProductsClient from "./ProductsClient";
 
-export const metadata: Metadata = {
-  title: "Our Products | Custom Software & SaaS Solutions - Vanurtech Media Pvt. Ltd.",
-  description: "Discover Vanurtech Media Pvt. Ltd.'s digital products and SaaS solutions, designed to automate your business, streamline CRM, and drive AI-powered growth in India.",
-  alternates: {
-    canonical: "https://vanurmedia.com/products",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Business Software Products India | Vanurtech Media",
+  description:
+    "Vanurtech Media products: solar plant management, GST finance software, WhatsApp AI chatbot, and HRMS with GPS field tracking for Indian businesses.",
+  path: "/products",
+  keywords: [
+    "business software India",
+    "solar management software",
+    "HRMS software",
+    "WhatsApp chatbot",
+    "GST billing software",
+    "GPS field tracking software",
+  ],
+});
 
 export default function ProductsPage() {
-  return <ProductsClient />;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Vanurtech Business Software Products",
+    "description": "Ready-to-use software products from Vanurtech Media for Indian businesses.",
+    "url": "https://vanurmedia.com/products",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Solar Plant Management Software",
+        "url": "https://vanurmedia.com/products/solar-management-software"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "GST Billing & Finance Software",
+        "url": "https://vanurmedia.com/products/finance-management-software"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "WhatsApp AI Chatbot",
+        "url": "https://vanurmedia.com/products/whatsapp-ai-chatbot"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "HRMS & GPS Field Tracking Software",
+        "url": "https://vanurmedia.com/products/hrms-field-tracking-software"
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ProductsClient />
+    </>
+  );
 }

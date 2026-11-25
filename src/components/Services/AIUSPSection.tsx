@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { Brain, CheckCircle2, Sparkles, Zap, Bot, Cpu } from "lucide-react";
 
 const uspItems = [
-  "Automate customer calls & follow-ups",
-  "Analyze competitor strategies",
-  "Suggest marketing improvements",
-  "Improve lead conversion rates",
+  "AI calling bots that follow up leads without human effort",
+  "WhatsApp & email automation triggered by customer actions",
+  "Predictive analytics that spot growth opportunities in your data",
+  "Workflow automation that cuts repetitive manual work each week",
 ];
 
 export default function AIUSPSection() {
@@ -36,7 +36,7 @@ export default function AIUSPSection() {
             >
               <Sparkles size={16} className="text-purple-400" />
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide uppercase">
-                AI Unique Selling Proposition
+                Why AI Is Now Non-Negotiable
               </span>
             </motion.div>
 
@@ -47,9 +47,9 @@ export default function AIUSPSection() {
               transition={{ delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1]"
             >
-              AI That Works for Your <br className="hidden sm:block" />
+              Your competitors are already <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-cyan-400">
-                Business Growth
+                automating — are you?
               </span>
             </motion.h2>
 
@@ -60,7 +60,7 @@ export default function AIUSPSection() {
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base sm:text-lg md:text-xl mb-10 max-w-2xl lg:max-w-none leading-relaxed"
             >
-              Our AI-powered solutions help businesses streamline operations and achieve exponential growth through intelligent automation.
+              Businesses that automate follow-ups, lead qualification, and repetitive ops tasks close more deals and spend less on headcount. We build that automation for you — custom, not off-the-shelf.
             </motion.p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 w-full max-w-2xl lg:max-w-none">

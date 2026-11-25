@@ -46,12 +46,11 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
               </div>
             </motion.div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-              Bridge the Gap: <br className="md:hidden" />
-              From <span className="text-gray-500 underline decoration-red-500/30 underline-offset-2">Confusing</span> to{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Legendary</span>
+              UI/UX design that makes your product{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">easy to use on day one</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Don't settle for a design that just looks pretty. We build intuitive interfaces that drive engagement and capture value.
+              Vanurtech Media maps user flows, tests wireframes in Figma, and hands off design systems developers can build from — for web and mobile products in India.
             </p>
           </div>
 

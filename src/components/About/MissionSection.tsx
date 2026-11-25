@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Rocket, Zap, Target } from 'lucide-react';
 
-const PuzzleAssembly = ({ images, color = "purple" }: { images: string[], color?: "purple" | "blue" }) => {
+const PuzzleAssembly = ({ images, alts = [], color = "purple" }: { images: string[], alts?: string[], color?: "purple" | "blue" }) => {
   const colorClasses = color === "purple" 
     ? "from-purple-600/40 to-pink-600/40 border-purple-500/30 shadow-purple-500/10" 
     : "from-blue-600/40 to-emerald-600/40 border-blue-500/30 shadow-blue-500/10";
@@ -27,7 +27,7 @@ const PuzzleAssembly = ({ images, color = "purple" }: { images: string[], color?
             animate={{ scale: [1.5, 1.6, 1.5] }}
             transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
             src={images[0]} 
-            alt="Main Puzzle Image" 
+            alt={alts[0] || "Vanurtech Media team working on mission"} 
             className="-rotate-45 w-full h-full object-cover" 
           />
           <div className="absolute inset-0 bg-linear-to-tr from-purple-500/10 to-transparent pointer-events-none" />
@@ -41,7 +41,7 @@ const PuzzleAssembly = ({ images, color = "purple" }: { images: string[], color?
           transition={{ type: "spring", stiffness: 40, damping: 12, delay: 0.3 }}
           className="absolute top-[40%] left-[5%] w-[35%] h-[35%] rotate-45 overflow-hidden border border-white/10 shadow-3xl z-10 rounded-xl bg-slate-900"
         >
-          <img src={images[1]} alt="Side Puzzle 1" className="-rotate-45 scale-[1.7] w-full h-full object-cover grayscale opacity-60 hover:opacity-100 transition-opacity" />
+          <img src={images[1]} alt={alts[1] || "Vanurtech Media software solutions"} className="-rotate-45 scale-[1.7] w-full h-full object-cover grayscale opacity-60 hover:opacity-100 transition-opacity" />
         </motion.div>
 
         {/* Piece 3: Right Wing */}
@@ -52,7 +52,7 @@ const PuzzleAssembly = ({ images, color = "purple" }: { images: string[], color?
           transition={{ type: "spring", stiffness: 40, damping: 12, delay: 0.5 }}
           className="absolute top-[15%] right-[5%] w-[35%] h-[35%] rotate-45 overflow-hidden border border-white/10 shadow-3xl z-10 rounded-xl bg-slate-900"
         >
-          <img src={images[2]} alt="Side Puzzle 2" className="-rotate-45 scale-[1.7] w-full h-full object-cover grayscale opacity-60 hover:opacity-100 transition-opacity" />
+          <img src={images[2]} alt={alts[2] || "Vanurtech Media business automation"} className="-rotate-45 scale-[1.7] w-full h-full object-cover grayscale opacity-60 hover:opacity-100 transition-opacity" />
         </motion.div>
 
         {/* Piece 4: Integrated Technical Accent */}
@@ -120,23 +120,30 @@ export default function MissionSection() {
             </motion.div>
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                Our Mission Simplifying Business Through <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Technology</span>
+                Our Mission —{" "}
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
+                  Make Good Software Accessible to Every Business
+                </span>
               </h2>
               <div className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-light">
-                <p>Our mission is to <span className="text-white font-medium">empower businesses</span> with smart, scalable, and easy-to-use software solutions that simplify operations and drive growth.</p>
-                <p>We aim to <span className="text-white font-medium">bridge the gap</span> between business challenges and technology by creating solutions that are powerful, practical, and user-friendly.</p>
+                <p>
+                  Too many Indian businesses run on tools that were never designed for them — imported software with features they don&apos;t need and missing features they do. Our mission is to change that.
+                </p>
+                <p>
+                  We build software that is <span className="text-white font-medium">practical, not just impressive</span>. Every CRM, ERP, or platform we deliver is shaped around the actual workflow of the business using it — their sales process, their team structure, their industry.
+                </p>
               </div>
             </div>
           </div>
           <div className="flex-1 flex justify-center lg:justify-end">
-             <PuzzleAssembly images={missionImages} color="purple" />
+             <PuzzleAssembly images={missionImages} alts={["Vanurtech Media team empowering businesses with software", "Custom software development for Indian businesses", "Scalable technology solutions built by Vanurtech"]} color="purple" />
           </div>
         </div>
 
         {/* Vision Row: Content Untouched, Graphics Repetitive Trigger */}
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           <div className="flex-1 flex justify-center lg:justify-start order-2 lg:order-1">
-             <PuzzleAssembly images={visionImages} color="purple" />
+             <PuzzleAssembly images={visionImages} alts={["Vanurtech Media vision for global AI solutions", "AI-powered business automation in India", "Vanurtech expanding to global markets"]} color="purple" />
           </div>
           <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
             <motion.div
@@ -150,10 +157,18 @@ export default function MissionSection() {
             </motion.div>
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                Our Vision Becoming a <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Global AI Solution Provider</span>
+                Our Vision —{" "}
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
+                  Be the Software Partner Indian Businesses Grow With
+                </span>
               </h2>
               <div className="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed font-light">
-                <p>We envision becoming a <span className="text-white font-medium">global leader</span> in AI-powered business solutions, helping organizations across <span className="text-white">India, USA, UK, and Canada</span> transform their operations through innovation and technology.</p>
+                <p>
+                  We want to be the team a business calls at ₹10 lakh revenue and still relies on at ₹10 crore. That means building software that doesn&apos;t break when you scale, and staying involved long after launch day.
+                </p>
+                <p>
+                  Long-term, we are expanding our AI automation capabilities to serve businesses in <span className="text-white font-medium">India, UAE, USA, and UK</span> — bringing the same hands-on, custom approach to international markets.
+                </p>
               </div>
             </div>
           </div>

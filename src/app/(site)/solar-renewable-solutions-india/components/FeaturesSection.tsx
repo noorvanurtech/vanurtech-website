@@ -74,7 +74,7 @@ export function FeaturesSection() {
           </h3>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            Our solar management platform provides the tools you need to scale your renewable energy business, from the first lead to the final installation.
+            Solar EPC and installer tools from Vanurtech Media — lead tracking, site surveys, project milestones, and AMC schedules for renewable teams in India.
           </p>
         </div>
 

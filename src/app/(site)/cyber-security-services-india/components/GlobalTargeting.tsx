@@ -41,9 +41,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto"
         >
-          Neutralizing Threats <br className="hidden md:block" />
+          Cyber security services from{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            On A Global Scale
+            Vanurtech Media in India
           </span>
         </motion.h3>
         
@@ -53,7 +53,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          Our security operation centers (SOC) monitor and defend digital assets across India, USA, UK, and Canada, ensuring a unified shield against international cybercrime.
+          We harden websites and web apps for Indian businesses — audits, patching, access controls, and monitoring — with remote assessments for teams in the USA, UK, and Canada.
         </motion.p>
       </div>
 

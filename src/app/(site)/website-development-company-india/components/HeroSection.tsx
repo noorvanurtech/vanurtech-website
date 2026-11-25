@@ -69,7 +69,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
           >
             <Sparkles size={16} className="text-purple-400 shrink-0" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Leading Web Solutions in India
+              Website Development · Delhi & Bhubaneswar
             </span>
           </motion.div>
 
@@ -79,9 +79,10 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Website Development <br className="hidden md:block" />
+            A website built for your business —{" "}
+            <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Company in India
+              not a template for someone else's
             </span>
           </motion.h1>
 
@@ -89,9 +90,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            We build SEO-optimized, fast, and high-converting websites for businesses. Get custom website development services in India for global clients.
+            Fast, SEO-ready business websites that turn visitors into leads.
           </motion.p>
 
           <motion.div
@@ -104,7 +105,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
               onClick={onConsultClick}
               className="w-full sm:w-auto px-5 sm:px-8 py-3 sm:py-4 bg-linear-to-r from-purple-600 to-pink-600 hover:scale-105 rounded-full text-white font-semibold text-sm sm:text-base transition-all duration-300 shadow-lg shadow-purple-500/25 flex items-center justify-center gap-2 whitespace-nowrap"
             >
-              Get Started Today
+              Get a Free Website Quote
               <ArrowRight size={20} />
             </button>
             <Link

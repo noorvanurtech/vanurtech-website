@@ -37,7 +37,7 @@ export function ProblemSection({ onConsultClick }: { onConsultClick?: () => void
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">Operations and Follow-Ups?</span>
             </h3>
             <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Our AI-powered solutions eliminate these problems by automating key business processes.
+              Vanurtech Media automates calling, WhatsApp replies, and office workflows so your team spends less time on repeat tasks and more on closing deals.
             </p>
           </div>
 

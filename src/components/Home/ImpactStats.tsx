@@ -17,16 +17,16 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-sm">
               <Sparkles size={14} className="text-purple-500 shrink-0" />
               <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-tight">
-                Built for Business Growth. Powered by AI & Experience.
+                Real Problems. Practical Solutions. Proven Results.
               </span>
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1]">
-              Helping Businesses Solve <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600">Real Operational Challenges</span>
+              Your Business Deserves Software <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600">Built Around It</span>
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl">
-              With over 10+ years of experience, we specialize in building intelligent software solutions that solve real-world business challenges from lead management to operations automation.
+              Most businesses waste hours every week on manual follow-ups, broken spreadsheets, and disconnected tools. We fix that — with custom CRM, ERP, and automation built exactly for how your team works.
             </p>
 
             {/* Replacement Contact Buttons */}
@@ -36,7 +36,7 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
                 className="group flex items-center justify-center gap-2 px-5 sm:px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 rounded-xl text-white font-semibold transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] active:scale-95 text-sm sm:text-base"
               >
                 <PhoneCall size={16} className="group-hover:rotate-12 transition-transform shrink-0" />
-                Get a Quick Call Back
+                Talk to Us — It's Free
               </button>
               <Link
                 href="https://wa.me/7978874959?text=Hi%20Vanurmedia!%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details?"
@@ -44,7 +44,7 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
                 className="group flex items-center justify-center gap-2 px-5 sm:px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white font-semibold transition-all hover:bg-white/10 active:scale-95 text-sm sm:text-base"
               >
                 <MessageCircle size={16} className="shrink-0" />
-                Chat on WhatsApp
+                WhatsApp Us
               </Link>
             </div>
           </div>
@@ -57,18 +57,18 @@ export default function ImpactStats({ onConsultClick }: { onConsultClick?: () =>
             </div>
 
             <div className="group p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/5 bg-white/2 backdrop-blur-sm hover:border-purple-500/30 transition-all duration-300 sm:mt-12">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2 group-hover:scale-110 transition-transform origin-left">50k+</h3>
-              <p className="text-purple-300 text-sm sm:text-lg">Hours of Development</p>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2 group-hover:scale-110 transition-transform origin-left">200+</h3>
+              <p className="text-purple-300 text-sm sm:text-lg">Businesses Served</p>
             </div>
 
             <div className="group p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/5 bg-white/2 backdrop-blur-sm hover:border-purple-500/30 transition-all duration-300">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2 group-hover:scale-110 transition-transform origin-left">99%</h3>
-              <p className="text-purple-300 text-sm sm:text-lg">Client Satisfaction</p>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2 group-hover:scale-110 transition-transform origin-left">10+</h3>
+              <p className="text-purple-300 text-sm sm:text-lg">Years of Experience</p>
             </div>
 
             <div className="group p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/5 bg-white/2 backdrop-blur-sm hover:border-purple-500/30 transition-all duration-300 sm:mt-12">
-              <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-1 sm:mb-2 group-hover:scale-110 transition-transform origin-left">AI-Driven</h3>
-              <p className="text-purple-300 text-sm sm:text-lg">Business Solutions</p>
+              <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-1 sm:mb-2 group-hover:scale-110 transition-transform origin-left">AI-Powered</h3>
+              <p className="text-purple-300 text-sm sm:text-lg">Every Solution We Build</p>
             </div>
           </div>
         </div>

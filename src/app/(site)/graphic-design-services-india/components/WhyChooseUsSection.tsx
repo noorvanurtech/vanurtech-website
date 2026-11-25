@@ -94,7 +94,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on aesthetic precision and strategic impact, ensuring your brand stands out in an overcrowded digital landscape.
+              Vanurtech Media aligns logos, colour, and marketing assets with your website and sales decks — consistent brand design for Indian businesses.
             </motion.p>
           </div>
         </div>

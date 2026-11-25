@@ -25,46 +25,46 @@ export default function ServicesSection({ onConsultClick }: { onConsultClick?: (
       icon: Code,
       features: [
         {
-          title: "Custom Business Websites:",
+          title: "Built for your business goals:",
           description:
-            "high-converting websites designed for your business goals",
+            "not a template — every page designed around what you sell and who you sell to",
         },
         {
-          title: "SEO & Performance Optimized:",
-          description: "fast-loading, Google-friendly websites",
+          title: "SEO-ready from day one:",
+          description: "fast load times, proper headings, and Google-friendly structure built in",
         },
         {
-          title: "Lead Generation Focused:",
-          description: "designed to convert visitors into customers",
+          title: "Converts visitors into leads:",
+          description: "clear CTAs, trust signals, and inquiry forms placed where they work best",
         },
         {
-          title: "Scalable & Secure:",
-          description: "built with modern technologies for long-term growth",
+          title: "Scales as you grow:",
+          description: "modern tech stack (Next.js, React) that handles traffic and feature additions",
         },
       ],
     },
     {
       id: 2,
       category: "Cross-Platform",
-      title: "Mobile Application",
+      title: "Mobile Application Development",
       link: "/mobile-app-development-company-india",
       icon: Smartphone,
       features: [
         {
-          title: "Custom Mobile App Development:",
-          description: "native iOS/Android & React Native solutions",
+          title: "iOS & Android from one codebase:",
+          description: "React Native apps that feel native on both platforms",
         },
         {
-          title: "Figma Design for Mobile Applications:",
-          description: "pixel-perfect UI/UX design and prototyping",
+          title: "Pixel-perfect UI/UX design:",
+          description: "Figma prototypes reviewed and approved before a single line of code",
         },
         {
-          title: "App Testing and Quality Assurance:",
-          description: "comprehensive testing for optimal performance",
+          title: "Thorough QA before launch:",
+          description: "device, performance, and edge-case testing so it works on day one",
         },
         {
-          title: "App Maintenance and Support:",
-          description: "ongoing updates, bug fixes & feature enhancements",
+          title: "Ongoing support included:",
+          description: "bug fixes, OS updates, and new features handled by the same team",
         },
       ],
     },
@@ -76,45 +76,45 @@ export default function ServicesSection({ onConsultClick }: { onConsultClick?: (
       icon: Layers,
       features: [
         {
-          title: "Custom CRM Development:",
-          description: "tailored workflows to manage your unique business sales pipeline",
+          title: "CRM built for your sales process:",
+          description: "track leads, assign follow-ups, and close deals without missing a step",
         },
         {
-          title: "ERP System Integration:",
-          description: "unify finance, HR, inventory & operations in one powerful platform",
+          title: "ERP that connects every department:",
+          description: "finance, inventory, HR, and operations in a single dashboard",
         },
         {
-          title: "Real-Time Dashboards:",
-          description: "actionable insights and analytics to drive smarter business decisions",
+          title: "Real-time reports that matter:",
+          description: "see revenue, pipeline, and team performance at a glance",
         },
         {
-          title: "Process Automation:",
-          description: "intelligent tools to eliminate manual tasks and boost productivity",
+          title: "Automates the repetitive work:",
+          description: "reminders, assignments, invoicing, and status updates — all automatic",
         },
       ],
     },
     {
       id: 4,
       category: "Intelligence",
-      title: "AI Automation",
+      title: "AI Business Automation",
       link: "/ai-business-automation-india",
       icon: Code,
       features: [
         {
-          title: "Custom AI Growth Engines:",
-          description: "intelligent automation building tailored to your specific business needs",
+          title: "Automates your follow-up:",
+          description: "AI calls, WhatsApp messages, and emails sent without manual effort",
         },
         {
-          title: "Workflow Streamlining:",
-          description: "use high-end AI to eliminate repetitive tasks and save human hours",
+          title: "Eliminates repetitive tasks:",
+          description: "saves 10–20 staff hours per week through intelligent workflow automation",
         },
         {
-          title: "Smart Interaction Bots:",
-          description: "deploy next-gen AI calling and messaging for 24/7 global support",
+          title: "24/7 AI chat & calling bots:",
+          description: "answer customer queries and qualify leads even outside business hours",
         },
         {
-          title: "Predictive Analytics:",
-          description: "forecast market trends and optimize strategy with AI-driven data science",
+          title: "Predictive business insights:",
+          description: "AI analyses your data to flag risks and spot growth opportunities",
         },
       ],
     },
@@ -131,19 +131,19 @@ export default function ServicesSection({ onConsultClick }: { onConsultClick?: (
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/20 bg-purple-500/5 backdrop-blur-md mb-6">
             <Sparkles size={16} className="text-purple-400" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Strategic Service Ecosystem
+              What We Build
             </span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight">
-            Comprehensive Solutions <br className="hidden md:block" />
+            Four Core Services. <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Tailored for Global Scaling
+              One Team Behind All of Them.
             </span>
           </h2>
 
           <p className="text-gray-400 text-lg sm:text-xl max-w-3xl leading-relaxed">
-            We deliver high-performance software engineering and elite digital strategies that empower brands to dominate the modern landscape.
+            From your first website to a fully automated CRM — we design, build, and support everything your business needs to run and grow online.
           </p>
         </div>
 
@@ -321,14 +321,14 @@ export default function ServicesSection({ onConsultClick }: { onConsultClick?: (
               onMouseLeave={() => setHoveredCard(null)}
             >
               <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6">
-                Ready to Transform Your Business?
+                Not Sure Where to Start? Let's Figure It Out Together.
               </h4>
 
               <button
                 onClick={onConsultClick}
                 className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-purple-600 text-white hover:bg-purple-500 transition-all duration-300 group-hover:scale-105 font-semibold text-sm sm:text-base"
               >
-                <span>Get Started Today</span>
+                <span>Book a Free 20-Min Call</span>
                 <ArrowUpRight
                   size={16}
                   className="group-hover:rotate-45 transition-transform duration-300"

@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
 
 
@@ -15,106 +16,75 @@ const montserrat = Montserrat({
   preload: true,
 });
 
-// SEO Metadata
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vanurmedia.com'),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "AI-Powered Custom Software, CRM & SaaS Development Company | Vanurtech Media Pvt. Ltd.",
-    template: "%s | Vanurtech Media Pvt. Ltd."
+    default: "Custom Software, CRM & SaaS Company in India | Vanurtech",
+    template: "%s | Vanurtech",
   },
-  description: "Vanurtech Media Pvt. Ltd.: Leading AI-powered software development company in India. We automate SMEs with custom CRM, SaaS & mobile apps. Scale faster now!",
+  description:
+    "Vanurtech Media builds custom software, CRM, ERP, SaaS, and mobile apps for businesses in India. Get a free consultation in Delhi and Bhubaneswar.",
   keywords: [
-    // "digital marketing agency",
-    "web development",
-    "mobile app development",
-    "SEO services",
-    "custom software development",
-    "UI/UX design",
-    "e-commerce solutions",
-    "cloud services",
-    "digital transformation",
-    "Vanurtech Media Pvt. Ltd."
+    "custom software development company India",
+    "CRM development company India",
+    "SaaS development company India",
+    "website development company India",
+    "AI business automation India",
+    "mobile app development India",
+    "ERP software India",
+    "software company Delhi",
+    "software company Bhubaneswar",
+    "Vanurtech Media",
   ],
-  authors: [{ name: "Vanurtech Media Pvt. Ltd.", url: "https://vanurmedia.com" }],
-  creator: "Vanurtech Media Pvt. Ltd.",
-  publisher: "Vanurtech Media Pvt. Ltd.",
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-
-  // Open Graph
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://vanurmedia.com",
-    siteName: "Vanurtech Media Pvt. Ltd.",
-    title: "Vanurtech Media Pvt. Ltd. | AI-Powered Custom Software, CRM & SaaS Development Company",
-    description: "Vanurtech Media Pvt. Ltd.: Leading AI-powered software development company in India. We automate SMEs with custom CRM, SaaS & mobile apps. Scale faster now!",
+    locale: "en_IN",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: "Custom Software, CRM & SaaS Company in India | Vanurtech",
+    description:
+      "Vanurtech Media builds custom software, CRM, ERP, SaaS, and mobile apps for businesses in India. Get a free consultation in Delhi and Bhubaneswar.",
     images: [
       {
         url: "/images/logo-1.png",
         width: 1200,
         height: 630,
-        alt: "Vanurtech Media Pvt. Ltd. - Digital Solutions",
-      }
+        alt: "Vanurtech Media — custom software, CRM and SaaS company in India",
+      },
     ],
   },
-
-  // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@vanurmedia",
-    creator: "@vanurmedia",
-    title: "Vanurtech Media Pvt. Ltd. | AI-Powered Custom Software, CRM & SaaS Development Company",
-    description: "Vanurtech Media Pvt. Ltd.: Leading AI-powered software development company in India. We automate SMEs with custom CRM, SaaS & mobile apps. Scale faster now!",
+    title: "Custom Software, CRM & SaaS Company in India | Vanurtech",
+    description:
+      "Vanurtech Media builds custom software, CRM, ERP, SaaS, and mobile apps for businesses in India.",
     images: ["/images/logo-1.png"],
   },
-
-  // Robots
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-
-  // Icons
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      // { url: "/icon.svg", type: "image/svg+xml" },
-      // { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      // { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
-    ],
-    // apple: [
-    //   { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
-    // ],
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
   },
-
-  // Manifest
-  // manifest: "/manifest.json",
-
-  // Verification
-  verification: {
-    google: "your-google-verification-code", // TODO: Replace with actual Google Search Console verification code
-  },
-
-  // Alternate Languages
   alternates: {
-    canonical: "https://vanurmedia.com",
-    languages: {
-      'en-US': 'https://vanurmedia.com',
-    },
+    canonical: SITE_URL,
   },
-
-  // Category
   category: "technology",
 };
 
@@ -138,45 +108,76 @@ export default function RootLayout({
   // JSON-LD Structured Data for Organization
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Vanurtech Media Pvt. Ltd.",
-    url: "https://vanurmedia.com",
-    logo: "https://vanurmedia.com/images/logo.png",
-    description: "Leading AI-powered software development company in India specializing in custom software, CRM, SaaS, and mobile applications.",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "US"
+    "@type": "ProfessionalService",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/images/logo-1.png`,
+      width: 300,
+      height: 100,
     },
+    image: `${SITE_URL}/images/logo-1.png`,
+    description:
+      "Custom software, CRM, ERP, SaaS, website and mobile app development company in India.",
+    email: "info@vanurmedia.com",
+    telephone: "+91-7077004890",
+    foundingDate: "2015",
+    numberOfEmployees: { "@type": "QuantitativeValue", value: 20 },
+    areaServed: {
+      "@type": "Country",
+      name: "India",
+    },
+    address: [
+      {
+        "@type": "PostalAddress",
+        addressLocality: "Bhubaneswar",
+        addressRegion: "Odisha",
+        postalCode: "751001",
+        addressCountry: "IN",
+      },
+      {
+        "@type": "PostalAddress",
+        addressLocality: "New Delhi",
+        addressCountry: "IN",
+      },
+    ],
     contactPoint: {
       "@type": "ContactPoint",
-      contactType: "Customer Service",
-      availableLanguage: ["English"]
+      telephone: "+91-7077004890",
+      email: "info@vanurmedia.com",
+      contactType: "customer support",
+      areaServed: "IN",
+      availableLanguage: ["English", "Hindi"],
+      hoursAvailable: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "10:00",
+        closes: "19:00",
+      },
     },
     sameAs: [
-      "https://facebook.com/vanurmedia",
-      "https://twitter.com/vanurmedia",
-      "https://linkedin.com/company/vanurmedia",
-      "https://instagram.com/vanurmedia"
-    ]
+      "https://www.facebook.com/profile.php?id=61551081436589",
+      "https://www.instagram.com/vanur_media",
+      "https://www.linkedin.com/company/vanurmedia/",
+    ],
   };
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Vanurtech Media Pvt. Ltd.",
-    url: "https://vanurmedia.com",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://vanurmedia.com/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    name: SITE_NAME,
+    url: SITE_URL,
+    inLanguage: "en-IN",
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en-IN" className="scroll-smooth">
       <head>
         {/* Structured Data */}
         <script

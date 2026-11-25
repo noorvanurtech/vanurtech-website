@@ -103,9 +103,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Manage Your Workforce & <br className="md:hidden" />
+            HRMS and GPS field tracking <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-400 to-blue-500">
-              Track Field Agents in Real-Time
+              so you always know where your team is
             </span>
           </motion.h1>
 
@@ -113,9 +113,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            GPS-powered attendance, live field agent tracking, automated payroll, and complete HR operations — all in one platform built for India&apos;s growing workforce.
+            GPS attendance, live field tracking, leave, and payroll in one HRMS.
           </motion.p>
 
           <motion.div

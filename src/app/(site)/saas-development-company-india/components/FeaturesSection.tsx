@@ -65,7 +65,7 @@ export function FeaturesSection() {
             </span>
           </h3>
           <p className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed">
-            We don't just build SaaSs; we engineer powerful digital assets equipped with everything you need to scale your traffic and capture more revenue.
+            SaaS development with Vanurtech Media: user accounts, subscription billing, admin dashboards, and APIs — built in Delhi and Bhubaneswar for Indian and global clients.
           </p>
         </div>
 

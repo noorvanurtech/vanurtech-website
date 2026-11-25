@@ -68,7 +68,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
           >
             <Sparkles size={16} className="text-purple-400 shrink-0" />
             <span className="text-purple-300 text-xs sm:text-sm font-medium tracking-wide">
-              Results-Driven SEO in India
+              Technical & On-Page SEO · Delhi & Bhubaneswar
             </span>
           </motion.div>
 
@@ -78,9 +78,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-white tracking-tight"
           >
-            Top-Rated SEO Agency <br className="hidden md:block" />
+            SEO that gets your website <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              in India for Global Growth
+              found by the right people
             </span>
           </motion.h1>
 
@@ -88,9 +88,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-zinc-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-zinc-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            Scale your organic traffic and skyrocket your ROI with our custom SEO strategies. We help businesses dominate search rankings and capture high-intent leads.
+            Technical SEO, speed, and on-page fixes for better Google visibility.
           </motion.p>
 
           <motion.div

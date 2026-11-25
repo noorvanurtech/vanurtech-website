@@ -88,7 +88,7 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             CRM Development{" "}
             <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Company in India
+              that fits your sales pipeline exactly
             </span>
           </motion.h1>
 
@@ -96,9 +96,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0"
           >
-            We build SEO-optimized, fast, and high-converting CRM systems for businesses. Get custom CRM development services in India for global clients.
+            Custom CRM for your sales flow — leads, follow-ups, and pipeline in one place.
           </motion.p>
 
           <motion.div

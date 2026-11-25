@@ -27,11 +27,11 @@ export function GlobalTargeting() {
           </div>
         </motion.div>
         <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto">
-          Powering Businesses <br className="md:hidden" />
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-purple-500">Across The Globe</span>
+          WhatsApp AI chatbot for{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-400 to-purple-500">Indian sales and support teams</span>
         </motion.h3>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed">
-          Our WhatsApp AI Chatbot serves businesses in India, USA, UK, and Canada — with multi-language support and localized compliance built in.
+          Vanurtech Media&apos;s WhatsApp bot handles enquiries, bookings, and follow-ups on the channel your customers already use — with rollout options for teams in the USA, UK, and Canada.
         </motion.p>
       </div>
 

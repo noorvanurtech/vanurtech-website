@@ -63,7 +63,7 @@ export function FeaturesSection() {
             Tech-First <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-500 to-violet-600">Property Management</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light">
-            Everything you need to scale your real estate business in the digital-first Indian market.
+            CRM, lead automation, property inventory, and field agent tools for builders, brokerages, and developers across India — built by Vanurtech Media.
           </p>
         </div>
 

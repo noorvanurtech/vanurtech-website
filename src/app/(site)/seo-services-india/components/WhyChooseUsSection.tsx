@@ -93,7 +93,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-zinc-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We don't just 'do SEO' we engineer comprehensive search strategies that turn search engines into your most powerful customer acquisition channel.
+              Vanurtech Media fixes crawl errors, page speed, titles, and content structure — and can rebuild the site when technical debt is blocking rankings.
             </motion.p>
           </div>
         </div>

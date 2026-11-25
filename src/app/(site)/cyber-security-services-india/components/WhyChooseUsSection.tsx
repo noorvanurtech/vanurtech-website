@@ -94,7 +94,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on prevention, total visibility, and rapid response to ensure your business remains immune to the evolving global threat landscape.
+              Vanurtech Media prioritises practical fixes — patches, HTTPS, backups, and access rules — for web apps and sites your business relies on daily.
             </motion.p>
           </div>
         </div>

@@ -65,7 +65,7 @@ export function FeaturesSection() {
             </span>
           </h3>
           <p className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed">
-            We don't just build apps; we create powerful mobile experiences equipped with the latest features to help you engage your users and grow your business.
+            Mobile app development with React Native for iOS and Android — design review in Figma, real-device testing, and the same Vanurtech team for updates after launch.
           </p>
         </div>
 

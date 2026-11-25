@@ -41,9 +41,9 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-tight max-w-4xl mx-auto"
         >
-          Designing Digital Magic <br className="hidden md:block" />
+          UI/UX design from Vanurtech Media in{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-            Across The Globe
+            India for global products
           </span>
         </motion.h3>
         
@@ -53,7 +53,7 @@ export function GlobalTargeting() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-gray-400 text-lg sm:text-lg max-w-3xl mx-auto leading-relaxed"
         >
-          We build elite UI/UX designs and guide user strategy for ambitious products in India, USA, UK, and Canada through our interconnected global design framework.
+          We run research, wireframes, and visual design for startups in Delhi, Bhubaneswar, and remote clients in the USA, UK, and Canada who need a dedicated product design partner.
         </motion.p>
       </div>
 

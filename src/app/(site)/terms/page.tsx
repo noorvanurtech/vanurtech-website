@@ -2,10 +2,14 @@ import React from 'react';
 import { FileText, CheckCircle, AlertCircle, Scale, ShieldAlert, HeartHandshake, Mail } from 'lucide-react';
 import PageLoader from '@/components/PageLoader';
 
-export const metadata = {
-  title: "Terms of Service | Vanurtech Media Pvt. Ltd.",
-  description: "Read the terms of service for using Vanurtech Media Pvt. Ltd.'s website and services.",
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Terms of Service | Vanurtech Media",
+  description:
+    "Terms that apply when you use the Vanurtech Media website and engage our software, design, and digital services.",
+  path: "/terms",
+});
 
 const TermsOfService = () => {
   return (

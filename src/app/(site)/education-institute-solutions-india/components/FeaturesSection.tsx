@@ -74,7 +74,7 @@ export function FeaturesSection() {
           </h3>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            Our comprehensive institute management software helps schools and colleges automate operations and focus on delivering quality education.
+            Vanurtech Media builds institute ERP for Indian schools and colleges — admissions, fees, attendance, timetables, and parent communication in one system.
           </p>
         </div>
 

@@ -94,7 +94,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, scalability, and solving real-world business problems through intelligent SaaS engineering.
+              Vanurtech Media builds SaaS with sign-up, roles, billing hooks, and admin dashboards — one team in Delhi and Bhubaneswar from prototype to production.
             </motion.p>
           </div>
         </div>

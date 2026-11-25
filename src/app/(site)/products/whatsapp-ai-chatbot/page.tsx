@@ -1,14 +1,13 @@
-import { Metadata } from "next";
 import WhatsAppChatbotContent from "./WhatsAppChatbotContent";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "WhatsApp AI Chatbot India | 24/7 Automated Customer Support",
+export const metadata = pageMetadata({
+  title: "WhatsApp AI Chatbot for Business in India | Vanurtech Media",
   description:
-    "Engage customers 24/7, capture leads, and automate support through WhatsApp powered by AI. Built for Indian businesses to scale communication effortlessly.",
-  alternates: {
-    canonical: "/products/whatsapp-ai-chatbot",
-  },
-};
+    "Answer WhatsApp enquiries, capture leads, and handle repeat questions with an AI chatbot built by Vanurtech for Indian businesses.",
+  path: "/products/whatsapp-ai-chatbot",
+  keywords: ["WhatsApp AI chatbot India", "WhatsApp business automation", "lead chatbot"],
+});
 
 export default function WhatsAppChatbotPage() {
   const jsonLd = {
@@ -16,9 +15,18 @@ export default function WhatsAppChatbotPage() {
     "@type": "SoftwareApplication",
     name: "WhatsApp AI Chatbot",
     applicationCategory: "BusinessApplication",
+    operatingSystem: "Web, Android, iOS",
+    description: "AI-powered WhatsApp chatbot that answers enquiries, captures leads, and handles repeat questions for Indian businesses.",
+    url: "https://vanurmedia.com/products/whatsapp-ai-chatbot",
     provider: {
       "@type": "Organization",
       name: "Vanurtech Media Pvt. Ltd.",
+      url: "https://vanurmedia.com",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
     },
   };
 

@@ -19,9 +19,7 @@ const serviceLinks = [
   { href: "/saas-development-company-india", label: "SaaS Development" },
   { href: "/crm-erp-development-company-india", label: "CRM & ERP Development" },
   { href: "/ai-business-automation-india", label: "AI Business Automation" },
-  { href: "/seo-services-india", label: "SEO Services" },
   { href: "/ui-ux-design-services-india", label: "UI/UX Design" },
-  { href: "/graphic-design-services-india", label: "Graphic Design" },
   { href: "/cyber-security-services-india", label: "Cyber Security" },
 ];
 
@@ -77,7 +75,7 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 src="/images/logo-1.png"
-                alt="Vanur Logo"
+                alt="Vanurtech Media logo"
                 width={40}
                 height={40}
                 className="cursor-pointer"

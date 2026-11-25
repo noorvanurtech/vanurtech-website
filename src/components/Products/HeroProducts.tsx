@@ -49,9 +49,9 @@ export default function HeroProducts() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight tracking-tight text-white"
           >
-            Powerful Products. <br className="sm:hidden" />
+            Business software products <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-purple-600">
-              Built for Business.
+              built for companies in India
             </span>
           </motion.h1>
 
@@ -59,9 +59,9 @@ export default function HeroProducts() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-gray-300 text-base md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed"
+            className="text-gray-300 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed"
           >
-            Ready-to-deploy software products crafted by Vanutech Media to streamline your operations, boost sales, and scale your business.
+            Solar, finance, WhatsApp chatbot, and HRMS — ready to deploy.
           </motion.p>
 
           <motion.div

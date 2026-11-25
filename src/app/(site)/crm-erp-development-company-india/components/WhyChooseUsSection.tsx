@@ -95,7 +95,7 @@ export function WhyChooseUsSection({ onConsultClick }: { onConsultClick?: () => 
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed"
             >
-              We focus on precision, scalability, and solving real-world business problems through intelligent CRM & ERP engineering.
+              Vanurtech Media connects sales, inventory, finance, and HR in one custom platform — built for how Indian operators actually run their business.
             </motion.p>
           </div>
         </div>

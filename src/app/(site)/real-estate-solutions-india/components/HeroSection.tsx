@@ -103,9 +103,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             transition={{ delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 leading-tight text-white tracking-tight px-2 sm:px-0"
           >
-            Automate Your Property <br className="hidden md:block" />
+            Real estate CRM software <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 via-indigo-500 to-blue-500">
-              Sales & Lead Pipeline
+              that closes more deals and misses fewer leads
             </span>
           </motion.h1>
 
@@ -113,9 +113,9 @@ export function HeroSection({ onConsultClick }: { onConsultClick?: () => void })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-gray-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0 font-light"
+            className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0 font-light"
           >
-            Empower your real estate firm with advanced property tracking, automated lead follow-ups, and AI-driven agent performance dashboards.
+            Leads, site visits, and agent follow-ups in one CRM.
           </motion.p>
 
           <motion.div

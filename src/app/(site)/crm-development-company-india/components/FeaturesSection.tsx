@@ -66,7 +66,7 @@ export function FeaturesSection() {
           </h3>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            We don't just build CRMs — we engineer powerful customer relationship platforms that help you capture more leads, close more deals, and retain more customers.
+            Custom CRM software for Indian sales teams: lead capture, pipeline stages, follow-up automation, and reports that match how you actually sell.
           </p>
         </div>
 

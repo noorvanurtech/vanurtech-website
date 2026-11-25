@@ -17,48 +17,48 @@ import Link from "next/link";
 
 const solutions = [
   {
-    title: "Small & Medium Businesses (SMEs)",
-    description: "Custom ERP, automated billing systems, and localized digital ecosystems built for rapid growth and efficiency.",
+    title: "Small & Medium Businesses",
+    description: "Custom ERP, automated billing, and CRM built for SMEs that want to scale without hiring more staff.",
     icon: Briefcase,
     color: "from-violet-600 to-purple-600",
     tag: "Growth Ready",
     link: "/small-medium-business-solutions-india"
   },
   {
-    title: "Real Estate & Lead Management",
-    description: "Advanced property tracking, automated lead follow-ups, and agent performance dashboards for high-volume firms.",
+    title: "Real Estate & Property",
+    description: "Track leads, automate follow-ups, manage site visits, and monitor agent performance from one dashboard.",
     icon: Building2,
     color: "from-violet-600 to-purple-600",
-    tag: "Revenue Max",
+    tag: "More Closings",
     link: "/real-estate-solutions-india"
   },
   {
     title: "Solar & Renewable Energy",
-    description: "End-to-end installation tracking, field team reporting, and automated energy calculation tools for solar installers.",
+    description: "Installation tracking, field team GPS, automated quotation tools, and energy calculation software for solar companies.",
     icon: Sun,
     color: "from-violet-600 to-purple-600",
     tag: "Green Scale",
     link: "/solar-renewable-solutions-india"
   },
   {
-    title: "Education & Institutes",
-    description: "Automated student enrollment, high-performance learning portals, and integrated fee management systems.",
+    title: "Schools & Institutes",
+    description: "Automate student admissions, fee collection, attendance, and parent communication — all in one platform.",
     icon: GraduationCap,
     color: "from-violet-600 to-purple-600",
-    tag: "Elite Learning",
+    tag: "Smart Campus",
     link: "/education-institute-solutions-india"
   },
   {
     title: "Healthcare & Clinics",
-    description: "Scalable patient scheduling, electronic health records (EHR), and automated patient follow-up systems.",
+    description: "Appointment booking, digital patient records (EHR), billing, and automated reminders for clinics and hospitals.",
     icon: Activity,
     color: "from-violet-600 to-purple-600",
-    tag: "Care Flow",
+    tag: "Better Care",
     link: "/healthcare-clinic-solutions-india"
   },
   {
     title: "Travel & Hospitality",
-    description: "Custom booking engines, dynamic itinerary management, and AI-driven personalized travel experiences.",
+    description: "Custom booking engines, itinerary management, and AI-driven upselling tools for hotels, tours, and travel agencies.",
     icon: MapPin,
     color: "from-violet-600 to-purple-600",
     tag: "Global Reach",
@@ -94,7 +94,7 @@ export default function IndustrySolutions() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight leading-[1.2]"
           >
-            Custom Software Solutions for <span className="inline-block text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600 italic py-1 pr-6">Every Industry</span>
+            We Know Your Industry. <span className="inline-block text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-600 italic py-1 pr-6">We Build for It.</span>
           </motion.h2>
 
           <motion.p
@@ -104,8 +104,7 @@ export default function IndustrySolutions() {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-gray-400 max-w-3xl leading-relaxed"
           >
-            We build tailored solutions for industries that need automation and scalability.
-            Our systems are fully customizable based on your unique business workflow.
+            Generic software rarely fits a specific industry. We build solutions from scratch that match your exact workflow — the terminology, the process, and the people who use it daily.
           </motion.p>
         </div>
 

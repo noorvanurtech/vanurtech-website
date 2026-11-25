@@ -74,7 +74,7 @@ export function FeaturesSection() {
           </h3>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            We don't just build software — we engineer powerful business platforms that help you automate operations, track growth, and scale efficiently.
+            Software for small and medium businesses in India — websites, CRM, billing, and automation in one plan, without juggling multiple vendors.
           </p>
         </div>
 

@@ -105,9 +105,9 @@ export default function CTASection() {
   };
 
   const actionItems = [
-    { icon: <PhoneCall className="w-5 h-5 text-purple-400" />, text: "Talk to Experts" },
-    { icon: <MessageSquare className="w-5 h-5 text-purple-400" />, text: "Get Free Consultation" },
-    { icon: <Rocket className="w-5 h-5 text-purple-400" />, text: "Start Your Project Today" },
+    { icon: <PhoneCall className="w-5 h-5 text-purple-400" />, text: "Speak directly with our developers" },
+    { icon: <MessageSquare className="w-5 h-5 text-purple-400" />, text: "Free scope and timeline discussion" },
+    { icon: <Rocket className="w-5 h-5 text-purple-400" />, text: "From idea to launch — one team" },
   ];
 
   return (
@@ -161,19 +161,18 @@ export default function CTASection() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold mb-5 sm:mb-6 tracking-wider">
               <Sparkles className="w-3 h-3" />
-              Upgrade Your Business
+              Free consultation
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 sm:mb-6">
-              Let&apos;s Solve Your Business{" "}
+              Ready for software that fits{" "}
               <span className="bg-linear-to-r from-purple-400 via-purple-500 to-pink-400 bg-clip-text text-transparent">
-                Challenges with AI
+                how your team works?
               </span>
             </h2>
 
             <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-xl mb-8 sm:mb-10 leading-relaxed opacity-80">
-              Get a free consultation and discover how custom software can transform
-              your operations and increase your revenue.
+              Share your requirement — website, CRM, mobile app, or automation. Our Delhi and Bhubaneswar team will call back with a clear plan and timeline. No obligation.
             </p>
 
             <div className="space-y-3 sm:space-y-4">
